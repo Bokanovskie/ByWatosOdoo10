@@ -45,3 +45,14 @@ class Production(http.Controller):
         response = request.render('bywatos_website.production_template_view', values)
 
         return response
+
+    @http.route('/contact-us', type='http', auth='public', website=True)
+    def contact_us(self):
+
+        values = {
+
+        }
+
+        response = request.render('website.contactus', values)
+
+        return response
