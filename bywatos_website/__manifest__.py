@@ -28,7 +28,8 @@
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'views/website_template/my_production_template.xml'
+        'views/website_template/my_production_template.xml',
+        'views/website_template/production_template.xml'
     ],
     # only loaded in demonstration mode
     'demo': [

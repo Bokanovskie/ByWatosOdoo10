@@ -34,3 +34,14 @@ class Production(http.Controller):
         response = request.render('the_requests', values)
 
         return response
+
+    @http.route('/production/product/<model("product.template"):product>', type='http', auth='public', website=True)
+    def production_view(self, product):
+
+        values = {
+            'product': product,
+        }
+
+        response = request.render('bywatos_website.production_template_view', values)
+
+        return response

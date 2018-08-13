@@ -14,7 +14,7 @@
                 <div class="row">
                     <t t-foreach="product_ids" t-as="product">
                         <div class="col-md-4 container-image">
-                            <a href="">
+                            <a t-attf-href="/production/product/#{ slug(product) }">
                                 <img t-attf-src="/website/image/product.template/{{product.id}}/image/450x400"
                                      class="image-product"/>
                             </a>
