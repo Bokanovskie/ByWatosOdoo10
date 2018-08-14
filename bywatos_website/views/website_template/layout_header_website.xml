@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <template id="assets_frontend_header" inherit_id="website.assets_frontend" name="By Watos Header">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" href="/bywatos_website/static/src/css/header.css"></link>
+        </xpath>
+    </template>
+
+    <!-- Template override header native template -->
+    <template id="layout_website_inherited" inherit_id="website.layout" name="Main layout override">
+        <xpath expr="//header" position="replace">
+            <header>
+                <div id="bywatos_header">
+                    <div class="container">
+                        <!-- Social network -->
+                        <div id="header-top">
+                            <div id="social-network" class="list-inline-style">
+                                <ul>
+                                    <li><a t-att-href="website.social_facebook"
+                                           t-if="website.social_facebook"><i class="fa fa-facebook-square"/></a></li>
+                                    <li><a t-att-href="website.social_twitter"
+                                           t-if="website.social_twitter"><i class="fa fa-twitter"/></a></li>
+                                    <li><a t-att-href="website.social_linkedin"
+                                           t-if="website.social_linkedin"><i class="fa fa-linkedin"/></a></li>
+                                    <li><a t-att-href="website.social_youtube"
+                                           t-if="website.social_youtube"><i class="fa fa-youtube-play"/></a></li>
+                                    <li><a t-att-href="website.social_googleplus"
+                                           t-if="website.social_googleplus" rel="publisher"><i class="fa fa-google-plus-square"/></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Logo -->
+                            <div id="header-logo">
+                                <a href="/">
+                                    <img src="/bywatos_website/static/src/img/Logo_BW.png" class="header-logo"/>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div id="header-bottom">
+                            <!-- Menu -->
+                            <div class="list-inline-style">
+                                <ul>
+                                    <li><a href="/">Home</a></li>
+                                    <li>
+                                        <a href="#">
+                                            Réalisation
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <a href="/production_my_creation">
+                                                    Mes créations
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/production_the_request">
+                                                    Les demandes
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="/">
+                                            Atelier
+                                        </a>
+                                    </li>
+                                    <li><a href="/contact-us">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </xpath>
+    </template>
+
+</odoo>
