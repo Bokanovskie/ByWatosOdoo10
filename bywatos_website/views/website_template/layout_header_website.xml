@@ -8,7 +8,7 @@
     </template>
 
     <!-- Template override header native template -->
-    <template id="layout_website_inherited" inherit_id="website.layout" name="Main layout override">
+    <template id="layout_header_website_inherited" inherit_id="website.layout" name="Main layout override">
         <xpath expr="//header" position="replace">
             <header>
                 <div id="bywatos_header">
