@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <template id="assets_frontend_main" inherit_id="website.assets_frontend" name="By Watos css main">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" href="/bywatos_website/static/src/css/main.css"></link>
+        </xpath>
+    </template>
+
+    <template id="layout_main_website_inherited" inherit_id="website.layout" name="Main layout override">
+        <xpath expr="//main" position="replace">
+            <section id="page2">
+                <main>
+                    <div class="container">
+                        <h2>Page2</h2>
+                    </div>
+                </main>
+            </section>
+        </xpath>
+
+    </template>
+
+</odoo>
