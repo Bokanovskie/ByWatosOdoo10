@@ -14,7 +14,7 @@
                 <h2>Page3</h2>
             </section>
 
-            <!-- Call bywatos header template -->
+            <!-- Call bywatos footer template -->
             <t t-call="bywatos_website.bywatos_footer_website_template"/>
 
         </t>
