@@ -1,17 +1,15 @@
 #section_footer {
-    background-color: #2C3E50;
     height: 1100px;
     color: #BDC3C7;
 }
 
 #section_footer footer{
-    background-color: inherit;
+
 }
 
 #footer_contact {
-    height: 650px;
+    height: 610px;
     width: 100%;
-    background-color: red;
 }
 
 
@@ -25,12 +23,12 @@ footer {
 .box-news-letter {
     font-size: 22px;
     text-align: center;
-    margin-top: 45px;
+    margin-top: 25px;
     height: 150px;
 }
 
 .box-inside {
-    background-color: yellow;
+
 }
 
 input-control {
