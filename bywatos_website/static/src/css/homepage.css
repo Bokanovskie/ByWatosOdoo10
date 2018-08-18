@@ -10,8 +10,9 @@ section {
 }
 
 #page3 {
-    background-color: blue;
+    background-color: black;
 }
+
 
 .square-container {
     background-color: white;
@@ -20,8 +21,25 @@ section {
     padding: 25px;
 }
 
+#page2 .square-container{
+    text-align: center;
+}
+
+#page3 .square-container{
+    background-color: black;
+    position: relative;
+}
+
 .page-two-img {
-    height: 640px;
-    width: 728px;
+    height: 660px;
+    width: 700px;
     object-fit: contain;
+}
+
+.youtube-iframe {
+    position: absolute;
+    height: 281px;
+    width: 500px;
+    left: 114px;
+    top: 214.5px;
 }

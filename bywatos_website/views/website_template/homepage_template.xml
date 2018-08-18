@@ -14,7 +14,7 @@
 
             <section id="page2">
                 <div class="square-container">
-                    <img src="/bywatos_website/static/src/img/lampe_mel_halo3.jpg" class="page-two-img"/>
+                    <img src="/bywatos_website/static/src/img/lampe_mel_halo.jpg" class="page-two-img"/>
                 </div>
 
                 <div class="square-container">
@@ -30,7 +30,14 @@
             </section>
 
             <section id="page3">
-                <h2>Page3</h2>
+                <div class="square-container">
+                     <img src="/bywatos_website/static/src/img/cendrier_03.jpg" class="page-two-img"/>
+                </div>
+
+                <div class="square-container">
+                     <iframe src="https://www.youtube.com/embed/lYaY8nL2340" class="youtube-iframe"/>
+                </div>
+
             </section>
 
             <!-- Call bywatos footer template -->
