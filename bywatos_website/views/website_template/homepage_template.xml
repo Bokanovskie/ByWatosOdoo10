@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="homepage_template" name="Home page template">
+        <t t-call="website.layout">
+                <section id="page2">
+                    <h2>Page2</h2>
+                </section>
+
+                <section id="page3">
+                    <h2>Page3</h2>
+                </section>
+        </t>
+    </template>
+</odoo>
