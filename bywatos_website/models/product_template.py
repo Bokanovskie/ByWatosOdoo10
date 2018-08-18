@@ -9,12 +9,10 @@ class ProductTemplate(models.Model):
 
     def get_product_by_type(self, by_watos_type):
 
-        template_obj = self.env['product.template']
-        template_ids = template_obj.search([
+        template_ids = self.search([
             ('by_watos_type', '=', by_watos_type),
             ('sale_ok', '=', 'True'),
             ('active', '=', 'True'),
-            ('website_published', '=', 'True')
         ])
 
         return template_ids

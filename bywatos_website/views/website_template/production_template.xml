@@ -8,9 +8,9 @@
     </template>
 
     <template id="production_template_view">
-        <t t-call="website.layout">
-            <span t-esc="product.name"></span>
-        </t>
+        <!--<t t-call="website.layout">-->
+            <!--<span t-esc="product.name"></span>-->
+        <!--</t>-->
 
     </template>
 </odoo>

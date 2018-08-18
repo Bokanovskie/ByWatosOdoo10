@@ -11,8 +11,9 @@
     <template id="layout_footer_website_inherited" inherit_id="website.layout" name="Main layout override">
         <xpath expr="//footer" position="replace">
             <section id="section_footer">
+                <h2>Footer</h2>
                 <footer>
-                    TEST
+
                 </footer>
             </section>
         </xpath>
