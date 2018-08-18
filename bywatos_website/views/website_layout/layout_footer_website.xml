@@ -10,6 +10,15 @@
     <!-- Template override footer native template -->
     <template id="layout_footer_website_inherited" inherit_id="website.layout" name="Main layout override">
         <xpath expr="//footer" position="replace">
+            <footer>
+
+            </footer>
+        </xpath>
+    </template>
+
+    <!-- Template ByWatos footer template -->
+    <template id="bywatos_footer_website_template" name="ByWatos footer template">
+        <xpath expr="//footer" position="replace">
             <section id="section_footer">
                 <h2>Footer</h2>
                 <footer>
