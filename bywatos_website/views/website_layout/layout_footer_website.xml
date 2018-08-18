@@ -20,9 +20,32 @@
     <template id="bywatos_footer_website_template" name="ByWatos footer template">
         <xpath expr="//footer" position="replace">
             <section id="section_footer">
-                <h2>Footer</h2>
-                <footer>
+                <div id="footer_contact">
 
+                </div>
+
+                <div class="box-news-letter">
+                    <h1>Artisan ByWatos</h1>
+                    <strong>Abonnez-vous à la newsletter</strong>
+                    <div class="box-inside">
+                        <p class="input-control">
+                            <label class="input-item">Email*</label>
+                            <br/>
+                            <input class="input-item" type="email" />
+                        </p>
+                        <p></p>
+                        <div class="submit-control">
+                            <input type="submit" value="S'inscrire"/>
+                        </div>
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="copyright">
+                        © Copyright bywatos.fr
+                    </div>
+
+                    <t t-call="bywatos_website.social_network_template" />
                 </footer>
             </section>
         </xpath>

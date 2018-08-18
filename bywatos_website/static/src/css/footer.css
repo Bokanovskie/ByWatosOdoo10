@@ -1,7 +1,58 @@
 #section_footer {
     background-color: #2C3E50;
+    height: 1100px;
+    color: #BDC3C7;
 }
 
 #section_footer footer{
     background-color: inherit;
+}
+
+#footer_contact {
+    height: 600px;
+    width: 100%;
+    background-color: red;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+.box-news-letter {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 45px;
+    height: 150px;
+}
+
+.box-inside {
+    background-color: yellow;
+}
+
+input-control {
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.submit-control {
+    padding-top: 135px;
+}
+
+.input-item {
+    margin-top: 10px;
+}
+
+#section_footer .social-network {
+    float: right;
+    padding-right: 60px;
+}
+
+.copyright {
+    float: left;
+    padding-top: 25px;
+    padding-left: 60px;
 }
