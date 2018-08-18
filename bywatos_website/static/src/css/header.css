@@ -1,3 +1,8 @@
+#section_header {
+    background-image: url('../img/lampe_mel_halo.jpg');
+    background-size: 1473px 800px;
+}
+
 #bywatos_header .container {
     padding: 0;
     margin: 0;

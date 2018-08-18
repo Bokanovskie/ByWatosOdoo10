@@ -11,9 +11,13 @@
         <xpath expr="//main" position="replace">
             <section id="page2">
                 <main>
-                    <div class="container">
-                        <h2>Page2</h2>
-                    </div>
+                    <h2>Page2</h2>
+                </main>
+            </section>
+
+            <section id="page3">
+                <main>
+                    <h2>Page3</h2>
                 </main>
             </section>
         </xpath>
