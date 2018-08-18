@@ -21,7 +21,25 @@
         <xpath expr="//footer" position="replace">
             <section id="section_footer">
                 <div id="footer_contact">
+                    <div class="red-container">
+                        <div class="white-container">
+                            <div class="contact-title">
+                                <h1>Demande de</h1>
+                                <h1>renseignements</h1>
+                            </div>
 
+                            <div class="contact-link">
+
+                                <p>
+                                    A votre disposition, nous vous invitons à prendre contact avec nous pour tout renseignement.
+                                </p>
+
+                                <p>
+                                    <a>Nous contacter</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="box-news-letter">
