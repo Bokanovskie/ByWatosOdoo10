@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
 
-    <template id="assets_frontend_footer" inherit_id="website.assets_frontend" name="By Watos Header">
+    <template id="assets_frontend_footer" inherit_id="website.assets_frontend" name="By Watos css footer">
         <xpath expr="." position="inside">
             <link rel="stylesheet" href="/bywatos_website/static/src/css/footer.css"></link>
         </xpath>
@@ -10,9 +10,11 @@
     <!-- Template override footer native template -->
     <template id="layout_footer_website_inherited" inherit_id="website.layout" name="Main layout override">
         <xpath expr="//footer" position="replace">
-            <footer>
-                TEST
-            </footer>
+            <section id="section_footer">
+                <footer>
+                    TEST
+                </footer>
+            </section>
         </xpath>
     </template>
 
