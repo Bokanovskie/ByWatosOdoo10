@@ -6,13 +6,7 @@
             <link rel="stylesheet" href="/bywatos_website/static/src/css/header.css"></link>
         </xpath>
     </template>
-
-    <!-- Template override header native template -->
-    <template id="layout_header_website_inherited" inherit_id="website.layout" name="Header layout override">
-        <xpath expr="//header" position="replace">
-        </xpath>
-    </template>
-
+    
     <!-- Template bywatos header template -->
     <template id="bywatos_header_website_template" name="ByWatos header template">
         <xpath expr="//header" position="replace">
