@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "bywatos_product_extended",
+    'name': "bywatos_website",
 
     'summary': """
         Short (1 phrase/line) summary of the module's purpose, used as
@@ -21,12 +21,25 @@
 
     # any module necessary for this one to work correctly
     'depends': ['base',
+                'website',
+                'bywatos_product_extended',
                 'product'],
 
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'views/product_template_views.xml'
+
+        # Layout views
+        'views/website_layout/layout_main_website.xml',
+        'views/website_layout/layout_header_website.xml',
+        'views/website_layout/layout_footer_website.xml',
+
+        #Website Template
+        'views/website_template/homepage_template.xml',
+        'views/website_template/my_production_template.xml',
+        'views/website_template/social_network_template.xml',
+
+        # 'views/website_template/production_template.xml'
     ],
     # only loaded in demonstration mode
     'demo': [

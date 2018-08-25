@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <template id="assets_frontend_header" inherit_id="website.assets_frontend" name="By Watos css Header">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" href="/bywatos_website/static/src/css/header.css"></link>
+        </xpath>
+    </template>
+
+    <!-- Template override header native template -->
+    <template id="layout_header_website_inherited" inherit_id="website.layout" name="Header layout override">
+        <xpath expr="//header" position="replace">
+        </xpath>
+    </template>
+
+    <!-- Template bywatos header template -->
+    <template id="bywatos_header_website_template" name="ByWatos header template">
+        <xpath expr="//header" position="replace">
+            <section id="section_header">
+                <header>
+                    <div id="bywatos_header">
+                        <div class="container">
+                            <!-- Social network -->
+                            <div id="header-top">
+                                <t t-call="bywatos_website.social_network_template"/>
+
+                                <!-- Logo -->
+                                <div id="header-logo">
+                                    <a href="/">
+                                        <img src="/bywatos_website/static/src/img/logo_bw_transparency.png" class="header-logo"/>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div id="header-bottom">
+                                <!-- Menu -->
+                                <div class="list-inline-style">
+                                    <ul>
+                                        <li><a href="/">Home</a></li>
+                                        <li class="dropdown">
+                                            <a href="#">
+                                                Réalisation
+                                            </a>
+                                            <div class="dropdown-content">
+
+                                                <a href="/production_my_creation">
+                                                    Mes créations
+                                                </a>
+
+                                                <a href="/production_the_request">
+                                                    Les demandes
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="/">
+                                                Atelier
+                                            </a>
+                                        </li>
+                                        <li><a href="/contact-us">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </header>
+            </section>
+        </xpath>
+    </template>
+
+</odoo>
