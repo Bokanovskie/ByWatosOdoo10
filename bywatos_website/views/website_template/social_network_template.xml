@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <template id="social_network_template" name="Social network template">
+        <div class="social-network list-inline-style">
+            <ul>
+                <li><a t-att-href="website.social_facebook"
+                       t-if="website.social_facebook"><i class="fa fa-facebook-square"/></a></li>
+                <li><a t-att-href="website.social_twitter"
+                       t-if="website.social_twitter"><i class="fa fa-twitter"/></a></li>
+                <li><a t-att-href="website.social_linkedin"
+                       t-if="website.social_linkedin"><i class="fa fa-linkedin"/></a></li>
+                <li><a t-att-href="website.social_youtube"
+                       t-if="website.social_youtube"><i class="fa fa-youtube-play"/></a></li>
+                <li><a t-att-href="website.social_googleplus"
+                       t-if="website.social_googleplus" rel="publisher"><i class="fa fa-google-plus-square"/></a>
+                </li>
+            </ul>
+        </div>
+    </template>
+
+</odoo>

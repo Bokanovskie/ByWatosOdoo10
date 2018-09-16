@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <template id="assets_frontend_footer" inherit_id="website.assets_frontend" name="By Watos css footer">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" href="/bywatos_website/static/src/css/footer.css"></link>
+        </xpath>
+    </template>
+
+    <!-- Template override footer native template -->
+    <template id="layout_footer_website_inherited" inherit_id="website.layout" name="Main layout override">
+        <xpath expr="//footer" position="replace">
+            <footer>
+
+            </footer>
+        </xpath>
+    </template>
+
+    <!-- Template ByWatos footer template -->
+    <template id="bywatos_footer_website_template" name="ByWatos footer template">
+        <xpath expr="//footer" position="replace">
+            <section id="section_footer">
+                <div id="footer_contact">
+                    <div class="red-container">
+                        <div class="white-container">
+                            <div class="contact-title">
+                                <h1>Demande de</h1>
+                                <h1>renseignements</h1>
+                            </div>
+
+                            <div class="contact-link">
+
+                                <p>
+                                    A votre disposition, nous vous invitons à prendre contact avec nous pour tout renseignement.
+                                </p>
+
+                                <p>
+                                    <a>Nous contacter</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-news-letter">
+                    <h1>Artisan ByWatos</h1>
+                    <strong>Abonnez-vous à la newsletter</strong>
+                    <div class="box-inside">
+                        <p class="input-control">
+                            <label class="input-item">Email*</label>
+                            <br/>
+                            <input class="input-item" type="email" />
+                        </p>
+                        <p></p>
+                        <div class="submit-control">
+                            <input type="submit" value="S'inscrire"/>
+                        </div>
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="copyright">
+                        © Copyright bywatos.fr
+                    </div>
+
+                    <t t-call="bywatos_website.social_network_template" />
+                </footer>
+            </section>
+        </xpath>
+    </template>
+
+</odoo>
