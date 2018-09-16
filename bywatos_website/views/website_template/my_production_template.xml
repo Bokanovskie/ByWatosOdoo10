@@ -9,17 +9,19 @@
 
     <!-- My Production Template View -->
     <template id="my_production_template_view">
+
         <t t-call="website.layout">
-            <div id="portfolio" class="container">
-                <div class="row">
+            <div id="portfolio">
+                <div>
                     <t t-foreach="product_ids" t-as="product">
-                        <div class="col-md-4 container-image">
+                        <div class="gallery">
                             <a t-attf-href="/production/product/#{ slug(product) }">
-                                <img t-attf-src="/website/image/product.template/{{product.id}}/image/450x400"
-                                     class="image-product"/>
+                                <img t-attf-src="/website/image/product.template/{{product.id}}/image/3000x2300"
+                                     class="bywatos-image"/>
+                                <!--<img src="/bywatos_website/static/src/img/product/product_1.JPG" class="bywatos-image"/>-->
                             </a>
 
-                            <span t-esc="product.name" />
+                            <!--<span t-esc="product.name" />-->
                         </div>
                     </t>
                 </div>

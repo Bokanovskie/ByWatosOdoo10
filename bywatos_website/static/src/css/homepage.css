@@ -10,9 +10,8 @@ section {
 }
 
 #page3 {
-    background-color: black;
+    background-color: white;
 }
-
 
 .square-container {
     background-color: white;
@@ -22,15 +21,22 @@ section {
 }
 
 #page2 .square-container{
-    text-align: center;
+    text-align: left;
 }
 
 #page3 .square-container{
-    background-color: #000000;
+    background-color: white;
     position: relative;
 }
 
 .page-two-img {
+    height: 660px;
+    width: 700px;
+    object-fit: contain;
+
+}
+
+.page-three-img {
     height: 660px;
     width: 700px;
     object-fit: contain;

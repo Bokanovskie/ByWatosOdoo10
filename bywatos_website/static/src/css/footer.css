@@ -3,12 +3,9 @@
     color: #BDC3C7;
 }
 
-#section_footer footer{
-
-}
-
 .red-container {
-    background-color: red;
+    background-image: url('../img/lampe_color.JPG');
+    background-size: 1473px 800px;
     height: 570px;
     margin-top: 50px;
     text-align: center;
@@ -35,7 +32,6 @@
     height: 610px;
     width: 100%;
 }
-
 
 footer {
     position: absolute;
@@ -77,4 +73,8 @@ input-control {
     float: left;
     padding-top: 25px;
     padding-left: 60px;
+}
+
+#section_footer ul li{
+    display: inline;
 }

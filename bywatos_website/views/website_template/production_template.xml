@@ -7,10 +7,13 @@
         </xpath>
     </template>
 
-    <template id="production_template_view">
-        <!--<t t-call="website.layout">-->
+    <template id="my_production_template_view">
+        TEST 3
+        <t t-call="website.layout">
             <!--<span t-esc="product.name"></span>-->
-        <!--</t>-->
+            TEST 2
+        </t>
+        TEST
 
     </template>
 </odoo>

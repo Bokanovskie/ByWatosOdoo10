@@ -1,9 +1,17 @@
 #portfolio {
 
+    float: left;
+    height: 800px;
+    width: 100%;
 }
 
-.grid-image {
+.gallery {
+    float: left;
+    width: 33%;
+}
 
+.bywatos-image {
+    height: auto;
 }
 
 .image-product:hover {

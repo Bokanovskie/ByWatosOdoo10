@@ -17,21 +17,18 @@
                     <img src="/bywatos_website/static/src/img/lampe_mel_halo.jpg" class="page-two-img"/>
                 </div>
 
-                <div class="square-container">
-                    Lorem Ipsum
-                    "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-                    "Il n’y a personne qui n’aime la souffrance pour elle-même, qui ne la recherche et qui ne la veuille pour elle-même…"
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel velit lectus. Vestibulum risus augue,
-                    ullamcorper sit amet condimentum ut, scelerisque eget neque. Integer vestibulum nec massa et viverra. Etiam consectetur
-                    laoreet augue nec dignissim. Nulla sodales, magna quis mattis feugiat, lectus nibh blandit est, vel pharetra lacus velit ac justo.
-                    Curabitur sodales imperdiet sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                    Fusce eget dui sapien. Morbi ipsum odio, pellentesque sit amet volutpat eu, tincidunt quis nunc. Nunc maximus dignissim purus, at pretium libero.
+                <div class="square-container presentation-container">
+                    <h1>L'acier sur mesure</h1>
+                    <p>
+                        Née d'une passion pour l'acier. Diplôme de métallier en poche, je me passione pour la transformation et le réalisation d'objet sur mesure unique.
+                        Mon imagination et mon savoir faire dans la conception de design d'intérieur.
+                    </p>
                 </div>
             </section>
 
             <section id="page3">
                 <div class="square-container">
-                     <img src="/bywatos_website/static/src/img/cendrier_03.jpg" class="page-two-img"/>
+                     <img src="/bywatos_website/static/src/img/lampe_molniya.JPG" class="page-three-img"/>
                 </div>
 
                 <div class="square-container">

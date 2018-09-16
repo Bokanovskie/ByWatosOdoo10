@@ -38,8 +38,9 @@
         'views/website_template/homepage_template.xml',
         'views/website_template/my_production_template.xml',
         'views/website_template/social_network_template.xml',
+        'views/website_template/contact_us_template.xml',
 
-        # 'views/website_template/production_template.xml'
+        'views/website_template/my_production_template.xml'
     ],
     # only loaded in demonstration mode
     'demo': [
