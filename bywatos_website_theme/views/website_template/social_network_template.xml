@@ -2,7 +2,7 @@
 <odoo>
 
     <template id="social_network_template" name="Social network template">
-        <div class="col-md-2 social-network list-inline-style">
+        <div id="social-network-template" class="col-md-2">
             <ul>
                 <li><a t-att-href="website.social_facebook"
                        t-if="website.social_facebook"><i class="fa fa-facebook-square"/></a></li>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="assets_frontend_homepage" inherit_id="website.assets_frontend" name="By Watos css homepage">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" href="/bywatos_website_theme/static/src/css/one-page-wonder.css"></link>
+        </xpath>
+    </template>
+
+    <template id="homepage_template" name="Home page template">
+        <t t-call="website.layout">
+            <!-- Call bywatos header template -->
+            <t t-call="bywatos_website_theme.bywatos_header_website_template"/>
+
+            <!-- Page Content -->
+            <div class="container-fluid">
+
+                <hr class="featurette-divider"/>
+
+                <!-- First Featurette -->
+                <div class="row featurette" id="about">
+                    <div class="col-md-6 col-xs-12">
+                        <h2 class="featurette-heading">This First Heading
+                            <span class="text-muted">Will Catch Your Eye</span>
+                        </h2>
+                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta
+                            felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                    </div>
+
+                    <div class="col-md-6 col-xs-12">
+                        <img class="featurette-image img-circle img-responsive center"
+                             src="/bywatos_website_theme/static/src/img/lampe_mel_halo.jpg"/>
+                    </div>
+                </div>
+
+                <hr class="featurette-divider"/>
+
+                <!-- Second Featurette -->
+                <div class="row featurette" id="services">
+                    <div class="col-md-6 col-xs-12">
+                        <img class="featurette-image img-circle img-responsive center"
+                             src="/bywatos_website_theme/static/src/img/table_en_x.jpg"/>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe src="https://www.youtube.com/embed/lYaY8nL2340"
+                                    class="embed-responsive-item"/>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="featurette-divider"/>
+
+                <!-- Call bywatos footer template -->
+                <t t-call="bywatos_website_theme.bywatos_footer_website_template"/>
+
+            </div>
+            <!-- /.container -->
+        </t>
+    </template>
+</odoo>

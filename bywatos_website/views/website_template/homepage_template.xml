@@ -28,18 +28,17 @@
 
             <section id="page3">
                 <div class="square-container">
-                     <img src="/bywatos_website/static/src/img/lampe_molniya.JPG" class="page-three-img"/>
+                    <img src="/bywatos_website/static/src/img/lampe_molniya.JPG" class="page-three-img"/>
                 </div>
 
                 <div class="square-container">
-                     <iframe src="https://www.youtube.com/embed/lYaY8nL2340" class="youtube-iframe"/>
+                    <iframe src="https://www.youtube.com/embed/lYaY8nL2340" class="youtube-iframe"/>
                 </div>
 
             </section>
 
             <!-- Call bywatos footer template -->
             <t t-call="bywatos_website.bywatos_footer_website_template"/>
-
         </t>
     </template>
 </odoo>

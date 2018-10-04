@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <template id="assets_frontend_footer" inherit_id="website.assets_frontend" name="By Watos css footer">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" href="/bywatos_website_theme/static/src/less/footer.less"></link>
+        </xpath>
+    </template>
+
+    <!-- Template override footer native template -->
+    <template id="layout_footer_website_inherited" inherit_id="website.layout" name="Main layout override">
+        <xpath expr="//footer" position="replace">
+            <footer>
+
+            </footer>
+        </xpath>
+    </template>
+
+    <!-- Template ByWatos footer template -->
+    <template id="bywatos_footer_website_template" name="ByWatos footer template">
+        <xpath expr="//footer" position="replace">
+            <section id="section-footer">
+                <div class="row red-container">
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 offset-md-3 ">
+                        <h1>Artisan ByWatos</h1>
+                        <strong>Abonnez-vous à la newsletter</strong>
+                    </div>
+                    <div class="offset-md-3 col-md-6">
+
+                        <label class="input-item">Email*</label>
+                        <br/>
+                        <input class="input-item" type="email" />
+
+                        <div>
+                            <input type="submit" value="S'inscrire"/>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-2">
+                        © Copyright bywatos.fr
+                    </div>
+
+                    <div id="social-network-bottom" class="col-md-10">
+                        <ul>
+                            <li><a t-att-href="website.social_facebook"
+                                   t-if="website.social_facebook"><i class="fa fa-facebook-square"/></a></li>
+                            <li><a t-att-href="website.social_twitter"
+                                   t-if="website.social_twitter"><i class="fa fa-twitter"/></a></li>
+                            <li><a t-att-href="website.social_linkedin"
+                                   t-if="website.social_linkedin"><i class="fa fa-linkedin"/></a></li>
+                            <li><a t-att-href="website.social_youtube"
+                                   t-if="website.social_youtube"><i class="fa fa-youtube-play"/></a></li>
+                            <li><a t-att-href="website.social_googleplus"
+                                   t-if="website.social_googleplus" rel="publisher"><i class="fa fa-google-plus-square"/></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+        </xpath>
+    </template>
+
+</odoo>
