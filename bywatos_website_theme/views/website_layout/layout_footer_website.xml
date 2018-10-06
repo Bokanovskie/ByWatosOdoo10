@@ -24,13 +24,13 @@
 
                 </div>
 
-                <div class="row">
-
-                    <div class="col-md-6 offset-md-3 ">
+                <div id="newsletter-section" class="row">
+                    <div class="col-md-6 col-md-offset-3">
                         <h1>Artisan ByWatos</h1>
-                        <strong>Abonnez-vous à la newsletter</strong>
+                        <h3><strong>Abonnez-vous à la newsletter</strong></h3>
                     </div>
-                    <div class="offset-md-3 col-md-6">
+
+                    <div class="col-md-6 col-md-offset-3">
 
                         <label class="input-item">Email*</label>
                         <br/>
@@ -43,7 +43,7 @@
 
                 </div>
 
-                <div class="row">
+                <footer class="row">
                     <div class="col-md-2">
                         © Copyright bywatos.fr
                     </div>
@@ -63,7 +63,7 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </footer>
 
             </section>
         </xpath>
