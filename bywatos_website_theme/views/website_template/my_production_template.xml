@@ -33,8 +33,9 @@
     <template id="my_production_template_view">
         <t t-call="website.layout">
             <div id="wrap">
+
                 <!--Sidebar-->
-                <aside id="sidebar" class="sidebar_show">
+                <aside id="sidebar" class="sidebar_hide">
                     <div id="sidebar-trigger">
                         <div class="menu-icon"><i class="icon-m-menu"></i></div>
                     </div>
@@ -70,6 +71,7 @@
                             <!--End #navi_wrap-->
                         </nav>
                         <!-- End Menu -->
+                        <!-- End Menu -->
                         <div class="sidebar-bottom-wrap">
                             <!--Social icons-->
                             <div class="social-icons-sidebar">
@@ -88,6 +90,8 @@
                     </div>
                     <!--end sidebar-main-->
                 </aside>
+
+
                 <!--End Header-->
                 <!--#main-wrap-->
                 <div id="main-wrap">
