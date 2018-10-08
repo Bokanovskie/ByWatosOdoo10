@@ -29,28 +29,7 @@
                                                 <!--End #title-wrap-->
                                             </div>
                                             <!--End #title-bar-wrap"-->
-                                            <ul class="gallery-info-property span3">
-                                                <li>
-                                                    <span class="gallery-info-property-tit">Project:</span>
-                                                    <span>Photography</span>
-                                                </li>
-                                                <li>
-                                                    <span class="gallery-info-property-tit">Author:</span>
-                                                    <span>Sunny Rui</span>
-                                                </li>
-                                                <li>
-                                                    <span class="gallery-info-property-tit date">Date: </span>
-                                                    <span>April 11 2014</span>
-                                                </li>
-                                                <li>
-                                                    <span class="gallery-info-property-tit tag">Tags: </span>
-                                                    <span><a href="http://ximudesign.com/aside/tag/architecture-2/" rel="tag">Architecture</a>, <a href="http://ximudesign.com/aside/tag/photography/" rel="tag">Photography</a></span>
-                                                </li>
-                                            </ul>
-                                            <div>
-                                                <p>Dis parturient tortor placerat! Sed. Placerat risus amet amet purus turpis elit penatibus mauris diam, sed pid. Duis. Non platea lorem ut mus mauris. Rhoncus etiam.</p>
-                                            </div>
-                                            <!--end entry-->
+
                                         </div>
                                         <!--end gallery-info-wrap -->
                                         <div class="gallery-images-wrap span8" style="left: 35%; position: static;">

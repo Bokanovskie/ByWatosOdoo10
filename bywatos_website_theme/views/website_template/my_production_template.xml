@@ -71,9 +71,7 @@
                                                                                                     <h3 class="brick-title"><t t-esc="product.name"/></h3>
                                                                                                 </div>
                                                                                                 <div class="brick-content">
-                                                                                                    <!--class="attachment-imagebox-thumb wp-post-image" alt="Paper-Hot-Cup-Mock-Up-vol-2"/>-->
-                                                                                                    <!--<a t-att-href="'/shop/product/%s' % slug(product)"></a>-->
-                                                                                                    <img t-attf-src="/website/image/product.product/{{product.product_variant_id.id}}/image/"
+                                                                                                    <img t-attf-src="/web/content/#{product.get_portefolio_img()}"
                                                                                                          class="attachment-imagebox-thumb wp-post-image" t-att-alt="product.name"/>
                                                                                                 </div>
                                                                                             </a>
