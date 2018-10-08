@@ -37,7 +37,10 @@
                 <!--Sidebar-->
                 <aside id="sidebar" class="sidebar_hide">
                     <div id="sidebar-trigger">
-                        <div class="menu-icon"><i class="icon-m-menu"></i></div>
+                        <div class="menu-icon">
+                            <!--<i class="float-bar-triggler-inn"></i>-->
+                            <img src="/bywatos_website_theme/static/src/img/bar-menu.png" class="burger-img"/>
+                        </div>
                     </div>
                     <!--End sidebar-trigger-->
                     <div class="sidebar-main">
