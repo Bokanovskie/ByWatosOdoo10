@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="layout_aside_bar" name="Layout Aside bar Website">
+        <!--Sidebar-->
+        <aside id="sidebar" class="sidebar_hide">
+            <div id="sidebar-trigger">
+                <div class="menu-icon">
+                    <!--<i class="float-bar-triggler-inn"></i>-->
+                    <img src="/bywatos_website_theme/static/src/img/bar-menu.png" class="burger-img"/>
+                </div>
+            </div>
+            <!--End sidebar-trigger-->
+            <div class="sidebar-main">
+
+                <!--Logo-->
+                <h1 id="logo">
+                    <a href="/" title="Aside Responsive HTML Theme">
+                        <img src="/bywatos_website_theme/static/src/img/logo_bw_v2.PNG"
+                             class="img-responsive header-logo"/>
+                    </a>
+                </h1>
+
+                <!--Menu-->
+                <nav id="navi" class="clearfix">
+                    <div id="navi_wrap" class="menu-demo-menu-container">
+                        <ul class="menu">
+                            <li id="menu-item-home" class="menu-item menu-item-type-post_type menu-item-object-page">
+                                <a href="/">Home</a>
+                            </li>
+                            <li id="menu-item-realisation" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item">
+                                <a href="#">Réalisation</a>
+                            </li>
+                            <li id="menu-item-atelier" class="menu-item menu-item-type-post_type menu-item-object-page">
+                                <a href="#">Atelier</a>
+                            </li>
+                            <li id="menu-item-contact" class="menu-item menu-item-type-custom menu-item-object-custom">
+                                <a href="/contact-us">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--End #navi_wrap-->
+                </nav>
+                <!-- End Menu -->
+                <!-- End Menu -->
+                <div class="sidebar-bottom-wrap">
+                    <!--Social icons-->
+                    <div class="social-icons-sidebar">
+                        <a class="icons-sidebar-unit" t-att-href="website.social_facebook" title="Suivez-nous"><i class="fa fa-facebook-square"></i></a>
+                        <a class="icons-sidebar-unit" t-att-href="website.social_twitter" title="Suivez-nous"><i class="fa fa-twitter-square"></i></a>
+                        <a class="icons-sidebar-unit" t-att-href="website.social_linkedin" title=""><i class="fa fa-linkedin-square"></i></a>
+                        <a class="icons-sidebar-unit" t-att-href="website.social_youtube" title=""><i class="fa fa-youtube-square"></i></a>
+                        <a class="icons-sidebar-unit" t-att-href="website.social_googleplus" title=""><i class="fa fa-google-plus-square"></i></a>
+
+                    </div>
+                    <!--Copyright-->
+                    <div class="copyright">Copyright ByWatos</div>
+                    <!--End copyright-->
+                </div>
+                <!--END sidebar-bottom-wrap-->
+            </div>
+            <!--end sidebar-main-->
+        </aside>
+    </template>
+</odoo>

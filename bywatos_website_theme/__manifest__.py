@@ -26,13 +26,17 @@
 
     # always loaded
     'data': [
+        'security/ir.model.access.csv',
+
         'views/website_layout/layout_footer_website.xml',
         'views/website_layout/layout_header_website.xml',
         'views/website_layout/layout_main_website.xml',
+        'views/website_layout/layout_aside_bar_website.xml',
 
         'views/website_template/homepage_template.xml',
         'views/website_template/social_network_template.xml',
         'views/website_template/my_production_template.xml',
+        'views/website_template/product_template.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

@@ -2,6 +2,9 @@
 
 from odoo import http
 from odoo.http import request
+import logging
+
+_logger = logging.getLogger(__name__)
 
 
 class Production(http.Controller):
@@ -14,9 +17,19 @@ class Production(http.Controller):
 
         values = {
             'product_ids': product_ids,
-            'html_test': '<h1>TEST TEST<h1>'
         }
 
         response = request.render('bywatos_website_theme.my_production_template_view', values)
+
+        return response
+
+    @http.route(['/shop/product/<model("product.template"):product>'], auth="public", website=True)
+    def product(self, product):
+
+        values = {
+            'product': product,
+        }
+
+        response = request.render('bywatos_website_theme.product_template_view', values)
 
         return response

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="product_template_view">
+        <t t-call="website.layout">
+            <div id="wrap">
+                <t t-call="bywatos_website_theme.layout_aside_bar"/>
+
+                <div id="main-wrap">
+                    <div id="main" style="-webkit-transform-origin: 50% 665px;">
+                        <div id="content">
+                            <div id="post-671" class="post-671 post type-post status-publish format-gallery has-post-thumbnail hentry category-architecture category-blog category-portfolio tag-architecture-2 tag-photography">
+                                <div id="content_wrap" class="">
+                                    <div class="row-fluid gallery-wrap gallery-wrap-sidebar " style="position: relative;">
+                                        <div class="gallery-info-wrap container span4" style="width: 35%; position: static;">
+                                            <div class="title-bar-wrap " id="title-bar">
+                                                <div id="title-wrap">
+                                                    <div class="title-wrap-inn">
+                                                        <div id="main-title">
+                                                            <h1 class="main-title">
+                                                                <t t-esc="product.name"/>
+                                                            </h1>
+                                                            <div class="post-meta">
+                                                                <span class="post-meta-unit date">Date: April 11 2014</span>
+                                                                <span class="post-meta-unit tag">Tags: <a href="http://ximudesign.com/aside/tag/architecture-2/" rel="tag">Architecture</a>, <a href="http://ximudesign.com/aside/tag/photography/" rel="tag">Photography</a></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--End #title-wrap-->
+                                            </div>
+                                            <!--End #title-bar-wrap"-->
+                                            <ul class="gallery-info-property span3">
+                                                <li>
+                                                    <span class="gallery-info-property-tit">Project:</span>
+                                                    <span>Photography</span>
+                                                </li>
+                                                <li>
+                                                    <span class="gallery-info-property-tit">Author:</span>
+                                                    <span>Sunny Rui</span>
+                                                </li>
+                                                <li>
+                                                    <span class="gallery-info-property-tit date">Date: </span>
+                                                    <span>April 11 2014</span>
+                                                </li>
+                                                <li>
+                                                    <span class="gallery-info-property-tit tag">Tags: </span>
+                                                    <span><a href="http://ximudesign.com/aside/tag/architecture-2/" rel="tag">Architecture</a>, <a href="http://ximudesign.com/aside/tag/photography/" rel="tag">Photography</a></span>
+                                                </li>
+                                            </ul>
+                                            <div>
+                                                <p>Dis parturient tortor placerat! Sed. Placerat risus amet amet purus turpis elit penatibus mauris diam, sed pid. Duis. Non platea lorem ut mus mauris. Rhoncus etiam.</p>
+                                            </div>
+                                            <!--end entry-->
+                                        </div>
+                                        <!--end gallery-info-wrap -->
+                                        <div class="gallery-images-wrap span8" style="left: 35%; position: static;">
+                                            <div class="row-fluid ">
+                                                <div class="gallery-wrap-slider clear gallery-post-wrap">
+                                                    <div class="vertical-list">
+                                                        <img src="/bywatos_website_theme/static/src/img/lampe_mel_halo.jpg" title="IMG_4783" />
+                                                        <img src="/bywatos_website_theme/static/src/img/lampe_mel_halo.jpg" title="IMG_4784" />
+                                                    </div>
+                                                </div>
+
+                                                <!--End related-post-wrap-->
+                                            </div>
+                                        </div>
+                                        <!--end row-fluid-->
+                                    </div>
+                                    <!--end gallery-images-wrap -->
+                                </div>
+                                <!--end row-fluid gallery-wrap-->
+                            </div>
+                            <!--end content_wrap-->
+                        </div>
+                        <!--end post-->
+                    </div>
+                    <!--end content-->
+                </div>
+                <!--End #main-->
+            </div>
+            <!--End #main-wrap-->
+        </t>
+    </template>
+</odoo>
