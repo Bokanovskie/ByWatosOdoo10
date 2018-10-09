@@ -21,7 +21,14 @@
         <xpath expr="//footer" position="replace">
             <section id="section-footer">
                 <div class="row red-container">
-
+                    <div class="container white-container">
+                        <div class="border-container">
+                            <h1 style="margin-top: 5%;">Demande de renseignements</h1>
+                            <hr class="hr-class"></hr>
+                            <p style="margin-top: 10%;">A votre disposition, nous vous invitons à prendre contact avec nous pour tout renseignement.</p>
+                            <input type="submit" value="Nous contacter"/>
+                        </div>
+                    </div>
                 </div>
 
                 <div id="newsletter-section" class="row">
@@ -30,25 +37,25 @@
                         <h3><strong>Abonnez-vous à la newsletter</strong></h3>
                     </div>
 
-                    <div class="col-md-6 col-md-offset-3">
+                    <div class="col-md-6 col-md-offset-3 input-control">
 
-                        <label class="input-item">Email*</label>
+                        <label class="input-item-mail">Email*</label>
                         <br/>
-                        <input class="input-item" type="email" />
+                        <input class="input-item-text" type="email" />
 
-                        <div>
+                        <div class="input-item">
                             <input type="submit" value="S'inscrire"/>
                         </div>
                     </div>
 
                 </div>
 
-                <footer class="row">
-                    <div class="col-md-2">
+                <div class="row">
+                    <div class="col-md-2 watos-blue-color">
                         © Copyright bywatos.fr
                     </div>
 
-                    <div id="social-network-bottom" class="col-md-10">
+                    <div id="social-network-bottom" class="col-md-3 offset-md-3">
                         <ul>
                             <li><a t-att-href="website.social_facebook"
                                    t-if="website.social_facebook"><i class="fa fa-facebook-square"/></a></li>
@@ -63,7 +70,7 @@
                             </li>
                         </ul>
                     </div>
-                </footer>
+                </div>
 
             </section>
         </xpath>

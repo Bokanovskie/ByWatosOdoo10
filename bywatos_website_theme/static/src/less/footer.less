@@ -1,8 +1,17 @@
+@font-face {
+font-family: 'megrim';
+src: url('../police/megrim.ttf');
+}
+
+.watos-blue-color {
+  color: #3f558f;
+}
 #section-footer {
   color: white;
 
   .row {
     margin: 0;
+    background-color: white;
   }
   .red-container {
     background-image: url('../img/lampe_color.JPG');
@@ -12,6 +21,45 @@
     text-align: center;
     padding-top: 70px;
     background-repeat: no-repeat;
+    color: black;
+
+    .white-container {
+      background-color: white;
+      width: 35%;
+
+      .border-container {
+        border-style: solid;
+        border-width: 1px;
+
+        .hr-class {
+          padding: 0;
+          border: 0;
+          height: 1px;
+          background: #333;
+          background-image: linear-gradient(to right, #ccc, #333, #ccc);
+          margin: 12% 40px;
+        }
+
+        input {
+          text-align: center;
+          margin: 4% 0;
+          font-size: 1.4em;
+          background-color: #9d9fa0;
+          transition-property: background-color;
+          transition-duration: 1s;
+          color: white;
+
+          height: 35px;
+        }
+        input:hover {
+          background-color: #343638;
+        }
+
+      }
+     }
+    .container {
+      padding: 5px 5px;
+    }
     }
 
     ul {
@@ -21,17 +69,76 @@
     }
 
     #newsletter-section {
-      padding-top: 75px;
+      padding-top: 80px;
       padding-bottom: 50px;
       text-align: center;
       color: black;
       background-color: white;
+
+      .input-control {
+       padding-top: 25px;
+
+       .input-item-mail {
+         font-size: 2em;
+       }
+
+       .input-item-text {
+        border: none;
+        border-bottom: 1px solid black;
+        width: 50%;
+        }
+
+        input:focus {
+            border-color: #9d9fa0;
+          }
+
+        .input-item {
+          padding-top: 25px;
+          input {
+            width: 120px;
+            height: 35px;
+          }
+
+          input {
+            background-color: #9d9fa0;
+            transition-property: background-color;
+            transition-duration: 1s;
+            font-size: 1.4em;
+            color: white;
+          }
+
+          input:hover {
+            background-color: #343638;
+          }
+
+        }
+
+      }
+
     }
 
-  footer {
+    #social-network-bottom {
+      font-size: 20px;
+      float: right;
+      ul {
+        li {
+          margin: 0 5px;
+
+          a {
+            color: #3f558f;
+          }
+
+          a:hover {
+              color: #e10d35;
+            }
+        }
+      }
+    }
+}
+
+footer {
     background-color: white;
   }
-}
 
 @media (min-height: 1024px) {
 
