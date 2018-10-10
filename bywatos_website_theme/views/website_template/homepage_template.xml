@@ -3,6 +3,7 @@
     <template id="assets_frontend_homepage" inherit_id="website.assets_frontend" name="By Watos css homepage">
         <xpath expr="." position="inside">
             <link rel="stylesheet" href="/bywatos_website_theme/static/src/css/one-page-wonder.css"></link>
+            <link rel="stylesheet" href="/bywatos_website_theme/static/src/css/fixed_background/style.css"></link>
             <link rel="stylesheet" href="/bywatos_website_theme/static/src/less/homepage.less"></link>
         </xpath>
     </template>
@@ -12,50 +13,39 @@
             <!-- Call bywatos header template -->
             <t t-call="bywatos_website_theme.bywatos_header_website_template"/>
 
-            <!-- Page Content -->
-            <div class="container-fluid init-padding" style="padding: 0;">
+            <div class="cd-scrolling-bg cd-scrolling-bg--color-2">
+                <div class="cd-scrolling-bg__content">
+                    <h1>L'acier sur mesure</h1>
+                    <p>
+                        Née d'une passion pour l'acier. Diplôme de métallier en poche, je me passione pour la
+                        transformation et le réalisation d'objet
+                        sur mesure unique. Mon imagination et mon savoir faire dans la conception de design d'intérieur.
+                    </p>
+                </div> <!-- cd-scrolling-bg__content -->
+            </div> <!-- cd-scrolling-bg -->
 
-                <hr class="featurette-divider"/>
+            <!-- Fixed background 1 -->
+            <div class="cd-fixed-bg cd-fixed-bg--1">
+                <div class="cd-fixed-bg__content">
 
-                <!-- First Featurette -->
-                <div class="row featurette" id="about">
-                    <div class="col-md-6 col-xs-12">
-                        <h2 class="featurette-heading">This First Heading
-                            <span class="text-muted">Will Catch Your Eye</span>
-                        </h2>
-                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta
-                            felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                    </div>
-
-                    <div class="col-md-6 col-xs-12">
-                        <img class="featurette-image img-circle img-responsive center"
-                             src="/bywatos_website_theme/static/src/img/lampe_mel_halo.jpg"/>
-                    </div>
                 </div>
+            </div> <!-- cd-fixed-bg -->
 
-                <hr class="featurette-divider"/>
-
-                <!-- Second Featurette -->
-                <div class="row featurette" id="services">
-                    <div class="col-md-6 col-xs-12">
-                        <img class="featurette-image img-circle img-responsive center"
-                             src="/bywatos_website_theme/static/src/img/table_en_x.jpg"/>
+            <div class="cd-scrolling-bg cd-scrolling-bg--color-1">
+                <div class="cd-scrolling-bg__content">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="https://www.youtube.com/embed/lYaY8nL2340"
+                                class="embed-responsive-item"/>
                     </div>
-                    <div class="col-md-6 col-xs-12">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe src="https://www.youtube.com/embed/lYaY8nL2340"
-                                    class="embed-responsive-item"/>
-                        </div>
-                    </div>
-                </div>
+                </div> <!-- cd-scrolling-bg__content -->
+            </div> <!-- cd-scrolling-bg -->
 
-                <hr class="featurette-divider"/>
+            <div class="cd-fixed-bg cd-fixed-bg--2">
 
-                <!-- Call bywatos footer template -->
-                <t t-call="bywatos_website_theme.bywatos_footer_website_template"/>
+            </div> <!-- cd-fixed-bg -->
 
-            </div>
-            <!-- /.container -->
+            <!-- Call bywatos footer template -->
+            <t t-call="bywatos_website_theme.bywatos_footer_website_template"/>
         </t>
     </template>
 </odoo>
