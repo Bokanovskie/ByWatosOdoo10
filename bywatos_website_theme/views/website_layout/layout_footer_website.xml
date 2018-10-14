@@ -25,7 +25,7 @@
                         <div class="border-container">
                             <h1 style="margin-top: 5%;">Demande de renseignements</h1>
                             <hr class="hr-class"></hr>
-                            <p style="margin-top: 10%;">A votre disposition, nous vous invitons à prendre contact avec nous pour tout renseignement.</p>
+                            <p style="margin-top: 10%;">A votre disposition pour tout renseignement.</p>
                             <input type="submit" value="Nous contacter"/>
                         </div>
                     </div>
