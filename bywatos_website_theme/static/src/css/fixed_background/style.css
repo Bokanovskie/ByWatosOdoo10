@@ -177,11 +177,13 @@ Alternate Fixed & Scroll Backgrounds - by CodyHouse.co
 }
 
 .cd-fixed-bg.cd-fixed-bg--1 {
-  background-image: url("/bywatos_website_theme/static/src/img/lampe_mel_halo.jpg");
+  background-image:
+  url("/bywatos_website_theme/static/src/img/background/lampe-mel-halo-background-compressor.jpg");
 }
 
 .cd-fixed-bg.cd-fixed-bg--2 {
-  background-image: url("/bywatos_website_theme/static/src/img/lampe_molnya_resize.png");
+  background-image:
+  url("/bywatos_website_theme/static/src/img/background/lampe-poser-molniya-background-compressor.jpg");
 }
 
 .cd-fixed-bg.cd-fixed-bg--3 {
