@@ -226,10 +226,11 @@ Alternate Fixed & Scroll Backgrounds - by CodyHouse.co
 .cd-scrolling-bg.cd-scrolling-bg--color-1 {
   background-color: black;
   color: #a6989a;
+  padding: 0;
 }
 
 .cd-scrolling-bg.cd-scrolling-bg--color-2 {
-  background-color: #99a478;
+  background-color: white;
   color: #3d3536;
 }
 
@@ -247,7 +248,7 @@ Alternate Fixed & Scroll Backgrounds - by CodyHouse.co
 @media only screen and (min-width: 768px) {
   .cd-scrolling-bg {
     padding: 8em 0;
-    font-size: 2rem;
+    font-size: 1.6rem;
     line-height: 2;
     font-weight: 300;
   }
