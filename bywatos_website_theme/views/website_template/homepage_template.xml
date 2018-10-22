@@ -17,7 +17,7 @@
 
             <div class="cd-scrolling-bg cd-scrolling-bg--color-2">
                 <div class="cd-scrolling-bg__content">
-                    <h1 style="text-align: center;">L'acier sur mesure</h1>
+                    <h1>L'acier sur mesure</h1>
                     <p>
                         Née d'une passion pour l'acier. Diplôme de métallier en poche, je me passione pour la
                         transformation et le réalisation d'objet
@@ -34,14 +34,14 @@
             </div> <!-- cd-fixed-bg -->
 
             <div class="cd-scrolling-bg cd-scrolling-bg--color-1">
-                <div class="row">
+                <div class="row video-container">
                     <div class="col-md-6">
                         <img src="/bywatos_website_theme/static/src/img/logo/logo_by_watos_noir.png"
                              class="header-logo-img"/>
                     </div>
 
                     <div class="col-md-6">
-                        <div class="cd-scrolling-bg__content">
+                        <div class="cd-scrolling-bg__content youtube-iframe">
                             <div class="embed-responsive embed-responsive-16by9">
                                 <iframe src="https://www.youtube.com/embed/lYaY8nL2340"
                                         class="embed-responsive-item"/>
