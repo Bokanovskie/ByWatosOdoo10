@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
+
+    <template id="assets_frontend_contact_us" inherit_id="website.assets_frontend" name="contact_us">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" href="/bywatos_website_theme/static/src/less/contact_us.less"></link>
+        </xpath>
+    </template>
+
     <template id="contact_us_template" name="ByWatos Contact-us Template">
         <t t-call="website.layout">
             <div id="wrap">
+                <!-- Header template -->
                 <t t-call="bywatos_website_theme.layout_aside_bar"/>
+
+                <!-- Float bar -->
+                <t t-call="bywatos_website_theme.float_bar_social_network" />
+                <!--End #float bar-->
             </div>
         </t>
     </template>
