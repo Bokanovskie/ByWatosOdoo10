@@ -10,7 +10,7 @@ class ProductTemplate(models.Model):
 
     _inherit = 'product.template'
 
-    def get_portefolio_img(self):
+    def get_portefolio_img(self, size=False):
 
         ir_attachment_obj = self.env['ir.attachment']
 
@@ -18,7 +18,8 @@ class ProductTemplate(models.Model):
             ('res_model', '=', self._name),
             ('res_id', '=', self.id),
             ('website_portfolio_image', '=', True),
-            ('website_image', '=', True)
+            ('website_image', '=', True),
+            ('image_size', '=', size)
         ])
 
         return ir_attachment_id.id

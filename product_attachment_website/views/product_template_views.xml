@@ -6,8 +6,11 @@
         <field name="inherit_id" ref="product.product_template_only_form_view" />
         <field name="arch" type="xml">
             <div name="button_box" position="inside">
-                <button class="oe_stat_button" name="action_open_attachments" type="object" icon="fa-file">
-
+                <button class="oe_stat_button"
+                        name="action_open_attachments"
+                        type="object"
+                        icon="fa-file"
+                        string="Images Website">
                 </button>
             </div>
         </field>
