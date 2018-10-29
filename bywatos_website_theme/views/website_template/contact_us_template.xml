@@ -9,13 +9,38 @@
 
     <template id="contact_us_template" name="ByWatos Contact-us Template">
         <t t-call="website.layout">
-            <div id="wrap">
-                <!-- Header template -->
-                <t t-call="bywatos_website_theme.layout_aside_bar"/>
+            <div id="contact-us">
+                <div id="wrap">
+                    <!-- Header template -->
+                    <t t-call="bywatos_website_theme.layout_aside_bar"/>
 
-                <!-- Float bar -->
-                <t t-call="bywatos_website_theme.float_bar_social_network" />
-                <!--End #float bar-->
+                    <!-- Fixed background  -->
+                    <div class="cd-fixed-bg cd-fixed-bg--contact-us">
+                        <div class="container">
+                            <div class="row">
+                                <div class="form-group">
+
+                                    <label for="nameFormControlInput">Nom*</label>
+                                    <input type="text" class="form-control" id="nameFormControlInput" />
+
+                                    <label for="emailFormControlInput">Email*</label>
+                                    <input type="email" class="form-control" id="emailFormControlInput" />
+
+                                    <label for="messageTextArea">Message*</label>
+                                    <textarea class="form-control" id="messageTextArea" rows="3"></textarea>
+
+                                    <div class="input-item">
+                                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- cd-fixed-bg -->
+
+                    <!-- Float bar -->
+                    <t t-call="bywatos_website_theme.float_bar_social_network" />
+                    <!--End #float bar-->
+                </div>
             </div>
         </t>
     </template>
