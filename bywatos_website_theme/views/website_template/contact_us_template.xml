@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="contact_us_template" name="ByWatos Contact-us Template">
+        <t t-call="website.layout">
+            <div id="wrap">
+                <t t-call="bywatos_website_theme.layout_aside_bar"/>
+            </div>
+        </t>
+    </template>
+</odoo>

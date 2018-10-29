@@ -11,6 +11,6 @@ class ContactUs(http.Controller):
 
         }
 
-        response = request.render('website.contactus', values)
+        response = request.render('bywatos_website_theme.contact_us_template', values)
 
         return response
