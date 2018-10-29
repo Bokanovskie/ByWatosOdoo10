@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<odoo>
-    <template id="contact_us_template_inherit" inherit_id="website.contactus" name="By Watos contact us">
-
-    </template>
-</odoo>
