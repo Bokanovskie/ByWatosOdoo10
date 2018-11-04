@@ -26,17 +26,17 @@
                                 <div class="row">
                                     <div class="form-group">
 
-                                        <label for="nameFormControlInput" class="col-md-12">Nom*</label>
-                                        <input type="text" class="form-control col-md-12" id="nameFormControlInput" />
+                                        <label for="nameFormControlInput">Nom*</label>
+                                        <input type="text" class="form-control" id="nameFormControlInput" />
 
-                                        <label for="emailFormControlInput" class="col-md-12">Email*</label>
-                                        <input type="email" class="form-control col-md-12" id="emailFormControlInput" />
+                                        <label for="emailFormControlInput" >Email*</label>
+                                        <input type="email" class="form-control" id="emailFormControlInput" />
 
-                                        <label for="messageTextArea" class="col-md-12">Message*</label>
-                                        <textarea class="form-control col-md-12" id="messageTextArea" rows="3"></textarea>
+                                        <label for="messageTextArea">Message*</label>
+                                        <textarea class="form-control" id="messageTextArea" rows="3"></textarea>
 
                                         <div class="input-item">
-                                            <button type="submit" class="btn btn-primary">Envoyer</button>
+                                            <input type="submit" />
                                         </div>
                                     </div>
                                 </div>

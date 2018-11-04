@@ -7,13 +7,13 @@
     #main{
       background-color: transparent;
     }
-    
+
     .cd-fixed-bg .container {
 
       background-color: white;
       opacity: 0.9;
-      top: 85px;
-      padding-top: 35px;
+      top: 55px;
+      padding-top: 3%;
 
       #header-logo {
         text-align: center;
@@ -27,9 +27,10 @@
     }
 
     .form-group{
-        padding: 0 5%;
+        padding: 2% 5%;
 
         .form-control {
+
             outline: none;
             box-shadow:none !important;
             width: 100%;
@@ -39,8 +40,56 @@
             input:focus {
                 border-color: #9d9fa0;
             }
+        }
 
+        .input-item {
 
+          padding-top: 35px;
+
+          input {
+            width: 120px;
+            height: 35px;
+            background-color: #9d9fa0;
+            transition-property: background-color;
+            transition-duration: 1s;
+            font-size: 1.4em;
+            color: white;
+          }
+
+          input:hover {
+            background-color: #343638;
+          }
+        }
+    }
+}
+
+@media (min-height: 922px){
+    #contact-us{
+        .cd-fixed-bg .container {
+
+          top: 135px;
+          width: 75%;
+
+          #header-logo {
+
+            .header-logo-img {
+              height: 200px;
+            }
+          }
+        }
+
+        .form-group{
+            label {
+              padding-top: 3%;
+            }
+            padding: 0 5%;
+
+            .form-control {
+
+            }
+            .input-item {
+              padding: 35px 0;
+            }
         }
     }
 }
