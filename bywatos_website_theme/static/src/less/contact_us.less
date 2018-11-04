@@ -4,13 +4,30 @@
 }
 
 #contact-us{
-
-    .container {
-        background-color: white;
-        opacity: 0.9;
+    #main{
+      background-color: transparent;
     }
+    
+    .cd-fixed-bg .container {
+
+      background-color: white;
+      opacity: 0.9;
+      top: 85px;
+      padding-top: 35px;
+
+      #header-logo {
+        text-align: center;
+
+        .header-logo-img {
+          height: 150px;
+          object-fit: contain;
+          position: relative;
+        }
+      }
+    }
+
     .form-group{
-        padding: 0 15%;
+        padding: 0 5%;
 
         .form-control {
             outline: none;

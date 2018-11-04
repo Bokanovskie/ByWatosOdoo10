@@ -4,6 +4,7 @@
     <template id="assets_frontend_contact_us" inherit_id="website.assets_frontend" name="contact_us">
         <xpath expr="." position="inside">
             <link rel="stylesheet" href="/bywatos_website_theme/static/src/less/contact_us.less"></link>
+            <link rel="stylesheet" href="/bywatos_website_theme/static/src/less/header.less"></link>
         </xpath>
     </template>
 
@@ -15,22 +16,28 @@
                     <t t-call="bywatos_website_theme.layout_aside_bar"/>
 
                     <!-- Fixed background  -->
-                    <div class="cd-fixed-bg cd-fixed-bg--contact-us">
-                        <div class="container">
-                            <div class="row">
-                                <div class="form-group">
+                    <div id="main-wrap" class="cd-fixed-bg cd-fixed-bg--contact-us">
+                        <div id="main">
+                            <div class="container">
+                                <div id="header-logo">
+                                    <img src="/bywatos_website_theme/static/src/img/logo/logo_bw_final.png"
+                                         class="header-logo-img"/>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
 
-                                    <label for="nameFormControlInput">Nom*</label>
-                                    <input type="text" class="form-control" id="nameFormControlInput" />
+                                        <label for="nameFormControlInput" class="col-md-12">Nom*</label>
+                                        <input type="text" class="form-control col-md-12" id="nameFormControlInput" />
 
-                                    <label for="emailFormControlInput">Email*</label>
-                                    <input type="email" class="form-control" id="emailFormControlInput" />
+                                        <label for="emailFormControlInput" class="col-md-12">Email*</label>
+                                        <input type="email" class="form-control col-md-12" id="emailFormControlInput" />
 
-                                    <label for="messageTextArea">Message*</label>
-                                    <textarea class="form-control" id="messageTextArea" rows="3"></textarea>
+                                        <label for="messageTextArea" class="col-md-12">Message*</label>
+                                        <textarea class="form-control col-md-12" id="messageTextArea" rows="3"></textarea>
 
-                                    <div class="input-item">
-                                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                                        <div class="input-item">
+                                            <button type="submit" class="btn btn-primary">Envoyer</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
