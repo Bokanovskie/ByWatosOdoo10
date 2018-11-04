@@ -32,6 +32,7 @@
         'views/website_layout/layout_header_website.xml',
         'views/website_layout/layout_main_website.xml',
         'views/website_layout/layout_aside_bar_website.xml',
+        'views/website_layout/layout_aside_bar_homepage.xml',
 
         'views/website_template/float_bar_bottom.xml',
         'views/website_template/homepage_template.xml',

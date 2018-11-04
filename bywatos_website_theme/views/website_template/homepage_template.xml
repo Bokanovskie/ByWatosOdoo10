@@ -12,6 +12,9 @@
 
     <template id="homepage_template" name="Home page template">
         <t t-call="website.layout">
+
+            <t t-call="bywatos_website_theme.layout_aside_bar_homepage"/>
+
             <!-- Call bywatos header template -->
             <t t-call="bywatos_website_theme.bywatos_header_website_template"/>
 
