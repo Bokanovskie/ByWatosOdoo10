@@ -7,7 +7,7 @@
             <div id="sidebar-trigger">
                 <div class="menu-icon">
                     <!--<i class="float-bar-triggler-inn"></i>-->
-                    <img src="/bywatos_website_theme/static/src/img/bar-menu.png" class="burger-img"/>
+                    <img src="/bywatos_website_theme/static/src/img/svg/menu-burger.svg" class="burger-img"/>
                 </div>
             </div>
             <div class="sidebar-main">
