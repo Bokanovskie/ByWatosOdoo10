@@ -42,7 +42,7 @@
                         <!-- Logo -->
                         <div id="header-logo" class="col-md-10">
                             <a href="/">
-                                <img src="/bywatos_website_theme/static/src/img/logo_bw_v2.PNG"
+                                <img src="/bywatos_website_theme/static/src/img/svg/Logo-BW.svg"
                                      class="header-logo-img"/>
                             </a>
                         </div>
