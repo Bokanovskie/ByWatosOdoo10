@@ -32,6 +32,24 @@
     <!-- My Production Template View -->
     <template id="my_production_template_view">
         <t t-call="website.layout">
+
+            <!-- Page Loading -->
+            <div class="page-loading visible">
+                <div class="page-loading-inn">
+                    <div class="page-loading-transform">
+                        <div class="ux-loading"></div>
+                        <div class="ux-loading-transform">
+                            <div class="loading-dot1"></div>
+                            <div class="loading-dot2"></div>
+                        </div>
+
+                        <!--<div class="site-loading-logo centered-ux">ByWatos</div>-->
+                    </div>
+                    <img src="/bywatos_website_theme/static/src/img/svg/logo-bw.svg"
+                             class="page-loading-transform-logo"/>
+                </div>
+            </div>
+
             <div id="wrap">
                 <t t-call="bywatos_website_theme.layout_aside_bar"/>
                 <!--#main-wrap-->

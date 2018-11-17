@@ -6,17 +6,16 @@
             <div id="sidebar-trigger">
                 <div class="menu-icon">
                     <!--<i class="float-bar-triggler-inn"></i>-->
-                    <img src="/bywatos_website_theme/static/src/img/svg/menu-burger.svg"
+                    <img src="/bywatos_website_theme/static/src/img/svg/burger-bw.svg"
                          class="burger-img" style="color: green;"/>
                 </div>
             </div>
             <!--End sidebar-trigger-->
             <div class="sidebar-main">
-
                 <!--Logo-->
                 <h1 id="logo">
                     <a href="/" title="Aside Responsive HTML Theme">
-                        <img src="/bywatos_website_theme/static/src/img/logo_bw_v2.PNG"
+                        <img src="/bywatos_website_theme/static/src/img/svg/logo-bw.svg"
                              class="img-responsive header-logo"/>
                     </a>
                 </h1>

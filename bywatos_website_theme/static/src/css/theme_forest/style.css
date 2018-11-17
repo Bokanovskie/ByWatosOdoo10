@@ -153,8 +153,18 @@ input[type="text"].textboxsearch,
   position: relative; width: 100%; height: 100%;
 }
 .page-loading-transform {
-	position: absolute; top: 50%; left: 50%;
+	position: absolute; top: 35%; left: 50%;
   width: 120px; line-height: 36px; text-align: center; margin-left: -60px; 
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.page-loading-transform-logo {
+	position: absolute; top: 50%; left: 50%;
+  width: 120px; line-height: 36px; text-align: center; margin-left: -60px;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);

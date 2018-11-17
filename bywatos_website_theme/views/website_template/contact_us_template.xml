@@ -20,7 +20,7 @@
                         <div id="main">
                             <div class="container">
                                 <div id="header-logo">
-                                    <img src="/bywatos_website_theme/static/src/img/logo/logo_bw_final.png"
+                                    <img src="/bywatos_website_theme/static/src/img/svg/logo-bw.svg"
                                          class="header-logo-img"/>
                                 </div>
                                 <div class="row">
