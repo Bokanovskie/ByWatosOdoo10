@@ -42,8 +42,6 @@
                             <div class="loading-dot1"></div>
                             <div class="loading-dot2"></div>
                         </div>
-
-                        <!--<div class="site-loading-logo centered-ux">ByWatos</div>-->
                     </div>
                     <img src="/bywatos_website_theme/static/src/img/svg/logo-bw.svg"
                              class="page-loading-transform-logo"/>

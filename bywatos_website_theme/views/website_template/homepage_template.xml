@@ -6,7 +6,7 @@
             <link rel="stylesheet" href="/bywatos_website_theme/static/src/css/fixed_background/style.css"></link>
             <link rel="stylesheet" href="/bywatos_website_theme/static/src/less/homepage.less"></link>
 
-            <script type="text/javascript" src="/bywatos_website_theme/static/src/js/by_watos.js"></script>
+            <script type="text/javascript" src="/bywatos_website_theme/static/src/js/by_watos_homepage.js"></script>
         </xpath>
     </template>
 
