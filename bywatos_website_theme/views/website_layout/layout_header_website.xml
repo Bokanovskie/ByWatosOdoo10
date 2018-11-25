@@ -18,7 +18,7 @@
     <template id="bywatos_header_website_template" name="ByWatos header template">
         <!-- Full Width Image Header -->
         <header class="header-image">
-            <div class="headline">
+            <div class="">
                 <div class="container">
                     <div class="row">
                         <!-- Social network -->
@@ -40,7 +40,7 @@
                         </div>
 
                         <!-- Logo -->
-                        <div id="header-logo" class="col-md-10">
+                        <div id="header-logo" class="col-md-10 col-sm-9 col-sm-offset-1 col-xs-10 col-xs-offset-1">
                             <a href="/">
                                 <img src="/bywatos_website_theme/static/src/img/svg/logo-bw.svg"
                                      class="header-logo-img"/>
