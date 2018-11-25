@@ -21,19 +21,19 @@
         <xpath expr="//footer" position="replace">
             <section id="section-footer">
                 <div class="row red-container">
-                    <div class="container white-container">
+                    <div class="col-md-6 col-md-offset-3 white-container" style="padding: 0;">
                         <div class="border-container">
-                            <h1 style="margin-top: 5%;">Demande de renseignements</h1>
+                            <h2>Demande de renseignements</h2>
                             <hr class="hr-class"></hr>
-                            <p style="margin-top: 15%;">A votre disposition pour tout renseignement.</p>
+                            <p>A votre disposition pour tout renseignement.</p>
                             <input type="submit" value="Nous contacter"/>
                         </div>
                     </div>
                 </div>
 
                 <div id="newsletter-section" class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                        <h1>Artisan ByWatos</h1>
+                    <div class="c">
+                        <h2>Artisan ByWatos</h2>
                         <h3><strong>Abonnez-vous à la newsletter</strong></h3>
                     </div>
 
