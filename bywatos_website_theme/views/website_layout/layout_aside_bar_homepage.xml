@@ -11,7 +11,7 @@
             </div>
             <div class="sidebar-main">
 
-                <div id="hot-close-sidebar" class="menu-icon" style="color: red;">
+                <div id="hot-close-sidebar" class="menu-icon" style="display: none; color: red;">
                     <a>CLOSE</a>
                 </div>
                 <!--Logo-->

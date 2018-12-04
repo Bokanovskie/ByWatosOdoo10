@@ -413,6 +413,7 @@ jQuery(document).ready(function() {
 
                     _sidebar_bar.css('background-color', 'transparent');
 
+                    jQuery('#hot-close-sidebar').hide();
 					jQuery('#sidebar-icon').show();
 				}
 				e.preventDefault();
@@ -425,6 +426,7 @@ jQuery(document).ready(function() {
 
 					_sidebar_bar.css('background-color', '#333');
 
+                    jQuery('#hot-close-sidebar').show();
 					jQuery('#sidebar-icon').hide();
 				}
 				//e.preventDefault();
