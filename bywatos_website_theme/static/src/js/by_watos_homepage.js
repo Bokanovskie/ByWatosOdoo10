@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     var element = document.getElementById('header-bottom');
-    var asideElement = document.getElementById('sidebar-homepage');
+    var asideElement = document.getElementsByClassName('sidebar-homepage');
     var asideToggle = document.getElementById('sidebar-trigger');
     var sidebar = document.getElementById('sidebar');
 
@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log(x)
 
     if(x > 768 && asideElement){
+        console.log('---- 768')
         sidebar.style.display = 'none'
     }
 
