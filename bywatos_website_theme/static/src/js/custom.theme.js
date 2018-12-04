@@ -274,7 +274,6 @@ jQuery(document).ready(function() {
 	
 	// Theme: Responsive Mobile Menu 
 	function ux_responsive_menu(){
-		 
 		var header = jQuery('#header');
 		
 		if(!header.length) return;

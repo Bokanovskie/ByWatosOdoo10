@@ -5,6 +5,19 @@ document.addEventListener('DOMContentLoaded', function () {
     var asideToggle = document.getElementById('sidebar-trigger');
     var sidebar = document.getElementById('sidebar');
 
+    // vanilla JS window width and height
+    var w=window,
+    d=document,
+    e=d.documentElement,
+    g=d.getElementsByTagName('body')[0],
+    x=w.innerWidth||e.clientWidth||g.clientWidth,
+    y=w.innerHeight||e.clientHeight||g.clientHeight;
+    console.log(x)
+
+    if(x > 768 && asideElement){
+        sidebar.style.display = 'none'
+    }
+
     if(checkVisibility(element)){
             if(asideToggle){
                 asideToggle.style.display = 'none';
