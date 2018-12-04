@@ -13,7 +13,11 @@ document.addEventListener('DOMContentLoaded', function () {
     x=w.innerWidth||e.clientWidth||g.clientWidth,
     y=w.innerHeight||e.clientHeight||g.clientHeight;
 
-    if(sidebar && asideElement){
+    console.log('--- ASIDE')
+    console.log(asideElement)
+    console.log(sidebar)
+
+    if(sidebar && asideElement.length > 0){
         sidebar.style.background = 'transparent';
 
         sidebar.addEventListener('mouseover', function(event){
@@ -26,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     }
 
-    if(x > 768 && asideElement){
+    if(x > 768 && asideElement.length > 0){
         sidebar.style.display = 'none';
     }
 
