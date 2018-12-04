@@ -404,8 +404,7 @@ jQuery(document).ready(function() {
 	}
 	
 	
-	// For Touch Devices 
-
+	// For Touch Devices
 	if(Modernizr.touch){
 
 		if(_sidebar_bar.hasClass('sidebar_hide')){
@@ -418,10 +417,10 @@ jQuery(document).ready(function() {
 				e.preventDefault();
 			});
 
-			jQuery('#sidebar-trigger').on({ 'touchstart click' : function(){ 
+			jQuery('#sidebar-trigger').on({ 'touchstart click' : function(){
 				if(!_sidebar_bar.hasClass('sidebar-hover')){
 					_sidebar_bar.addClass('sidebar-hover');
-					_sidebar_bar.addClass('sidebar-homepage:hover');
+					_sidebar_bar.removeClass('sidebar-homepage');
 				}
 				//e.preventDefault();
 				return false;
