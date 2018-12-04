@@ -3,7 +3,7 @@
     <template id="layout_aside_bar_homepage" name="Layout Aside bar HomepageWebsite">
         <!--End sidebar-trigger-->
         <!--Sidebar-->
-        <aside id="sidebar" class="sidebar_hide sidebar-homepage" style="display: none;">
+        <aside id="sidebar" class="sidebar_hide sidebar-homepage hide-sidebar-menu">
             <div id="sidebar-trigger">
                 <div class="menu-icon">
                     <img src="/bywatos_website_theme/static/src/img/svg/burger-bw.svg" class="burger-img"/>
