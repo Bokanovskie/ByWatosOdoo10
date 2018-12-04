@@ -13,7 +13,7 @@
 
                 <!--Logo-->
                 <h1 id="logo">
-                    <a href="/" title="Aside Responsive HTML Theme">
+                    <a href="/">
                         <img src="/bywatos_website_theme/static/src/img/svg/logo-bw.svg"
                              class="img-responsive header-logo"/>
                     </a>

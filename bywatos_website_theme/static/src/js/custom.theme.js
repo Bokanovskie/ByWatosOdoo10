@@ -413,6 +413,7 @@ jQuery(document).ready(function() {
 			jQuery('#hot-close-sidebar-touch').click(function(e){
 				if(_sidebar_bar.hasClass('sidebar-hover')){
 					_sidebar_bar.removeClass('sidebar-hover');
+					_sidebar_bar.removeClass('sidebar-homepage-device');
 				}
 				e.preventDefault();
 			});
@@ -420,6 +421,7 @@ jQuery(document).ready(function() {
 			jQuery('#sidebar-trigger').on({ 'touchstart click' : function(){ 
 				if(!_sidebar_bar.hasClass('sidebar-hover')){
 					_sidebar_bar.addClass('sidebar-hover');
+					_sidebar_bar.addClass('sidebar-homepage-device');
 				}
 				//e.preventDefault();
 				return false;
