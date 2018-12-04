@@ -1,5 +1,4 @@
 jQuery(document).ready(function() {
-	
 	var  _win    = jQuery(window),
 	_sidebar_bar = jQuery('#sidebar'),
 	_win_height  = _win.height();
@@ -401,17 +400,20 @@ jQuery(document).ready(function() {
 	if( _responsive == true ){
 		ux_responsive_menu();
 	}
-	
-	
+
 	// For Touch Devices
 	if(Modernizr.touch){
 
 		if(_sidebar_bar.hasClass('sidebar_hide')){
-	
-			jQuery('#hot-close-sidebar-touch').click(function(e){
+
+			jQuery('#hot-close-sidebar').click(function(e){
 				if(_sidebar_bar.hasClass('sidebar-hover')){
 					_sidebar_bar.removeClass('sidebar-hover');
-					_sidebar_bar.removeClass('sidebar-homepage:hover');
+					_sidebar_bar.addClass('sidebar-homepage');
+
+                    _sidebar_bar.css('background-color', 'transparent');
+
+					jQuery('#sidebar-icon').show();
 				}
 				e.preventDefault();
 			});
@@ -420,6 +422,10 @@ jQuery(document).ready(function() {
 				if(!_sidebar_bar.hasClass('sidebar-hover')){
 					_sidebar_bar.addClass('sidebar-hover');
 					_sidebar_bar.removeClass('sidebar-homepage');
+
+					_sidebar_bar.css('background-color', '#333');
+
+					jQuery('#sidebar-icon').hide();
 				}
 				//e.preventDefault();
 				return false;
@@ -428,7 +434,7 @@ jQuery(document).ready(function() {
 		}
 
 		jQuery( '#navi li:has(ul)' ).doubleTapToGo();
-	} 
+	}
 
 	//Sidebar position when logined
 	if(jQuery('#wpadminbar').length && jQuery('#wpadminbar').is(":visible")){

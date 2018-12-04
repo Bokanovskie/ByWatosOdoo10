@@ -12,11 +12,22 @@ document.addEventListener('DOMContentLoaded', function () {
     g=d.getElementsByTagName('body')[0],
     x=w.innerWidth||e.clientWidth||g.clientWidth,
     y=w.innerHeight||e.clientHeight||g.clientHeight;
-    console.log(x)
+
+    if(sidebar && asideElement){
+        sidebar.style.background = 'transparent';
+
+        sidebar.addEventListener('mouseover', function(event){
+            sidebar.style.background = '#333';
+        });
+
+        sidebar.addEventListener('mouseout', function(event){
+            sidebar.style.background = 'transparent';
+        });
+
+    }
 
     if(x > 768 && asideElement){
-        console.log('---- 768')
-        sidebar.style.display = 'none'
+        sidebar.style.display = 'none';
     }
 
     if(checkVisibility(element)){

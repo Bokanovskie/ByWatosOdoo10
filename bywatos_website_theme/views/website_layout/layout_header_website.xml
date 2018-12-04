@@ -21,6 +21,7 @@
             <div class="">
                 <div class="container">
                     <div class="row">
+
                         <!-- Social network -->
                         <div id ="social-network"
                              class="col-md-2 social-network list-inline-style">
@@ -46,6 +47,7 @@
                                      class="header-logo-img"/>
                             </a>
                         </div>
+
                     </div>
 
                     <div id="header-bottom" class="row">
