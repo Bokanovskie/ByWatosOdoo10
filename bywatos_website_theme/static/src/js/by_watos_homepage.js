@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var element = document.getElementById('header-bottom');
     var asideElement = document.getElementById('sidebar-homepage');
     var asideToggle = document.getElementById('sidebar-trigger');
+    var sidebar = document.getElementById('sidebar');
 
     if(checkVisibility(element)){
             if(asideToggle){
@@ -24,10 +25,12 @@ document.addEventListener('DOMContentLoaded', function () {
         if(checkVisibility(element)){
             if(asideToggle){
                 asideToggle.style.display = 'none';
+                sidebar.style.display = 'none';
             }
         }else {
             if(asideToggle){
                 asideToggle.style.display = 'block';
+                sidebar.style.display = 'block';
             }
         }
 
