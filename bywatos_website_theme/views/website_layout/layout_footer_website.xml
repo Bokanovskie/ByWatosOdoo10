@@ -27,7 +27,9 @@
                             <hr class="hr-class"></hr>
                             <p>A votre disposition pour tout renseignement.</p>
                             <div class="input-item">
-                                <input type="submit" value="Nous contacter"/>
+                               <form action="/contact-us">
+                                    <input type="submit" value="Nous contacter"/>
+                               </form>
                             </div>
                         </div>
                     </div>
