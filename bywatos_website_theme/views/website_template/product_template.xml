@@ -26,6 +26,11 @@
                                                         </div>
                                                     </div>
                                                 </div>
+
+                                                <!-- Product description -->
+                                                <div class="product-description">
+                                                    <div t-field="product.website_description"/>
+                                                </div>
                                                 <!--End #title-wrap-->
                                             </div>
                                             <!--End #title-bar-wrap"-->

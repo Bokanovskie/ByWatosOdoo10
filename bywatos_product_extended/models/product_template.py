@@ -12,3 +12,5 @@ class ProductTemplate(models.Model):
          ('the_requests', "Les demandes")],
         string="Types By Watos"
     )
+
+    website_description = fields.Html(string="Description website")

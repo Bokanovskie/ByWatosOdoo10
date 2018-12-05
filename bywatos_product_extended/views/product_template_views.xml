@@ -9,6 +9,13 @@
             <field name="categ_id" position="after">
                 <field name="by_watos_type" />
             </field>
+
+            <xpath expr="//page[@name='notes']" position="after">
+                <page string="Website">
+                    <field name="website_description" />
+                </page>
+            </xpath>
+
         </field>
     </record>
 </odoo>
