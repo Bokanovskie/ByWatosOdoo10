@@ -13,10 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
     x=w.innerWidth||e.clientWidth||g.clientWidth,
     y=w.innerHeight||e.clientHeight||g.clientHeight;
 
-    console.log('--- ASIDE')
-    console.log(asideElement)
-    console.log(sidebar)
-
     if(sidebar && asideElement.length > 0){
         sidebar.style.background = 'transparent';
 
