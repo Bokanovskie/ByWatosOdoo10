@@ -22,7 +22,8 @@
     # any module necessary for this one to work correctly
     'depends': ['base',
                 'website',
-                'product'],
+                'product',
+                'product_attachment_website'],
 
     # always loaded
     'data': [

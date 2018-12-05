@@ -24,6 +24,19 @@ class ProductTemplate(models.Model):
 
         return ir_attachment_id.id
 
+    def get_images_product(self):
+
+        ir_attachment_obj = self.env['ir.attachment']
+
+        ir_attachment_ids = ir_attachment_obj.search([
+            ('res_model', '=', self._name),
+            ('res_id', '=', self.id),
+            ('website_image', '=', True),
+            ('website_product_details', '=', True)
+        ])
+
+        return ir_attachment_ids
+
     @api.multi
     def action_open_attachments(self):
         self.ensure_one()

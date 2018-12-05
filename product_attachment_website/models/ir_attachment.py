@@ -12,6 +12,7 @@ class IrAttachment(models.Model):
 
     website_image = fields.Boolean(string="Image pour SiteWeb", default=False)
     website_portfolio_image = fields.Boolean(string="Image pour portefolio", default=False)
+    website_product_details = fields.Boolean(string="Image pour page produit", default=False)
 
     image_size = fields.Selection([
         ('width_and_long', "Image longueur"),

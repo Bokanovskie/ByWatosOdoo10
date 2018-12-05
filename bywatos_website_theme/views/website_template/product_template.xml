@@ -41,8 +41,11 @@
                                             <div class="row-fluid ">
                                                 <div class="gallery-wrap-slider clear gallery-post-wrap">
                                                     <div class="vertical-list">
-                                                        <img src="/bywatos_website_theme/static/src/img/lampe_mel_halo.jpg" title="IMG_4783" />
-                                                        <img src="/bywatos_website_theme/static/src/img/lampe_mel_halo.jpg" title="IMG_4784" />
+                                                        <t t-set="images_product" t-value="product.get_images_product()"/>
+
+                                                        <t t-foreach="images_product" t-as="image">
+                                                            <img t-attf-src="/web/content/#{image.id}" />
+                                                        </t>
                                                     </div>
                                                 </div>
 
