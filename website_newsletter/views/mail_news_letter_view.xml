@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="news_letter_tree_view" model="ir.ui.view">
+        <field name="name">News Letter Tree View</field>
+        <field name="model">mail.newsletter</field>
+        <field name="arch" type="xml">
+            <tree string="Mail News Letter">
+                <field name="mail"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_website_news_letter" model="ir.actions.act_window">
+        <field name="name">Mail News Letter</field>
+        <field name="res_model">mail.newsletter</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_news_letter"
+              name="News Letter"
+              parent="website.menu_website_configuration"
+              sequence="10"
+              action="action_website_news_letter" />
+</odoo>
