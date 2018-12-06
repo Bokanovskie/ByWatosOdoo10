@@ -13,7 +13,7 @@
             <div id="contact-us">
                 <div id="wrap">
                     <!-- Header template -->
-                    <t t-call="bywatos_website_theme.layout_aside_bar"/>
+                    <t t-call="bywatos_website_theme.layout_aside_bar_homepage"/>
 
                     <!-- Fixed background  -->
                     <div id="main-wrap" class="cd-fixed-bg cd-fixed-bg--contact-us">
