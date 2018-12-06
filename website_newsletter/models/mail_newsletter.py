@@ -10,6 +10,15 @@ class MailNewsletter(models.Model):
 
     _name = 'mail.newsletter'
 
-    title = fields.Char(string="Titre du mail")
+    state = fields.Selection([
+        ('draft', "Brouillon"),
+        ('sent', "Envoyée")
+    ], default='draft')
+
+    name = fields.Char(string="Titre du mail")
 
     mail_body = fields.Html(string="Corps du mail")
+
+    @api.multi
+    def action_send_mail(self):
+        pass
