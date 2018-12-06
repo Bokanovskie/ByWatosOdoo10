@@ -1,94 +1,73 @@
-.cd-fixed-bg.cd-fixed-bg--contact-us {
-  background-image:
-  url("/bywatos_website_theme/static/src/img/background/world-background-compressor.jpg");
-}
-
 #contact-us{
-    #main{
-      background-color: transparent;
-    }
 
-    .cd-fixed-bg .container {
+    #main-wrap{
 
-      background-color: white;
-      opacity: 0.9;
-      top: 55px;
-      padding-top: 3%;
+        padding-left: 0;
 
-      #header-logo {
-        text-align: center;
-
-        .header-logo-img {
-          height: 150px;
-          object-fit: contain;
-          position: relative;
-        }
-      }
-    }
-
-    .form-group{
-        padding: 2% 5%;
-
-        .form-control {
-
-            outline: none;
-            box-shadow:none !important;
-            width: 100%;
-            border: none !important;
-            border-bottom: 1px solid black !important;
-
-            input:focus {
-                border-color: #9d9fa0;
-            }
+        .cd-fixed-bg--contact-us {
+           position: relative;
+           min-height: 100vh;
+           background-size: cover;
+           background-repeat: no-repeat;
+           background-position: center center;
+           z-index: 1;
+           background-image:
+           url("/bywatos_website_theme/static/src/img/background/world-background-compressor.jpg");
         }
 
-        .input-item {
+        .container{
+            padding-top: 5%;
+            opacity: 0.9;
+            //width: 75%;
 
-          padding-top: 35px;
+            .row-white{
+                background-color: white;
 
-          input {
-            width: 120px;
-            height: 35px;
-            background-color: #9d9fa0;
-            transition-property: background-color;
-            transition-duration: 1s;
-            font-size: 1.4em;
-            color: white;
-          }
+                #header-logo {
+                    text-align: center;
+                    padding-top: 5%;
 
-          input:hover {
-            background-color: #343638;
-          }
-        }
-    }
-}
+                    .header-logo-img{
+                        height: 20em;
+                    }
+                }
 
-@media (min-height: 916px){
-    #contact-us{
-        .cd-fixed-bg .container {
+                .form-group {
 
-          top: 135px;
-          width: 75%;
+                    padding: 5%;
 
-          #header-logo {
+                    .form-control {
 
-            .header-logo-img {
-              height: 200px;
-            }
-          }
-        }
+                        outline: none;
+                        box-shadow:none !important;
+                        width: 100%;
+                        border: none !important;
+                        border-bottom: 1px solid black !important;
 
-        .form-group{
-            label {
-              padding-top: 3%;
-            }
-            padding: 0 5%;
+                        input:focus {
+                            border-color: #9d9fa0;
+                        }
+                    }
 
-            .form-control {
+                    .input-item {
 
-            }
-            .input-item {
-              padding: 35px 0;
+                        padding-top: 35px;
+
+                        input {
+                            width: 120px;
+                            height: 35px;
+                            background-color: #9d9fa0;
+                            transition-property: background-color;
+                            transition-duration: 1s;
+                            font-size: 1.4em;
+                            color: white;
+                        }
+
+                        input:hover {
+                            background-color: #343638;
+                        }
+                    }
+                }
             }
         }
     }

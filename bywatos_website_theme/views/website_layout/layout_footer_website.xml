@@ -43,20 +43,18 @@
                         <h3><strong>Abonnez-vous à la newsletter</strong></h3>
                     </div>
 
-                    <!--<form action="/save-mail-news-letter" method="post">-->
-                        <div class="col-md-6 col-md-offset-3 input-control">
+                    <div class="col-md-6 col-md-offset-3 input-control">
 
-                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
 
-                            <label class="input-item-mail">Email*</label>
-                            <br/>
-                            <input id="news-letter-mail" class="input-item-text" type="email" />
+                        <label class="input-item-mail">Email*</label>
+                        <br/>
+                        <input id="news-letter-mail" class="input-item-text" type="email" />
 
-                            <div class="input-item">
-                                <input id="submit-news-letter" type="submit" value="S'inscrire"/>
-                            </div>
+                        <div class="input-item">
+                            <input id="submit-news-letter" type="submit" value="S'inscrire"/>
                         </div>
-                    <!--</form>-->
+                    </div>
 
                 </div>
 
