@@ -6,8 +6,8 @@ import logging
 _logger = logging.getLogger(__name__)
 
 
-class MailNewsLetter(models.Model):
+class MailSubscribers(models.Model):
 
-    _name = 'mail.newsletter'
+    _name = 'mail.subscribers'
 
     mail = fields.Char(string="Adresse mail", required=True)

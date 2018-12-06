@@ -26,6 +26,8 @@
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'views/mail_news_letter_view.xml'
+        'views/mail_subscribers_news_letter_view.xml',
+        'views/mail_news_letter_view.xml',
+        'views/action_news_letter.xml',
     ],
 }

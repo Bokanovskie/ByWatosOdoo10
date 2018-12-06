@@ -12,7 +12,7 @@ class WebsiteNewsletter(http.Controller):
     def save_mail_news_letter(self, **post):
 
         news_letter_mail = request.params['email']
-        mail_newsletter_obj = request.env['mail.newsletter']
+        mail_newsletter_obj = request.env['mail.subscribers']
 
         if news_letter_mail:
             mail_newsletter_obj.sudo().create({

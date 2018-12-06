@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <!-- Action news letter -->
+    <menuitem id="menu_news_letter"
+              name="News Letter"
+              parent="website.menu_website_configuration"
+              sequence="10" />
+
+    <!-- Action mail news letter -->
+    <menuitem id="menu_mail_news_letter"
+              name="Mails News Letter"
+              parent="website_newsletter.menu_news_letter"
+              sequence="10"
+              action="action_mail_website_news_letter" />
+
+    <!-- Action list subscribers news letter -->
+    <menuitem id="menu_subscribers_news_letter"
+              name="Abonnées News Letter"
+              parent="website_newsletter.menu_news_letter"
+              sequence="20"
+              action="action_subscribers_website_news_letter" />
+
+</odoo>
