@@ -2,7 +2,7 @@
 <odoo>
 
     <record id="subscribers_news_letter_tree_view" model="ir.ui.view">
-        <field name="name">Abonnées News Letter Tree View</field>
+        <field name="name">Abonnés News Letter Tree View</field>
         <field name="model">mail.subscribers</field>
         <field name="arch" type="xml">
             <tree string="Abonnées News Letter">
@@ -12,7 +12,7 @@
     </record>
 
     <record id="action_subscribers_website_news_letter" model="ir.actions.act_window">
-        <field name="name">Abonnées News Letter</field>
+        <field name="name">Abonnés News Letter</field>
         <field name="res_model">mail.subscribers</field>
         <field name="view_mode">tree,form</field>
     </record>
