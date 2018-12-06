@@ -24,32 +24,61 @@
                                         <div id="content_wrap">
                                             <div class="content-wrap-inn ">
                                                 <div class="pagebuilder-wrap">
-                                                    <div class="container">
-                                                        <div class="row-white">
-                                                            <div id="header-logo">
-                                                                <img src="/bywatos_website_theme/static/src/img/svg/logo-bw.svg"
-                                                                     class="header-logo-img"/>
-                                                            </div>
+                                                    <form action="/send-contact" method="post">
+                                                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                                        <div class="container">
+                                                            <div class="row-white">
+                                                                <div id="header-logo">
+                                                                    <img src="/bywatos_website_theme/static/src/img/svg/logo-bw.svg"
+                                                                         class="header-logo-img"/>
+                                                                </div>
 
-                                                            <div class="form-group">
+                                                                <div class="form-group">
 
-                                                                <label for="nameFormControlInput">Nom*</label>
-                                                                <input type="text" class="form-control" id="nameFormControlInput" />
+                                                                    <div class="row">
 
-                                                                <label for="emailFormControlInput" >Email*</label>
-                                                                <input type="email" class="form-control" id="emailFormControlInput" />
+                                                                        <div class="col-md-2">
+                                                                            <label for="civilityFormControlInput">Civilité*</label>
+                                                                            <select name="civility" type="text"
+                                                                                   class="form-control"
+                                                                                   id="civilityFormControlInput"
+                                                                                   required="1">
+                                                                                    <option value="Mme">Mme</option>
+                                                                                    <option value="Mr">Mr</option>
+                                                                            </select>
+                                                                        </div>
 
-                                                                <label for="messageTextArea">Message*</label>
-                                                                <textarea class="form-control" id="messageTextArea" rows="3"></textarea>
+                                                                        <div class="col-md-10">
+                                                                            <label for="nameFormControlInput">Nom*</label>
+                                                                            <input name="name"
+                                                                                   type="text"
+                                                                                   class="form-control"
+                                                                                   id="nameFormControlInput"
+                                                                                   required="1"/>
+                                                                        </div>
+                                                                    </div>
 
-                                                                <div class="input-item">
-                                                                    <input type="submit" />
+                                                                    <label for="emailFormControlInput" >Email*</label>
+                                                                    <input name="email"
+                                                                           type="email"
+                                                                           class="form-control"
+                                                                           id="emailFormControlInput"
+                                                                           required="1" />
+
+                                                                    <label for="messageTextArea">Message*</label>
+                                                                    <textarea name="message"
+                                                                              class="form-control"
+                                                                              id="messageTextArea"
+                                                                              rows="3"
+                                                                              required="1"></textarea>
+
+                                                                    <div class="input-item">
+                                                                        <input type="submit" />
+                                                                    </div>
                                                                 </div>
                                                             </div>
-
                                                         </div>
-
-                                                    </div>
+                                                    </form>
 
                                                     <script type="text/javascript">
                                                         jQuery(document).ready(function(){
