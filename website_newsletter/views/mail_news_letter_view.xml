@@ -12,13 +12,17 @@
                 </header>
 
                 <group>
-                    <field name="email_from" />
-                    <field name="subject"/>
-                    <field name="body_html"/>
+                    <field name="email_from"
+                           attrs="{'readonly': [('state', '=', 'sent')]}"/>
+                    <field name="subject"
+                           attrs="{'readonly': [('state', '=', 'sent')]}"/>
+                    <field name="body_html"
+                           attrs="{'readonly': [('state', '=', 'sent')]}"/>
                 </group>
 
                 <group>
-                    <field name="template_id" />
+                    <field name="template_id"
+                           attrs="{'readonly': [('state', '=', 'sent')]}" />
                 </group>
             </form>
         </field>

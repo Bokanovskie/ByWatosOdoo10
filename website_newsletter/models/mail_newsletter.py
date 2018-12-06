@@ -13,7 +13,7 @@ class MailNewsletter(models.Model):
 
     state = fields.Selection([
         ('draft', "Brouillon"),
-        ('sent', "Envoyée")
+        ('sent', "Envoyé")
     ], default='draft')
 
     subject = fields.Char(string="Titre du mail", required=True)
@@ -70,3 +70,7 @@ class MailNewsletter(models.Model):
 
             mail_newsletter = mail_obj.create(mail_values)
             mail_newsletter.send()
+
+        self.update({
+            'state': 'sent',
+        })
