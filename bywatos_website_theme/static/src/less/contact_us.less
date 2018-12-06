@@ -1,4 +1,4 @@
-#contact-us{
+#contact-us {
 
     #main-wrap{
 
@@ -18,7 +18,6 @@
         .container{
             padding-top: 5%;
             opacity: 0.9;
-            //width: 75%;
 
             .row-white{
                 background-color: white;
@@ -35,6 +34,10 @@
                 .form-group {
 
                     padding: 5%;
+
+                    textarea {
+                        resize: vertical;
+                    }
 
                     .form-control {
 
@@ -65,6 +68,147 @@
 
                         input:hover {
                             background-color: #343638;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1024px){
+    #contact-us {
+
+        #main-wrap{
+
+            .cd-fixed-bg--contact-us {
+            }
+
+            .container{
+                padding-top: 10%;
+
+                .row-white{
+
+                    #header-logo {
+
+                        .header-logo-img{
+                        }
+                    }
+
+                    .form-group {
+
+                        .form-control {
+
+                            input:focus {
+
+                            }
+                        }
+
+                        .input-item {
+
+                            input {
+
+                            }
+
+                            input:hover {
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Tablet devices
+@media(max-width: 768px){
+    #contact-us {
+
+        #main-wrap{
+
+            .cd-fixed-bg--contact-us {
+            }
+
+            .container{
+                padding-left: 25px;
+                padding-right: 25px;
+
+                .row-white{
+
+                    #header-logo {
+
+                        .header-logo-img{
+                        }
+                    }
+
+                    .form-group {
+
+                        .form-control {
+
+                            input:focus {
+
+                            }
+                        }
+
+                        .input-item {
+
+                            input {
+
+                            }
+
+                            input:hover {
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Extra small devices
+@media(max-width: 425px){
+    #contact-us {
+
+        #main-wrap{
+
+            .cd-fixed-bg--contact-us {
+            }
+
+            .container{
+                padding-top: 20%;
+                padding-left: 5px;
+                padding-right: 5px;
+
+                .row-white{
+
+                    #header-logo {
+
+                        .header-logo-img{
+                            height: 16em;
+                        }
+                    }
+
+                    .form-group {
+
+                        .form-control {
+
+                            input:focus {
+
+                            }
+                        }
+
+                        .input-item {
+
+                            input {
+
+                            }
+
+                            input:hover {
+
+                            }
                         }
                     }
                 }
