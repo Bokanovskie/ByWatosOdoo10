@@ -1,20 +1,20 @@
 # -*- coding: utf-8 -*-
 from odoo import http
+from odoo.http import request
+import logging
 
-# class WebsiteNewsletter(http.Controller):
-#     @http.route('/website_newsletter/website_newsletter/', auth='public')
-#     def index(self, **kw):
-#         return "Hello, world"
+_logger = logging.getLogger(__name__)
 
-#     @http.route('/website_newsletter/website_newsletter/objects/', auth='public')
-#     def list(self, **kw):
-#         return http.request.render('website_newsletter.listing', {
-#             'root': '/website_newsletter/website_newsletter',
-#             'objects': http.request.env['website_newsletter.website_newsletter'].search([]),
-#         })
 
-#     @http.route('/website_newsletter/website_newsletter/objects/<model("website_newsletter.website_newsletter"):obj>/', auth='public')
-#     def object(self, obj, **kw):
-#         return http.request.render('website_newsletter.object', {
-#             'object': obj
-#         })
+class WebsiteNewsletter(http.Controller):
+
+    @http.route('/save-mail-news-letter', type='json', auth='public', website=True)
+    def save_mail_news_letter(self, **post):
+
+        news_letter_mail = request.params['email']
+        mail_newsletter_obj = request.env['mail.newsletter']
+
+        if news_letter_mail:
+            mail_newsletter_obj.sudo().create({
+                'mail': news_letter_mail
+            })

@@ -23,7 +23,8 @@
     'depends': ['base',
                 'website',
                 'product',
-                'product_attachment_website'],
+                'product_attachment_website',
+                'website_newsletter'],
 
     # always loaded
     'data': [
