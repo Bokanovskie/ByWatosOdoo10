@@ -7,13 +7,18 @@
         <field name="arch" type="xml">
             <form string="Mail News Letter">
                 <header>
-                    <button name="action_send_mail" string="Envoyer mail" states="draft" class="btn-primary" />
+                    <button name="action_send_mail" string="Envoyer mail" states="draft" class="btn-primary" type="object" />
                     <field name="state" widget="statusbar" />
                 </header>
 
                 <group>
-                    <field name="name"/>
-                    <field name="mail_body"/>
+                    <field name="email_from" />
+                    <field name="subject"/>
+                    <field name="body_html"/>
+                </group>
+
+                <group>
+                    <field name="template_id" />
                 </group>
             </form>
         </field>
@@ -24,7 +29,7 @@
         <field name="model">mail.newsletter</field>
         <field name="arch" type="xml">
             <tree string="Abonnées News Letter">
-                <field name="name"/>
+                <field name="subject"/>
                 <field name="state"/>
             </tree>
         </field>
