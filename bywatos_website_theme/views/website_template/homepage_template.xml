@@ -18,15 +18,22 @@
             <!-- Call bywatos header template -->
             <t t-call="bywatos_website_theme.bywatos_header_website_template"/>
 
-            <div class="cd-scrolling-bg cd-scrolling-bg--color-2">
-                <div class="cd-scrolling-bg__content">
-                    <h1>L'acier sur mesure</h1>
-                    <p>
-                        Née d'une passion pour l'acier. Diplôme de métallier en poche, je me passione pour la
-                        transformation et le réalisation d'objet
-                        sur mesure unique. Mon imagination et mon savoir faire dans la conception de design d'intérieur.
-                    </p>
-                </div> <!-- cd-scrolling-bg__content -->
+            <div class="cd-scrolling-bg cd-scrolling-bg--color-2 block-bywatos">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <img src="/bywatos_website_theme/static/src/img/svg/echiquier.svg" class="img-text" />
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 bywatos-text">
+                        <h1><i>L'acier sur mesure</i></h1>
+                        <hr/>
+                        <p class="text-md-left">
+                            Née d'une passion pour l'acier. Diplôme de métallier en poche, je me passione pour la
+                            transformation et le réalisation d'objet
+                            sur mesure unique. Mon imagination et mon savoir faire dans la conception de design d'intérieur.
+                        </p>
+                    </div>
+                </div>
             </div> <!-- cd-scrolling-bg -->
 
             <!-- Fixed background 1 -->

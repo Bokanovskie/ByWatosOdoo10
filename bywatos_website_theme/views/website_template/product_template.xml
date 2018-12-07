@@ -9,7 +9,7 @@
                     <div id="main" style="-webkit-transform-origin: 50% 665px;">
                         <div id="content">
                             <div id="post-671" class="post-671 post type-post status-publish format-gallery has-post-thumbnail hentry category-architecture category-blog category-portfolio tag-architecture-2 tag-photography">
-                                <div id="content_wrap" class="">
+                                <div id="content_wrap">
                                     <div class="row-fluid gallery-wrap gallery-wrap-sidebar " style="position: relative;">
                                         <div class="gallery-info-wrap container span4" style="width: 35%; position: static;">
                                             <div class="title-bar-wrap " id="title-bar">
@@ -19,10 +19,6 @@
                                                             <h1 class="main-title">
                                                                 <t t-esc="product.name"/>
                                                             </h1>
-                                                            <div class="post-meta">
-                                                                <span class="post-meta-unit date">Date: April 11 2014</span>
-                                                                <span class="post-meta-unit tag">Tags: <a href="http://ximudesign.com/aside/tag/architecture-2/" rel="tag">Architecture</a>, <a href="http://ximudesign.com/aside/tag/photography/" rel="tag">Photography</a></span>
-                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
