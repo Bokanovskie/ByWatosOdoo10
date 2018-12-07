@@ -26,7 +26,7 @@
 
                     <div class="col-sm-12 col-md-6 bywatos-text">
                         <h1><i>L'acier sur mesure</i></h1>
-                        <hr/>
+                        <hr id="hr-description"/>
                         <p class="text-md-left">
                             Née d'une passion pour l'acier. Diplôme de métallier en poche, je me passione pour la
                             transformation et le réalisation d'objet
