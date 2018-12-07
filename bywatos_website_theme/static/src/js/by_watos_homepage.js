@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var element = document.getElementById('header-bottom');
     var asideElement = document.getElementsByClassName('sidebar-homepage');
-    var contactUsElement = document.getElementsByClassName('contact-us');
+    var contactUsElement = document.getElementById('contact-us');
     var asideToggle = document.getElementById('sidebar-trigger');
     var sidebar = document.getElementById('sidebar');
 
@@ -27,7 +27,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     }
 
+    console.log('---- XXX');
     if(x > 768 && asideElement.length > 0 && !contactUsElement){
+        console.log('---- NONE');
         sidebar.style.display = 'none';
     }
 

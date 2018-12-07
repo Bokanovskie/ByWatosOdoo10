@@ -100,39 +100,6 @@
                         <!--End #main-->
                     </div>
                 </div>
-
-
-
-
-
-
-
-                <!--<div id="contact-us">-->
-                <!--<div class="container-fluid cd-fixed-bg&#45;&#45;contact-us">-->
-                <!--&lt;!&ndash; Header template &ndash;&gt;-->
-                <!--<t t-call="bywatos_website_theme.layout_aside_bar_homepage"/>-->
-
-                <!--<div class="row row-white">-->
-                <!--<div class="col-md-6 offset-md-3 col-lg-6 offset-lg-3">-->
-                <!--<div class="form-group">-->
-
-                <!--<label for="nameFormControlInput">Nom*</label>-->
-                <!--<input type="text" class="form-control" id="nameFormControlInput" />-->
-
-                <!--<label for="emailFormControlInput" >Email*</label>-->
-                <!--<input type="email" class="form-control" id="emailFormControlInput" />-->
-
-                <!--<label for="messageTextArea">Message*</label>-->
-                <!--<textarea class="form-control" id="messageTextArea" rows="3"></textarea>-->
-
-                <!--<div class="input-item">-->
-                <!--<input type="submit" />-->
-                <!--</div>-->
-                <!--</div>-->
-                <!--</div>-->
-                <!--</div>-->
-                <!--</div>-->
-                <!--</div>-->
             </div>
         </t>
 
