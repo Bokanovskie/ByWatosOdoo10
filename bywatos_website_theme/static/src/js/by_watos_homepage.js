@@ -27,9 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     }
 
-    console.log('---- XXX');
     if(x > 768 && asideElement.length > 0 && !contactUsElement){
-        console.log('---- NONE');
         sidebar.style.display = 'none';
     }
 
