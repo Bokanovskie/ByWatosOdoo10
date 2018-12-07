@@ -31,11 +31,20 @@ odoo.define('bywatos_website_theme.newsletter', function (require) {
                     }).then(function(result){
                         if(result === 'error'){
                             if(errorElement){
-                                errorElement.style.display = 'block';
+
+                                errorElement.innerHTML = "<span>Adresse déja inscrite à la news letter</span>";
+
+                                setTimeout(function(){
+                                    errorElement.innerHTML = "";
+                                }, 5000);
                             }
                         }else {
                             if(successElement){
-                                successElement.style.display = 'block';
+                                successElement.innerHTML = "<span>L'inscription à la news letter a bien été prise en compte. </span>";
+
+                                setTimeout(function(){
+                                    successElement.innerHTML = "";
+                                }, 5000);
                             }
                         }
                     });
