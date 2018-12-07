@@ -11,3 +11,7 @@ class MailSubscribers(models.Model):
     _name = 'mail.subscribers'
 
     mail = fields.Char(string="Adresse mail", required=True)
+
+    _sql_constraints = [
+        ('mail_uniq', 'unique (mail)', "E-mail already exists !"),
+    ]

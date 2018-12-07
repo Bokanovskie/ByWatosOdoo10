@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from odoo import http
-from odoo.http import request
+from odoo.http import request, Response
 import logging
 
 _logger = logging.getLogger(__name__)
@@ -15,6 +15,16 @@ class WebsiteNewsletter(http.Controller):
         mail_newsletter_obj = request.env['mail.subscribers']
 
         if news_letter_mail:
-            mail_newsletter_obj.sudo().create({
-                'mail': news_letter_mail
-            })
+
+            mail_result = mail_newsletter_obj.sudo().search([
+                ('mail', '=', news_letter_mail)
+            ])
+
+            if not mail_result:
+                mail_newsletter_obj.sudo().create({
+                    'mail': news_letter_mail
+                })
+
+                return "sucesss"
+
+            return "error"
