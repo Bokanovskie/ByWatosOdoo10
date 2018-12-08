@@ -179,6 +179,13 @@ Alternate Fixed & Scroll Backgrounds - by CodyHouse.co
 .cd-fixed-bg.cd-fixed-bg--1 {
   background-image:
   url("/bywatos_website_theme/static/src/img/background/lampe_background.jpg");
+  background-position-y: 30%;
+}
+
+@media (max-width: 425px){
+    .cd-fixed-bg.cd-fixed-bg--1 {
+        background-position-x: 20%;
+    }
 }
 
 .cd-fixed-bg.cd-fixed-bg--2 {
