@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var mousewheelevt=(/Firefox/i.test(navigator.userAgent))? "DOMMouseScroll" : "mousewheel"
 
     if (document.attachEvent)
-        document.attachEvent("on"+mousewheelevt, function(e){alert('Mouse wheel movement detected!')})
+        document.attachEvent("on"+mousewheelevt, function(e){})
     else if (document.addEventListener)
         document.addEventListener(mousewheelevt, function(e){
 

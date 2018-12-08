@@ -12,7 +12,7 @@
             <div class="sidebar-main">
 
                 <div id="hot-close-sidebar" class="menu-icon" style="display: none; color: red;">
-                    <a>CLOSE</a>
+                    <img src="/bywatos_website_theme/static/src/img/svg/cross_1.svg" class="burger-img" />
                 </div>
                 <!--Logo-->
                 <h1 id="logo">
