@@ -230,9 +230,7 @@ Alternate Fixed & Scroll Backgrounds - by CodyHouse.co
 }
 
 .cd-scrolling-bg.cd-scrolling-bg--color-2 {
-    background-color: #D2CECD;
-//background: -moz-linear-gradient(left, #bcbbb9 0%, #bcbbb9 50%, #cac6c5 51%, #d2cecd 100%);
-  //background: -moz-linear-gradient(45deg, #bcbbb9 0%, #bcbbb9 36%, #cac6c5 51%, #d2cecd 100%);
+  background-color: #D2CECD;
   color: #3d3536;
 }
 
