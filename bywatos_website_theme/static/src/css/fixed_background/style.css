@@ -178,7 +178,7 @@ Alternate Fixed & Scroll Backgrounds - by CodyHouse.co
 
 .cd-fixed-bg.cd-fixed-bg--1 {
   background-image:
-  url("/bywatos_website_theme/static/src/img/background/lampe-mel-halo-background-compressor.jpg");
+  url("/bywatos_website_theme/static/src/img/background/lampe_background.jpg");
 }
 
 .cd-fixed-bg.cd-fixed-bg--2 {
@@ -230,7 +230,9 @@ Alternate Fixed & Scroll Backgrounds - by CodyHouse.co
 }
 
 .cd-scrolling-bg.cd-scrolling-bg--color-2 {
-  background-color: white;
+    background-color: #D2CECD;
+//background: -moz-linear-gradient(left, #bcbbb9 0%, #bcbbb9 50%, #cac6c5 51%, #d2cecd 100%);
+  //background: -moz-linear-gradient(45deg, #bcbbb9 0%, #bcbbb9 36%, #cac6c5 51%, #d2cecd 100%);
   color: #3d3536;
 }
 
