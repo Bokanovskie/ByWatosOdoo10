@@ -199,16 +199,13 @@ jQuery(document).ready(function() {
 	        }
 	        imagesCont.css(rel);
             if(wordContHeight > clientHeight){
-                wordCont.css(sta);
-                imagesCont.css(sta);
+                wordCont.css(fix);
+                imagesCont.css(rel);
                 _win.scroll(function(){
                     wordContHideHeight = jQuery(document).scrollTop();
                     if(wordContHideHeight >= (wordContHeight-clientHeight)){
                         wordCont.css(fix).css("bottom",0);
                         imagesCont.css(rel);
-                    }else{
-                        wordCont.css(sta);
-                        imagesCont.css(sta);
                     }
                 });
             }
@@ -224,16 +221,13 @@ jQuery(document).ready(function() {
 	        }
 	        imagesCont.css(rel);
             if(wordContHeight > clientHeight){
-                wordCont.css(sta);
-                imagesCont.css(sta);
+                wordCont.css(fix);
+                imagesCont.css(rel);
                 _win.scroll(function(){
                     wordContHideHeight = jQuery(document).scrollTop();
                     if(wordContHideHeight >= (wordContHeight-clientHeight)){
                         wordCont.css(fix).css("bottom",0);
                         imagesCont.css(rel);
-                    }else{
-                        wordCont.css(sta);
-                        imagesCont.css(sta);
                     }
                 });
             }

@@ -11,7 +11,7 @@
                             <div id="post-671" class="post-671 post type-post status-publish format-gallery has-post-thumbnail hentry category-architecture category-blog category-portfolio tag-architecture-2 tag-photography">
                                 <div id="content_wrap">
                                     <div class="row-fluid gallery-wrap gallery-wrap-sidebar " style="position: relative;">
-                                        <div class="gallery-info-wrap container span4" style="width: 35%; position: static;">
+                                        <div class="gallery-info-wrap container span4" style="width: 35%; position: fixed;">
                                             <div class="title-bar-wrap " id="title-bar">
                                                 <div id="title-wrap">
                                                     <div class="title-wrap-inn">
@@ -33,7 +33,7 @@
 
                                         </div>
                                         <!--end gallery-info-wrap -->
-                                        <div class="gallery-images-wrap span8" style="left: 35%; position: static;">
+                                        <div class="gallery-images-wrap span8" style="left: 35%; position: relative;">
                                             <div class="row-fluid ">
                                                 <div class="gallery-wrap-slider clear gallery-post-wrap">
                                                     <div class="vertical-list">
