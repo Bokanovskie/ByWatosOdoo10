@@ -13,7 +13,7 @@ class Production(http.Controller):
     def my_production(self):
 
         product_obj = request.env['product.template'].sudo()
-        product_ids = product_obj.search([])
+        product_ids = product_obj.search(args=[], order='create_date desc')
 
         values = {
             'product_ids': product_ids,
