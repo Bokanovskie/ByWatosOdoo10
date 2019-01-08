@@ -19,6 +19,8 @@
                                                             <h1 class="main-title">
                                                                 <t t-esc="product.name"/>
                                                             </h1>
+
+                                                            <hr id="hr-product"/>
                                                         </div>
                                                     </div>
                                                 </div>
