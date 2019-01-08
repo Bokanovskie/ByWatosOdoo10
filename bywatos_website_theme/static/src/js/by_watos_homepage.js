@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     x=w.innerWidth||e.clientWidth||g.clientWidth,
     y=w.innerHeight||e.clientHeight||g.clientHeight;
 
-    if(element){
+    if(element || contactUsElement){
         if(sidebar && asideElement.length > 0){
             sidebar.style.background = 'transparent';
 
