@@ -279,7 +279,7 @@ jQuery(document).ready(function() {
          
 		var  
 		container            = jQuery('#wrap'),
-		show_menu            = jQuery('<a id="advanced_menu_toggle" href="#"><i class="icon-m-menu"></i></a>'),
+		show_menu            = jQuery('<a id="advanced_menu_toggle" href="#"><img src="/bywatos_website_theme/static/src/img/svg/burger-bw.svg" class="burger-img"/></a>'),
 		//hide_menu          = jQuery('<a id="advanced_menu_hide" href="#"><i class="m-close-circle"></i></a>'),
 		show_meta		     = jQuery('<a id="advanced_menu_toggle2" href="#"><i class="icon-m-grid"></i></a>'),
 		mobile_advanced      = menu.clone().attr({id:"mobile-advanced", "class":""}),
@@ -324,7 +324,6 @@ jQuery(document).ready(function() {
 		});
 
 		var set_visibility = function(){
-		
 			if(_win.width() > switchWidth){
 			
 				body_wrap.removeClass('show_mobile_menu');
@@ -346,11 +345,6 @@ jQuery(document).ready(function() {
 					show_menu.appendTo(header);
 					mobile_advanced.prependTo(body_wrap);
 					menu_added = true;
-				}
-				
-				if(!meta_added){
-					show_meta.appendTo(header);
-					meta_added = true;
 				}
 			
 				if(body_wrap.is('.show_mobile_menu')){

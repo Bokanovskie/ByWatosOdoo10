@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="assets_frontend_main" inherit_id="website.assets_frontend" name="By Watos css main">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" href="/bywatos_website_theme/static/src/less/header_mobile.less"></link>
+        </xpath>
+    </template>
+
+    <template id="layout_header_mobile">
+        <header id="header" class="">
+            <h1 id="logo-mobile">
+                <a href="/" title="ByWatos">
+                    <img src="/bywatos_website_theme/static/src/img/svg/logo-bw.svg"
+                         class=""/>
+                </a>
+            </h1>
+        </header>
+    </template>
+</odoo>
