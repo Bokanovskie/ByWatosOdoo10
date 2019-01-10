@@ -2,7 +2,13 @@
 <odoo>
     <template id="product_template_view">
         <t t-call="website.layout">
-            <div id="wrap">
+
+            <div id="wrap" class="responsive-ux">
+
+                <!--Header mobile template-->
+                <t t-call="bywatos_website_theme.layout_header_mobile" />
+
+                <!-- Aside template -->
                 <t t-call="bywatos_website_theme.layout_aside_bar"/>
 
                 <div id="main-wrap">
