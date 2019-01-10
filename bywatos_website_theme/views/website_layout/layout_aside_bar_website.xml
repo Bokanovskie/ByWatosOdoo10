@@ -5,7 +5,6 @@
         <aside id="sidebar" class="sidebar_hide">
             <div id="sidebar-trigger">
                 <div id="sidebar-icon" class="menu-icon">
-                    <!--<i class="float-bar-triggler-inn"></i>-->
                     <img src="/bywatos_website_theme/static/src/img/svg/burger-bw.svg"
                          class="burger-img" style="color: green;"/>
                 </div>
