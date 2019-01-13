@@ -14,6 +14,13 @@
         </xpath>
     </template>
 
+    <!-- Template override head native template -->
+    <template id="layout_web_inherited" inherit_id="web.layout" name="web layout override">
+        <xpath expr="//head/meta" position="after">
+            <meta name="google-site-verification" content="CVLaLOidOPpyrXxEyBnZV-jntIgvkz1jpmcNszg_k_4" />
+        </xpath>
+    </template>
+
     <!-- Template bywatos header template -->
     <template id="bywatos_header_website_template" name="ByWatos header template">
         <!-- Full Width Image Header -->
