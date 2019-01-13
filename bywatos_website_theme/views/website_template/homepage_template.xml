@@ -10,8 +10,13 @@
         </xpath>
     </template>
 
-    <template id="homepage_template" name="Home page template">
+    <template id="homepage_template">
         <t t-call="website.layout">
+
+            <!-- Override title -->
+            <xpath expr="//head" position="inside">
+                <title>By Watos | Design in Lyon</title>
+            </xpath>
 
             <t t-call="bywatos_website_theme.layout_aside_bar_homepage"/>
 

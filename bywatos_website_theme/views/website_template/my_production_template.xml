@@ -30,8 +30,13 @@
     </template>
 
     <!-- My Production Template View -->
-    <template id="my_production_template_view">
+    <template id="my_production_template_view" name="By Watos | Portefolio">
         <t t-call="website.layout">
+
+            <!-- Override title -->
+            <xpath expr="//head" position="inside">
+                <title>By Watos | Portfolio</title>
+            </xpath>
 
             <!-- Page Loading template -->
             <t t-call="bywatos_website_theme.layout_loader"/>

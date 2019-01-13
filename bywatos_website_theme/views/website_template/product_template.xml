@@ -2,7 +2,12 @@
 <odoo>
     <template id="product_template_view">
         <t t-call="website.layout">
-            
+
+            <!-- Override title -->
+            <xpath expr="//head" position="inside">
+                <title t-esc="product.name" />
+            </xpath>
+
             <!-- Page Loading template -->
             <t t-call="bywatos_website_theme.layout_loader"/>
 

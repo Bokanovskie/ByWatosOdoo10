@@ -9,7 +9,7 @@ _logger = logging.getLogger(__name__)
 
 class Production(http.Controller):
 
-    @http.route('/production_my_creation', auth='public', website=True)
+    @http.route('/portfolio', auth='public', website=True)
     def my_production(self):
 
         product_obj = request.env['product.template'].sudo()

@@ -19,6 +19,11 @@
         <xpath expr="//head/meta" position="after">
             <meta name="google-site-verification" content="CVLaLOidOPpyrXxEyBnZV-jntIgvkz1jpmcNszg_k_4" />
         </xpath>
+
+        <xpath expr="//head/title" position="replace">
+
+        </xpath>
+
     </template>
 
     <!-- Template bywatos header template -->
@@ -68,8 +73,8 @@
                                 </li>
 
                                 <li class="dropdown">
-                                    <a href="/production_my_creation">
-                                        Réalisation
+                                    <a href="/portfolio">
+                                        Portfolio
                                     </a>
 
                                 </li>
