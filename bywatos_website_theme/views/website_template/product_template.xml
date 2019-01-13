@@ -44,7 +44,7 @@
 
                                         </div>
                                         <!--end gallery-info-wrap -->
-                                        <div class="gallery-images-wrap span8" style="left: 35%; position: relative;">
+                                        <div class="gallery-images-wrap span8" style="margin: 0; position: relative;">
                                             <div class="row-fluid ">
                                                 <div class="gallery-wrap-slider clear gallery-post-wrap">
                                                     <div class="vertical-list">
