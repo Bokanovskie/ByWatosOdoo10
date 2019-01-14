@@ -19,7 +19,7 @@
     </template>
 
     <!-- Template ByWatos footer template -->
-    <template id="bywatos_footer_website_template" name="ByWatos footer template">
+    <template id="bywatos_footer_website_template" name="By Watos footer template">
         <xpath expr="//footer" position="replace">
             <section id="section-footer">
                 <div class="row red-container">

@@ -7,13 +7,13 @@
     </template>
 
     <template id="layout_header_mobile">
-        <header id="header" class="">
-            <h1 id="logo-mobile">
+        <header id="header">
+            <div id="logo-mobile">
                 <a href="/" title="ByWatos">
                     <img src="/bywatos_website_theme/static/src/img/svg/logo-bw.svg"
                          alt="Logo By Watos" />
                 </a>
-            </h1>
+            </div>
         </header>
     </template>
 </odoo>

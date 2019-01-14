@@ -18,12 +18,12 @@
                 </div>
 
                 <!--Logo-->
-                <h1 id="logo">
+                <div id="logo">
                     <a href="/" title="Aside Responsive HTML Theme">
                         <img src="/bywatos_website_theme/static/src/img/svg/logo-bw.svg"
                              class="img-responsive header-logo"/>
                     </a>
-                </h1>
+                </div>
 
                 <!--Menu-->
                 <nav id="navi" class="clearfix">
