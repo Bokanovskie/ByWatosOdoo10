@@ -30,6 +30,7 @@
                                                             <div class="row-white">
                                                                 <div id="header-logo">
                                                                     <img src="/bywatos_website_theme/static/src/img/svg/logo-bw.svg"
+                                                                         alt="Logo By Watos"
                                                                          class="header-logo-img"/>
                                                                 </div>
 
@@ -40,11 +41,11 @@
                                                                         <div class="col-md-2">
                                                                             <label for="civilityFormControlInput">Civilité*</label>
                                                                             <select name="civility" type="text"
-                                                                                   class="form-control"
-                                                                                   id="civilityFormControlInput"
-                                                                                   required="1">
-                                                                                    <option value="Mme">Mme</option>
-                                                                                    <option value="Mr">Mr</option>
+                                                                                    class="form-control"
+                                                                                    id="civilityFormControlInput"
+                                                                                    required="1">
+                                                                                <option value="Mme">Mme</option>
+                                                                                <option value="Mr">Mr</option>
                                                                             </select>
                                                                         </div>
 

@@ -11,7 +11,7 @@
             <h1 id="logo-mobile">
                 <a href="/" title="ByWatos">
                     <img src="/bywatos_website_theme/static/src/img/svg/logo-bw.svg"
-                         class=""/>
+                         alt="Logo By Watos" />
                 </a>
             </h1>
         </header>
