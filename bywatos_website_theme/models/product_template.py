@@ -6,6 +6,7 @@ from odoo import models
 class ProductTemplate(models.Model):
 
     _inherit = 'product.template'
+    _order = "sequence"
 
     def get_product_by_type(self, by_watos_type):
 
