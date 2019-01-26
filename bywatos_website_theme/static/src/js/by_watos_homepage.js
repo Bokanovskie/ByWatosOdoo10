@@ -1,4 +1,8 @@
+odoo.define('bywatos.website', function (require) {
+
 document.addEventListener('DOMContentLoaded', function () {
+
+    var ajax = require('web.ajax');
 
     var element = document.getElementById('header-bottom');
     var asideElement = document.getElementsByClassName('sidebar-homepage');
@@ -63,6 +67,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
             }, false)
     }
+
+    ajax.jsonRpc("/get_video").then(function(data) {
+
+        var iframeElement = document.getElementsByClassName('embed-responsive-16by9')[0];
+
+        var iframe = document.createElement('iframe');
+
+        iframe.setAttribute('src', data);
+        iframe.setAttribute('class', 'embed-responsive-item');
+
+        iframeElement.appendChild(iframe);
+
+    });
+
+});
+
 });
 
 function checkVisibility(element, evaluation){

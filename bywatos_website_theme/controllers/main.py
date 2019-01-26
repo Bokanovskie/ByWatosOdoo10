@@ -16,3 +16,12 @@ class WebsiteInherited(Website):
         response = request.render('bywatos_website_theme.homepage_template')
 
         return response
+
+    @http.route('/get_video', type="json", auth="public", website=True)
+    def get_iframe(self):
+
+        website_config = request.env['website'].sudo().search([])
+
+        url = website_config.url_video_configuration
+
+        return url

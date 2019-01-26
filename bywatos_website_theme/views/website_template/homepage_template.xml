@@ -61,8 +61,7 @@
                     <div id="youtube-iframe" class="col-md-6 col-sm-12 col-xs-12">
                         <div class="cd-scrolling-bg__content youtube-iframe">
                             <div class="embed-responsive embed-responsive-16by9">
-                                <iframe src="https://www.youtube.com/embed/lYaY8nL2340"
-                                        class="embed-responsive-item"/>
+
                             </div>
                         </div> <!-- cd-scrolling-bg__content -->
                     </div>

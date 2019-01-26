@@ -44,6 +44,7 @@
         'views/website_template/my_production_template.xml',
         'views/website_template/product_template.xml',
         'views/website_template/contact_us_template.xml',
+        'views/website_template/backoffice_video_template.xml',
 
     ],
     # only loaded in demonstration mode
