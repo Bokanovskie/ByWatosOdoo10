@@ -23,7 +23,8 @@
         <xpath expr="//footer" position="replace">
             <section id="section-footer">
                 <div class="row red-container">
-                    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 white-container" style="padding: 0;">
+                    <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 white-container"
+                         style="padding: 0;">
                         <div class="border-container">
                             <h3>Demande de renseignements</h3>
                             <hr class="hr-class"></hr>
