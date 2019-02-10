@@ -11,8 +11,18 @@
             </field>
 
             <xpath expr="//page[@name='notes']" position="after">
-                <page string="Website">
+                <page string="Website" name="website">
                     <field name="website_description" />
+
+                    <group>
+                        <field name="short_description" string="Description courte" />
+                    </group>
+                </page>
+            </xpath>
+
+             <xpath expr="//page[@name='website']" position="after">
+                <page string="Seo" name="seo">
+
                 </page>
             </xpath>
 

@@ -14,3 +14,5 @@ class ProductTemplate(models.Model):
     )
 
     website_description = fields.Html(string="Description website")
+
+    short_description = fields.Text(string="Description courte pour mobile")
