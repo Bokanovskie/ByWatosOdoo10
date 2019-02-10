@@ -89,7 +89,7 @@
                                                                                             <t t-if="iterator%7 == 0 &amp; iterator_breaker == False">
                                                                                                 <div class="filter_my_creation width-and-long isotope-item brick-with-img">
                                                                                                     <div class="inside brick-inside post-bgcolor-default" style=" margin:1px 0 0 1px;">
-                                                                                                        <a t-att-href="'/shop/product/%s' % slug(product)" t-att-title="product.name" class="brick-link">
+                                                                                                        <a t-att-href="'/portfolio/%s' % slug(product)" t-att-title="product.name" class="brick-link">
                                                                                                             <div class="brick-hover-mask brick-hover">
                                                                                                                 <h3 class="brick-title"><t t-esc="product.name"/></h3>
                                                                                                             </div>
@@ -106,7 +106,7 @@
                                                                                             <t t-if="iterator%5 == 0 &amp; iterator_breaker == False">
                                                                                                 <div class="filter_my_creation width-and-height isotope-item brick-with-img">
                                                                                                     <div class="inside brick-inside post-bgcolor-default" style=" margin:1px 0 0 1px;">
-                                                                                                        <a t-att-href="'/shop/product/%s' % slug(product)" t-att-title="product.name" class="brick-link">
+                                                                                                        <a t-att-href="'/portfolio/%s' % slug(product)" t-att-title="product.name" class="brick-link">
                                                                                                             <div class="brick-hover-mask brick-hover">
                                                                                                                 <h3 class="brick-title"><t t-esc="product.name"/></h3>
                                                                                                             </div>
@@ -126,7 +126,7 @@
                                                                                                 <t t-if="iterator_breaker == False">
                                                                                                     <div class="filter_my_creation width-and-small isotope-item brick-with-img">
                                                                                                         <div class="inside brick-inside post-bgcolor-default" style=" margin:1px 0 0 1px;">
-                                                                                                            <a t-att-href="'/shop/product/%s' % slug(product)" t-att-title="product.name" class="brick-link">
+                                                                                                            <a t-att-href="'/portfolio/%s' % slug(product)" t-att-title="product.name" class="brick-link">
                                                                                                                 <div class="brick-hover-mask brick-hover">
                                                                                                                     <h3 class="brick-title"><t t-esc="product.name"/></h3>
                                                                                                                 </div>
@@ -151,7 +151,7 @@
                                                                                             <t t-if="iterator%7 == 0 &amp; iterator_breaker == False">
                                                                                                 <div class="filter_requests width-and-long isotope-item brick-with-img">
                                                                                                     <div class="inside brick-inside post-bgcolor-default" style=" margin:1px 0 0 1px;">
-                                                                                                        <a t-att-href="'/shop/product/%s' % slug(product)" t-att-title="product.name" class="brick-link">
+                                                                                                        <a t-att-href="'/portfolio/%s' % slug(product)" t-att-title="product.name" class="brick-link">
                                                                                                             <div class="brick-hover-mask brick-hover">
                                                                                                                 <h3 class="brick-title"><t t-esc="product.name"/></h3>
                                                                                                             </div>
@@ -170,7 +170,7 @@
                                                                                             <t t-if="iterator%5 == 0 &amp; iterator_breaker == False">
                                                                                                 <div class="filter_requests width-and-height isotope-item brick-with-img">
                                                                                                     <div class="inside brick-inside post-bgcolor-default" style=" margin:1px 0 0 1px;">
-                                                                                                        <a t-att-href="'/shop/product/%s' % slug(product)" t-att-title="product.name" class="brick-link">
+                                                                                                        <a t-att-href="'/portfolio/%s' % slug(product)" t-att-title="product.name" class="brick-link">
                                                                                                             <div class="brick-hover-mask brick-hover">
                                                                                                                 <h3 class="brick-title"><t t-esc="product.name"/></h3>
                                                                                                             </div>
@@ -190,7 +190,7 @@
                                                                                                 <t t-if="iterator_breaker == False">
                                                                                                     <div class="filter_requests width-and-small isotope-item brick-with-img">
                                                                                                         <div class="inside brick-inside post-bgcolor-default" style=" margin:1px 0 0 1px;">
-                                                                                                            <a t-att-href="'/shop/product/%s' % slug(product)" t-att-title="product.name" class="brick-link">
+                                                                                                            <a t-att-href="'/portfolio/%s' % slug(product)" t-att-title="product.name" class="brick-link">
                                                                                                                 <div class="brick-hover-mask brick-hover">
                                                                                                                     <h3 class="brick-title"><t t-esc="product.name"/></h3>
                                                                                                                 </div>
