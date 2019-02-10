@@ -23,7 +23,7 @@ class Production(http.Controller):
 
         return response
 
-    @http.route(['/shop/product/<model("product.template"):product>'], auth="public", website=True)
+    @http.route(['/portfolio/<model("product.template"):product>'], auth="public", website=True)
     def product(self, product):
 
         values = {
