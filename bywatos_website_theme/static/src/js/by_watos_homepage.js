@@ -68,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }, false)
     }
 
+    // Get video
     ajax.jsonRpc("/get_video").then(function(data) {
 
         var iframeElement = document.getElementsByClassName('embed-responsive-16by9')[0];

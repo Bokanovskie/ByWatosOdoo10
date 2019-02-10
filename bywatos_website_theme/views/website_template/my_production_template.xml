@@ -30,220 +30,224 @@
     </template>
 
     <!-- My Production Template View -->
-    <template id="my_production_template_view" name="By Watos | Portefolio">
+    <template id="my_production_template_view" name="By Watos | Portfolio">
         <t t-call="website.layout">
 
-            <!-- Override title -->
-            <xpath expr="//head" position="inside">
-                <title>By Watos | Portfolio</title>
-            </xpath>
-
-            <!-- Page Loading template -->
-            <t t-call="bywatos_website_theme.layout_loader"/>
-
-            <div id="wrap">
-                <t t-call="bywatos_website_theme.layout_aside_bar"/>
-                <!--#main-wrap-->
-                <div id="main-wrap">
-                    <div id="main">
-                        <div id="content" style="background-color: #333333;">
-                            <div id="post-122" class="page type-page status-publish hentry">
-                                <div class="row-fluid">
-                                    <div id="content_wrap">
-                                        <div class="content-wrap-inn ">
-                                            <div class="pagebuilder-wrap">
-                                                <div class="fullwrap_moudle">
-                                                    <div class="row-fluid">
-                                                        <div id="full" class="fullwidth-wrap bg-theme-color-10">
-                                                            <div class="row-fluid">
-                                                                <div class="span12 moudle bottom-space-no">
-                                                                    <!--Portfolio isotope-->
-                                                                    <div class="row-fluid">
-                                                                        <!--Filter-->
-                                                                        <div class="clearfix filters filter-floating filter-floating-fixed">
-                                                                            <ul>
-                                                                                <li class="active"><a href="#" data-filter="*">All</a></li>
-                                                                                <li><a data-filter=".filter_my_creation" href="#">Mes création</a></li>
-                                                                                <li><a data-filter=".filter_requests" href="#">Les demandes</a></li>
-                                                                            </ul>
-                                                                            <div class="filter-floating-triggle hidden-phone"><i class="fa fa-filter"></i></div>
-                                                                        </div>
-                                                                        <!--End filter-->
-                                                                        <div class="container-isotope">
-                                                                            <div class="isotope masonry isotope_fade" data-space="1px" data-size="brick" style="margin: -1px 0px 0px -1px;">
-                                                                                <t t-set="iterator" t-value="0"/>
-                                                                                <t t-foreach="product_ids" t-as="product">
-                                                                                    <t t-set="iterator_breaker" t-value="False"/>
-                                                                                    <t t-set="iterator" t-value="iterator + 1" />
-
-                                                                                    <t t-if="iterator == 8">
-                                                                                        <t t-set="iterator" t-value="1"/>
-                                                                                    </t>
-                                                                                    <!--Item-->
-                                                                                    <!-- Dans le cas ou my creation -->
-                                                                                    <t t-if="product.by_watos_type == 'my_production'">
-
-                                                                                        <t t-if="iterator%7 == 0 &amp; iterator_breaker == False">
-                                                                                            <div class="filter_my_creation width-and-long isotope-item brick-with-img">
-                                                                                                <div class="inside brick-inside post-bgcolor-default" style=" margin:1px 0 0 1px;">
-                                                                                                    <a t-att-href="'/shop/product/%s' % slug(product)" t-att-title="product.name" class="brick-link">
-                                                                                                        <div class="brick-hover-mask brick-hover">
-                                                                                                            <h3 class="brick-title"><t t-esc="product.name"/></h3>
-                                                                                                        </div>
-                                                                                                        <div class="brick-content">
-                                                                                                            <img t-attf-src="/web/content/#{product.get_portefolio_img('width_and_long')}"
-                                                                                                                 class="attachment-imagebox-thumb wp-post-image" t-att-alt="product.name"/>
-                                                                                                        </div>
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <t t-set="iterator_breaker" t-value="True"/>
-                                                                                        </t>
-
-                                                                                        <t t-if="iterator%5 == 0 &amp; iterator_breaker == False">
-                                                                                            <div class="filter_my_creation width-and-height isotope-item brick-with-img">
-                                                                                                <div class="inside brick-inside post-bgcolor-default" style=" margin:1px 0 0 1px;">
-                                                                                                    <a t-att-href="'/shop/product/%s' % slug(product)" t-att-title="product.name" class="brick-link">
-                                                                                                        <div class="brick-hover-mask brick-hover">
-                                                                                                            <h3 class="brick-title"><t t-esc="product.name"/></h3>
-                                                                                                        </div>
-                                                                                                        <div class="brick-content">
-                                                                                                            <img t-attf-src="/web/content/#{product.get_portefolio_img('width_and_height')}"
-                                                                                                                 class="attachment-imagebox-thumb wp-post-image" t-att-alt="product.name"/>
-                                                                                                        </div>
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                            </div>
-
-                                                                                            <t t-set="iterator_breaker" t-value="True"/>
-
-                                                                                        </t>
-
-                                                                                        <t t-if="iterator%5 != 0">
-                                                                                            <t t-if="iterator_breaker == False">
-                                                                                                <div class="filter_my_creation width-and-small isotope-item brick-with-img">
-                                                                                                    <div class="inside brick-inside post-bgcolor-default" style=" margin:1px 0 0 1px;">
-                                                                                                        <a t-att-href="'/shop/product/%s' % slug(product)" t-att-title="product.name" class="brick-link">
-                                                                                                            <div class="brick-hover-mask brick-hover">
-                                                                                                                <h3 class="brick-title"><t t-esc="product.name"/></h3>
-                                                                                                            </div>
-                                                                                                            <div class="brick-content">
-                                                                                                                <img t-attf-src="/web/content/#{product.get_portefolio_img('width_and_small')}"
-                                                                                                                     class="attachment-imagebox-thumb wp-post-image" t-att-alt="product.name"/>
-                                                                                                            </div>
-                                                                                                        </a>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </t>
-
-                                                                                            <t t-set="iterator_breaker" t-value="True"/>
-
-                                                                                        </t>
-
-                                                                                    </t>
-
-                                                                                    <!-- Dans le cas ou requests -->
-                                                                                    <t t-if="product.by_watos_type == 'the_requests'">
-
-                                                                                        <t t-if="iterator%7 == 0 &amp; iterator_breaker == False">
-                                                                                            <div class="filter_requests width-and-long isotope-item brick-with-img">
-                                                                                                <div class="inside brick-inside post-bgcolor-default" style=" margin:1px 0 0 1px;">
-                                                                                                    <a t-att-href="'/shop/product/%s' % slug(product)" t-att-title="product.name" class="brick-link">
-                                                                                                        <div class="brick-hover-mask brick-hover">
-                                                                                                            <h3 class="brick-title"><t t-esc="product.name"/></h3>
-                                                                                                        </div>
-                                                                                                        <div class="brick-content">
-                                                                                                            <img t-attf-src="/web/content/#{product.get_portefolio_img('width_and_long')}"
-                                                                                                                 class="attachment-imagebox-thumb wp-post-image" t-att-alt="product.name"/>
-                                                                                                        </div>
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                            </div>
-
-                                                                                            <t t-set="iterator_breaker" t-value="True"/>
-
-                                                                                        </t>
-
-                                                                                        <t t-if="iterator%5 == 0 &amp; iterator_breaker == False">
-                                                                                            <div class="filter_requests width-and-height isotope-item brick-with-img">
-                                                                                                <div class="inside brick-inside post-bgcolor-default" style=" margin:1px 0 0 1px;">
-                                                                                                    <a t-att-href="'/shop/product/%s' % slug(product)" t-att-title="product.name" class="brick-link">
-                                                                                                        <div class="brick-hover-mask brick-hover">
-                                                                                                            <h3 class="brick-title"><t t-esc="product.name"/></h3>
-                                                                                                        </div>
-                                                                                                        <div class="brick-content">
-                                                                                                            <img t-attf-src="/web/content/#{product.get_portefolio_img('width_and_height')}"
-                                                                                                                 class="attachment-imagebox-thumb wp-post-image" t-att-alt="product.name"/>
-                                                                                                        </div>
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                            </div>
-
-                                                                                            <t t-set="iterator_breaker" t-value="True"/>
-
-                                                                                        </t>
-
-                                                                                        <t t-if="iterator%5 != 0">
-                                                                                            <t t-if="iterator_breaker == False">
-                                                                                                <div class="filter_requests width-and-small isotope-item brick-with-img">
-                                                                                                    <div class="inside brick-inside post-bgcolor-default" style=" margin:1px 0 0 1px;">
-                                                                                                        <a t-att-href="'/shop/product/%s' % slug(product)" t-att-title="product.name" class="brick-link">
-                                                                                                            <div class="brick-hover-mask brick-hover">
-                                                                                                                <h3 class="brick-title"><t t-esc="product.name"/></h3>
-                                                                                                            </div>
-                                                                                                            <div class="brick-content">
-                                                                                                                <img t-attf-src="/web/content/#{product.get_portefolio_img('width_and_small')}"
-                                                                                                                     class="attachment-imagebox-thumb wp-post-image" t-att-alt="product.name"/>
-                                                                                                            </div>
-                                                                                                        </a>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </t>
+            <div id="portfolio">
 
 
-                                                                                            <t t-set="iterator_breaker" t-value="True"/>
+                <!-- Override title -->
+                <xpath expr="//head" position="inside">
+                    <title>By Watos | Portfolio</title>
+                </xpath>
 
-                                                                                        </t>
+                <!-- Page Loading template -->
+                <t t-call="bywatos_website_theme.layout_loader"/>
 
-                                                                                    </t>
-
-                                                                                </t> <!-- end t-foreach -->
-
+                <div id="wrap">
+                    <t t-call="bywatos_website_theme.layout_aside_bar"/>
+                    <!--#main-wrap-->
+                    <div id="main-wrap">
+                        <div id="main">
+                            <div id="content" style="background-color: #333333;">
+                                <div id="post-122" class="page type-page status-publish hentry">
+                                    <div class="row-fluid">
+                                        <div id="content_wrap">
+                                            <div class="content-wrap-inn ">
+                                                <div class="pagebuilder-wrap">
+                                                    <div class="fullwrap_moudle">
+                                                        <div class="row-fluid">
+                                                            <div id="full" class="fullwidth-wrap bg-theme-color-10">
+                                                                <div class="row-fluid">
+                                                                    <div class="span12 moudle bottom-space-no">
+                                                                        <!--Portfolio isotope-->
+                                                                        <div class="row-fluid">
+                                                                            <!--Filter-->
+                                                                            <div class="clearfix filters filter-floating filter-floating-fixed">
+                                                                                <ul>
+                                                                                    <li class="active"><a href="#" data-filter="*">All</a></li>
+                                                                                    <li><a data-filter=".filter_my_creation" href="#">Mes création</a></li>
+                                                                                    <li><a data-filter=".filter_requests" href="#">Les demandes</a></li>
+                                                                                </ul>
+                                                                                <div class="filter-floating-triggle hidden-phone"><i class="fa fa-filter"></i></div>
                                                                             </div>
+                                                                            <!--End filter-->
+                                                                            <div class="container-isotope">
+                                                                                <div class="isotope masonry isotope_fade" data-space="1px" data-size="brick" style="margin: -1px 0px 0px -1px;">
+                                                                                    <t t-set="iterator" t-value="0"/>
+                                                                                    <t t-foreach="product_ids" t-as="product">
+                                                                                        <t t-set="iterator_breaker" t-value="False"/>
+                                                                                        <t t-set="iterator" t-value="iterator + 1" />
+
+                                                                                        <t t-if="iterator == 8">
+                                                                                            <t t-set="iterator" t-value="1"/>
+                                                                                        </t>
+                                                                                        <!--Item-->
+                                                                                        <!-- Dans le cas ou my creation -->
+                                                                                        <t t-if="product.by_watos_type == 'my_production'">
+
+                                                                                            <t t-if="iterator%7 == 0 &amp; iterator_breaker == False">
+                                                                                                <div class="filter_my_creation width-and-long isotope-item brick-with-img">
+                                                                                                    <div class="inside brick-inside post-bgcolor-default" style=" margin:1px 0 0 1px;">
+                                                                                                        <a t-att-href="'/shop/product/%s' % slug(product)" t-att-title="product.name" class="brick-link">
+                                                                                                            <div class="brick-hover-mask brick-hover">
+                                                                                                                <h3 class="brick-title"><t t-esc="product.name"/></h3>
+                                                                                                            </div>
+                                                                                                            <div class="brick-content">
+                                                                                                                <img t-attf-src="/web/content/#{product.get_portefolio_img('width_and_long')}"
+                                                                                                                     class="attachment-imagebox-thumb wp-post-image" t-att-alt="product.name"/>
+                                                                                                            </div>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <t t-set="iterator_breaker" t-value="True"/>
+                                                                                            </t>
+
+                                                                                            <t t-if="iterator%5 == 0 &amp; iterator_breaker == False">
+                                                                                                <div class="filter_my_creation width-and-height isotope-item brick-with-img">
+                                                                                                    <div class="inside brick-inside post-bgcolor-default" style=" margin:1px 0 0 1px;">
+                                                                                                        <a t-att-href="'/shop/product/%s' % slug(product)" t-att-title="product.name" class="brick-link">
+                                                                                                            <div class="brick-hover-mask brick-hover">
+                                                                                                                <h3 class="brick-title"><t t-esc="product.name"/></h3>
+                                                                                                            </div>
+                                                                                                            <div class="brick-content">
+                                                                                                                <img t-attf-src="/web/content/#{product.get_portefolio_img('width_and_height')}"
+                                                                                                                     class="attachment-imagebox-thumb wp-post-image" t-att-alt="product.name"/>
+                                                                                                            </div>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                                <t t-set="iterator_breaker" t-value="True"/>
+
+                                                                                            </t>
+
+                                                                                            <t t-if="iterator%5 != 0">
+                                                                                                <t t-if="iterator_breaker == False">
+                                                                                                    <div class="filter_my_creation width-and-small isotope-item brick-with-img">
+                                                                                                        <div class="inside brick-inside post-bgcolor-default" style=" margin:1px 0 0 1px;">
+                                                                                                            <a t-att-href="'/shop/product/%s' % slug(product)" t-att-title="product.name" class="brick-link">
+                                                                                                                <div class="brick-hover-mask brick-hover">
+                                                                                                                    <h3 class="brick-title"><t t-esc="product.name"/></h3>
+                                                                                                                </div>
+                                                                                                                <div class="brick-content">
+                                                                                                                    <img t-attf-src="/web/content/#{product.get_portefolio_img('width_and_small')}"
+                                                                                                                         class="attachment-imagebox-thumb wp-post-image" t-att-alt="product.name"/>
+                                                                                                                </div>
+                                                                                                            </a>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </t>
+
+                                                                                                <t t-set="iterator_breaker" t-value="True"/>
+
+                                                                                            </t>
+
+                                                                                        </t>
+
+                                                                                        <!-- Dans le cas ou requests -->
+                                                                                        <t t-if="product.by_watos_type == 'the_requests'">
+
+                                                                                            <t t-if="iterator%7 == 0 &amp; iterator_breaker == False">
+                                                                                                <div class="filter_requests width-and-long isotope-item brick-with-img">
+                                                                                                    <div class="inside brick-inside post-bgcolor-default" style=" margin:1px 0 0 1px;">
+                                                                                                        <a t-att-href="'/shop/product/%s' % slug(product)" t-att-title="product.name" class="brick-link">
+                                                                                                            <div class="brick-hover-mask brick-hover">
+                                                                                                                <h3 class="brick-title"><t t-esc="product.name"/></h3>
+                                                                                                            </div>
+                                                                                                            <div class="brick-content">
+                                                                                                                <img t-attf-src="/web/content/#{product.get_portefolio_img('width_and_long')}"
+                                                                                                                     class="attachment-imagebox-thumb wp-post-image" t-att-alt="product.name"/>
+                                                                                                            </div>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                                <t t-set="iterator_breaker" t-value="True"/>
+
+                                                                                            </t>
+
+                                                                                            <t t-if="iterator%5 == 0 &amp; iterator_breaker == False">
+                                                                                                <div class="filter_requests width-and-height isotope-item brick-with-img">
+                                                                                                    <div class="inside brick-inside post-bgcolor-default" style=" margin:1px 0 0 1px;">
+                                                                                                        <a t-att-href="'/shop/product/%s' % slug(product)" t-att-title="product.name" class="brick-link">
+                                                                                                            <div class="brick-hover-mask brick-hover">
+                                                                                                                <h3 class="brick-title"><t t-esc="product.name"/></h3>
+                                                                                                            </div>
+                                                                                                            <div class="brick-content">
+                                                                                                                <img t-attf-src="/web/content/#{product.get_portefolio_img('width_and_height')}"
+                                                                                                                     class="attachment-imagebox-thumb wp-post-image" t-att-alt="product.name"/>
+                                                                                                            </div>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                                <t t-set="iterator_breaker" t-value="True"/>
+
+                                                                                            </t>
+
+                                                                                            <t t-if="iterator%5 != 0">
+                                                                                                <t t-if="iterator_breaker == False">
+                                                                                                    <div class="filter_requests width-and-small isotope-item brick-with-img">
+                                                                                                        <div class="inside brick-inside post-bgcolor-default" style=" margin:1px 0 0 1px;">
+                                                                                                            <a t-att-href="'/shop/product/%s' % slug(product)" t-att-title="product.name" class="brick-link">
+                                                                                                                <div class="brick-hover-mask brick-hover">
+                                                                                                                    <h3 class="brick-title"><t t-esc="product.name"/></h3>
+                                                                                                                </div>
+                                                                                                                <div class="brick-content">
+                                                                                                                    <img t-attf-src="/web/content/#{product.get_portefolio_img('width_and_small')}"
+                                                                                                                         class="attachment-imagebox-thumb wp-post-image" t-att-alt="product.name"/>
+                                                                                                                </div>
+                                                                                                            </a>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </t>
+
+
+                                                                                                <t t-set="iterator_breaker" t-value="True"/>
+
+                                                                                            </t>
+
+                                                                                        </t>
+
+                                                                                    </t> <!-- end t-foreach -->
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <!--End container-isotope-->
                                                                         </div>
-                                                                        <!--End container-isotope-->
+                                                                        <!--End row-fluid-->
                                                                     </div>
-                                                                    <!--End row-fluid-->
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <script type="text/javascript">
+                                                        jQuery(document).ready(function(){
+                                                        var ux_pb = new ThemePageBuilder();
+                                                        ux_pb.init();
+                                                        });
+                                                    </script>
                                                 </div>
-                                                <script type="text/javascript">
-                                                    jQuery(document).ready(function(){
-                                                    var ux_pb = new ThemePageBuilder();
-                                                    ux_pb.init();
-                                                    });
-                                                </script>
                                             </div>
+                                            <!--End content-wrap-inn-->
                                         </div>
-                                        <!--End content-wrap-inn-->
+                                        <!--end content_wrap-->
                                     </div>
-                                    <!--end content_wrap-->
                                 </div>
+                                <!--end post-->
                             </div>
-                            <!--end post-->
+                            <!--end content-->
                         </div>
-                        <!--end content-->
+                        <!--End #main-->
                     </div>
-                    <!--End #main-->
-                </div>
-                <!--End #main-wrap-->
-            </div><!--End #wrap-->
+                    <!--End #main-wrap-->
+                </div><!--End #wrap-->
 
-            <!-- Float bar -->
-            <t t-call="bywatos_website_theme.float_bar_social_network" />
-            <!--End #float bar-->
+                <!-- Float bar -->
+                <t t-call="bywatos_website_theme.float_bar_social_network" />
+                <!--End #float bar-->
+            </div>
         </t>
     </template>
 </odoo>

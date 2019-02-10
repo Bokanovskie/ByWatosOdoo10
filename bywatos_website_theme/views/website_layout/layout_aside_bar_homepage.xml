@@ -28,16 +28,16 @@
                 <nav id="navi" class="clearfix">
                     <div id="navi_wrap" class="menu-demo-menu-container">
                         <ul class="menu">
-                            <li id="menu-item-home" class="menu-item menu-item-type-post_type menu-item-object-page">
+                            <li id="menu-item-homepage" class="menu-item menu-item-type-post_type menu-item-object-page">
                                 <a href="/">Home</a>
                             </li>
-                            <li id="menu-item-realisation" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item">
+                            <li id="menu-item-portfolio" class="menu-item menu-item-type-custom menu-item-object-custom">
                                 <a href="/portfolio">Portfolio</a>
                             </li>
-                            <li id="menu-item-atelier" class="menu-item menu-item-type-post_type menu-item-object-page">
+                            <li id="menu-item-workshop" class="menu-item menu-item-type-post_type menu-item-object-page">
                                 <a href="#">Atelier</a>
                             </li>
-                            <li id="menu-item-contact" class="menu-item menu-item-type-custom menu-item-object-custom">
+                            <li id="menu-item-contact-us" class="menu-item menu-item-type-custom menu-item-object-custom">
                                 <a href="/contact-us">Contact</a>
                             </li>
                         </ul>
