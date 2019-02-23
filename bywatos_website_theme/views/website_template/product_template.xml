@@ -32,20 +32,25 @@
                                 <div id="content_wrap">
 
                                     <!-- Modal -->
-                                    <div id="descriptionProductModal" class="modal-product" role="dialog">
+                                    <div id="description-product-modal" class="modal-product show">
                                         <div class="modal-dialog">
 
                                             <!-- Modal content-->
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <button type="button" class="close" data-dismiss="modal"></button>
-                                                    <h4 class="modal-title">Modal Header</h4>
+                                                    <button type="button" class="close"></button>
+                                                    <!-- Title modal -->
+                                                    <h4 class="modal-title">
+                                                        <t t-esc="product.name"/>
+                                                    </h4>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <p>Some text in the modal.</p>
+                                                    <p>
+                                                        <div t-field="product.website_description"/>
+                                                    </p>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                    <button id="close-button-modal" type="button" class="btn btn-default">Close</button>
                                                 </div>
                                             </div>
 
@@ -74,7 +79,7 @@
                                                 <!-- Product description Mobile -->
                                                 <div id="mobile-description" class="product-description">
                                                     <div t-field="product.short_description"/>
-                                                    <button id="continuous-button" data-toggle="modal" data-target="#myModal">...</button>
+                                                    <button id="continuous-button" data-toggle="modal" data-target="descriptionProductModal">...</button>
                                                 </div>
                                                 <!--End #title-wrap-->
                                             </div>
