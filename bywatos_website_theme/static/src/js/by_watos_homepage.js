@@ -73,12 +73,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
         var iframeElement = document.getElementsByClassName('embed-responsive-16by9')[0];
 
-        var iframe = document.createElement('iframe');
+        if(iframeElement){
+            var iframe = document.createElement('iframe');
 
-        iframe.setAttribute('src', data);
-        iframe.setAttribute('class', 'embed-responsive-item');
+            iframe.setAttribute('src', data);
+            iframe.setAttribute('class', 'embed-responsive-item');
 
-        iframeElement.appendChild(iframe);
+            iframeElement.appendChild(iframe);
+        }
+
 
     });
 

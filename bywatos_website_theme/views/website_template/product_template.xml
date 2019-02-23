@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
+    <template id="assets_frontend_product" inherit_id="website.assets_frontend" name="By Watos assets product">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/bywatos_website_theme/static/src/js/bywatos-product.js"></script>
+        </xpath>
+    </template>
+
     <template id="product_template_view">
         <t t-call="website.layout">
 
@@ -24,6 +30,27 @@
                         <div id="content">
                             <div id="post-671" class="post-671 post type-post status-publish format-gallery has-post-thumbnail hentry category-architecture category-blog category-portfolio tag-architecture-2 tag-photography">
                                 <div id="content_wrap">
+
+                                    <!-- Modal -->
+                                    <div id="descriptionProductModal" class="modal-product" role="dialog">
+                                        <div class="modal-dialog">
+
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal"></button>
+                                                    <h4 class="modal-title">Modal Header</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Some text in the modal.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
                                     <div class="row-fluid gallery-wrap gallery-wrap-sidebar " style="position: relative;">
                                         <div class="gallery-info-wrap container span4" style="width: 35%; position: fixed;">
                                             <div class="title-bar-wrap " id="title-bar">
@@ -39,9 +66,15 @@
                                                     </div>
                                                 </div>
 
-                                                <!-- Product description -->
-                                                <div class="product-description">
+                                                <!-- Product description desktop -->
+                                                <div id="desktop-description" class="product-description">
                                                     <div t-field="product.website_description"/>
+                                                </div>
+
+                                                <!-- Product description Mobile -->
+                                                <div id="mobile-description" class="product-description">
+                                                    <div t-field="product.short_description"/>
+                                                    <button id="continuous-button" data-toggle="modal" data-target="#myModal">...</button>
                                                 </div>
                                                 <!--End #title-wrap-->
                                             </div>
@@ -75,6 +108,7 @@
                         <!--end post-->
                     </div>
                     <!--end content-->
+
                 </div>
                 <!--End #main-->
             </div>

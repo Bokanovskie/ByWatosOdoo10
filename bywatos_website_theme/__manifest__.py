@@ -24,7 +24,8 @@
                 'website',
                 'product',
                 'product_attachment_website',
-                'website_newsletter'],
+                'website_newsletter',
+                'bywatos_product_extended'],
 
     # always loaded
     'data': [
