@@ -507,7 +507,7 @@ input[type="text"].textboxsearch {
 .mobile_active #top_bar,
 .mobile_active .header_line{ display:none; }
 #header_wrap.mobile_active{ box-shadow: 0 1px 2px #ccc; height: 100px; line-height: 100px;}
-#header.mobile_active{ position:relative;}
+#header.mobile_active{ position:fixed;}
 .mobile_active~#main #main_title_wrap{ background:none; }
 
 .show_mobile_meta #wrap{ 

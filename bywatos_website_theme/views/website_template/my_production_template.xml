@@ -55,8 +55,13 @@
                 </div>
                 <!--End filter-->
 
-                <div id="wrap">
+                <div id="wrap" class="responsive-ux">
+
+                    <t t-call="bywatos_website_theme.layout_header_mobile" />
+
                     <t t-call="bywatos_website_theme.layout_aside_bar"/>
+
+
                     <!--#main-wrap-->
                     <div id="main-wrap">
                         <div id="main">

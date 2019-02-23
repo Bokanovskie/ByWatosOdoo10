@@ -21,62 +21,66 @@
                     <title>By Watos | Design in Lyon</title>
                 </xpath>
 
-                <t t-call="bywatos_website_theme.layout_aside_bar_homepage"/>
+                <div id="wrap" class="responsive-ux">
+                    <t t-call="bywatos_website_theme.layout_header_mobile" />
 
-                <!-- Call bywatos header template -->
-                <t t-call="bywatos_website_theme.bywatos_header_website_template"/>
+                    <t t-call="bywatos_website_theme.layout_aside_bar_homepage"/>
 
-                <div class="cd-scrolling-bg cd-scrolling-bg--color-2 block-bywatos">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-6">
-                            <img src="/bywatos_website_theme/static/src/img/background/Horloge.jpg"
-                                 alt="Horloge By Watos"
-                                 class="img-text" />
+                    <!-- Call bywatos header template -->
+                    <t t-call="bywatos_website_theme.bywatos_header_website_template"/>
+
+                    <div class="cd-scrolling-bg cd-scrolling-bg--color-2 block-bywatos">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <img src="/bywatos_website_theme/static/src/img/background/Horloge.jpg"
+                                     alt="Horloge By Watos"
+                                     class="img-text" />
+                            </div>
+
+                            <div class="col-sm-12 col-md-6 bywatos-text">
+                                <h1><i>L'acier sur mesure</i></h1>
+                                <hr id="hr-description"/>
+                                <p class="text-md-left">
+                                    Née d'une passion pour l'acier. Diplôme de métallier en poche, je me passione pour la
+                                    transformation et le réalisation d'objet
+                                    sur mesure unique. Mon imagination et mon savoir faire dans la conception de design d'intérieur.
+                                </p>
+                            </div>
                         </div>
+                    </div> <!-- cd-scrolling-bg -->
 
-                        <div class="col-sm-12 col-md-6 bywatos-text">
-                            <h1><i>L'acier sur mesure</i></h1>
-                            <hr id="hr-description"/>
-                            <p class="text-md-left">
-                                Née d'une passion pour l'acier. Diplôme de métallier en poche, je me passione pour la
-                                transformation et le réalisation d'objet
-                                sur mesure unique. Mon imagination et mon savoir faire dans la conception de design d'intérieur.
-                            </p>
+                    <!-- Fixed background 1 -->
+                    <div class="cd-fixed-bg cd-fixed-bg--1">
+                        <div class="cd-fixed-bg__content">
+
                         </div>
-                    </div>
-                </div> <!-- cd-scrolling-bg -->
+                    </div> <!-- cd-fixed-bg -->
 
-                <!-- Fixed background 1 -->
-                <div class="cd-fixed-bg cd-fixed-bg--1">
-                    <div class="cd-fixed-bg__content">
+                    <div class="cd-scrolling-bg cd-scrolling-bg--color-1">
+                        <div class="row video-container">
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                <img src="/bywatos_website_theme/static/src/img/logo/logo_by_watos_noir.png"
+                                     alt="Logo By Watos noir"
+                                     class="header-logo-img"/>
+                            </div>
 
-                    </div>
-                </div> <!-- cd-fixed-bg -->
+                            <div id="youtube-iframe" class="col-md-6 col-sm-12 col-xs-12">
+                                <div class="cd-scrolling-bg__content youtube-iframe">
+                                    <div class="embed-responsive embed-responsive-16by9">
 
-                <div class="cd-scrolling-bg cd-scrolling-bg--color-1">
-                    <div class="row video-container">
-                        <div class="col-md-6 col-sm-12 col-xs-12">
-                            <img src="/bywatos_website_theme/static/src/img/logo/logo_by_watos_noir.png"
-                                 alt="Logo By Watos noir"
-                                 class="header-logo-img"/>
+                                    </div>
+                                </div> <!-- cd-scrolling-bg__content -->
+                            </div>
                         </div>
+                    </div> <!-- cd-scrolling-bg -->
 
-                        <div id="youtube-iframe" class="col-md-6 col-sm-12 col-xs-12">
-                            <div class="cd-scrolling-bg__content youtube-iframe">
-                                <div class="embed-responsive embed-responsive-16by9">
+                    <div class="cd-fixed-bg cd-fixed-bg--2">
 
-                                </div>
-                            </div> <!-- cd-scrolling-bg__content -->
-                        </div>
-                    </div>
-                </div> <!-- cd-scrolling-bg -->
+                    </div> <!-- cd-fixed-bg -->
 
-                <div class="cd-fixed-bg cd-fixed-bg--2">
-
-                </div> <!-- cd-fixed-bg -->
-
-                <!-- Call bywatos footer template -->
-                <t t-call="bywatos_website_theme.bywatos_footer_website_template"/>
+                    <!-- Call bywatos footer template -->
+                    <t t-call="bywatos_website_theme.bywatos_footer_website_template"/>
+                </div>
             </div>
 
         </t>
