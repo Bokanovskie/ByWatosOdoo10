@@ -191,7 +191,7 @@ jQuery(document).ready(function() {
 		wordCont.parent().css("position","relative");
 		function domPosition(){
 			var fix = {"position":"fixed","width":"35%"};
-        	var sta = {"position":"static"};
+        	var sta = {"position":"static","width":"35%"};
         	var rel = {'position':"relative","left":"35%"};
 	        wordCont.css(fix);
 	        if(wordContHideHeight>wordContHeight){

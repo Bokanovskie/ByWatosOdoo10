@@ -57,7 +57,7 @@
                                         </div>
                                     </div>
                                     <div class="row-fluid gallery-wrap gallery-wrap-sidebar " style="position: relative;">
-                                        <div class="gallery-info-wrap container span4" style="width: 35%; position: fixed;">
+                                        <div class="gallery-info-wrap container span4" style="position: fixed;">
                                             <div class="title-bar-wrap " id="title-bar">
                                                 <div id="title-wrap">
                                                     <div class="title-wrap-inn">
