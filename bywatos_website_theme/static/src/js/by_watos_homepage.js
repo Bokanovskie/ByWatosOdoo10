@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         asideToggle.style.display = 'none';
                         sidebar.style.display = 'none';
                     }
-                }else {
+                }else if(window.innerWidth > 768) {
                     if(asideToggle){
                         asideToggle.style.display = 'block';
                         sidebar.style.display = 'block';
