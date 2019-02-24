@@ -324,9 +324,6 @@ jQuery(document).ready(function() {
 			
 		});
 
-        console.log(_win.width());
-        console.log(_win.height());
-        console.log(aside_element);
 		var set_visibility = function(){
 			if(_win.width() > switchWidth && _win.height() > 375){
 
