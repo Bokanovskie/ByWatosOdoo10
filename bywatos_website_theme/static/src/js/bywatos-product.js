@@ -46,9 +46,14 @@ odoo.define('bywatos_website_theme.main', function (require) {
             let modalWidth = modalElement.offsetWidth;
             let windowWidth = window.innerWidth;
 
-            let modalLeftPosition = ((windowWidth / 2) - (modalWidth / 2));
+            let modalHeight = modalElement.offsetHeight;
+            let windowHeight = window.innerHeight;
 
-            modalElement.style.left = modalLeftPosition + 'px';
+            let modalXPosition = ((windowWidth / 2) - (modalWidth / 2));
+            let modalYPosition = ((windowHeight / 2) - (modalHeight / 2));
+
+            modalElement.style.left = modalXPosition + 'px';
+            modalElement.style.top = modalYPosition + 'px';
         }
 
         positionModal(modalElement);

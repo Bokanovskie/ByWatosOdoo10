@@ -195,7 +195,7 @@ jQuery(document).ready(function() {
         	var rel = {'position':"relative","left":"35%"};
 	        wordCont.css(fix);
 	        if(wordContHideHeight>wordContHeight){
-	        	wordCont.css("bottom",0);
+//	        	wordCont.css("bottom",0);
 	        }
 	        imagesCont.css(rel);
             if(wordContHeight > clientHeight){
@@ -217,7 +217,7 @@ jQuery(document).ready(function() {
         	var rel = {'position':"relative"};
         	wordCont.css(fix);
         	if(wordContHideHeight>wordContHeight){
-	        	wordCont.css("bottom",0);
+//	        	wordCont.css("bottom",0);
 	        }
 	        imagesCont.css(rel);
             if(wordContHeight > clientHeight){
@@ -226,7 +226,7 @@ jQuery(document).ready(function() {
                 _win.scroll(function(){
                     wordContHideHeight = jQuery(document).scrollTop();
                     if(wordContHideHeight >= (wordContHeight-clientHeight)){
-                        wordCont.css(fix).css("bottom",0);
+//                        wordCont.css(fix).css("bottom",0);
                         imagesCont.css(rel);
                     }
                 });
