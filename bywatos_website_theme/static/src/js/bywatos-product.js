@@ -9,6 +9,7 @@ odoo.define('bywatos_website_theme.main', function (require) {
 
         // Button to close modal
         var closeButtonModal = document.getElementById('close-button-modal');
+        var headerElement = document.getElementById('header');
 
 
         if(continuousButton && modalElement && closeButtonModal){
@@ -50,9 +51,9 @@ odoo.define('bywatos_website_theme.main', function (require) {
             let windowHeight = window.innerHeight;
 
             let modalXPosition = ((windowWidth / 2) - (modalWidth / 2));
-            let modalYPosition = ((windowHeight / 2) - (modalHeight / 2));
+            let modalYPosition = headerElement.offsetHeight;
 
-            modalElement.style.left = modalXPosition + 'px';
+            //modalElement.style.left = modalXPosition + 'px';
             modalElement.style.top = modalYPosition + 'px';
         }
 
