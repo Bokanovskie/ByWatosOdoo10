@@ -873,7 +873,7 @@ body.single .pagebuilder-wrap{
 
 .gallery-wrap-sidebar #title-bar,
 #page-feaured-image-layout #title-bar{
-  padding: 60px 0 80px 0;
+  padding: 20px 0 80px 0;
 }
 .carousel-inner img,.portfolio_vertical_list img{ width:100%;}
 .gallery-post-wrap .single-image{ width:100%; }

@@ -286,7 +286,8 @@ jQuery(document).ready(function() {
 		mobile_meta_advanced = jQuery('#mobile-header-meta'),
 		menu_added           = false,
 		meta_added			 = false,
-		body_wrap            = jQuery('body');
+		body_wrap            = jQuery('body'),
+		aside_element        = jQuery('#sidebar');
 
 
 		show_menu.click(function(){
@@ -323,9 +324,12 @@ jQuery(document).ready(function() {
 			
 		});
 
+        console.log(_win.width());
+        console.log(_win.height());
+        console.log(aside_element);
 		var set_visibility = function(){
-			if(_win.width() > switchWidth){
-			
+			if(_win.width() > switchWidth && _win.height() > 375){
+
 				body_wrap.removeClass('show_mobile_menu');
 				body_wrap.removeClass('show_mobile_meta');
 				header.removeClass('mobile_active');
@@ -337,7 +341,9 @@ jQuery(document).ready(function() {
 				}
 			
 			}else{
-			
+                if(aside_element){
+			        aside_element.css({'display': 'none'});
+			    }
 				header.addClass('mobile_active');
 				jQuery('body').css({'height':"auto"});
 			
