@@ -56,8 +56,12 @@
                         <a class="icons-sidebar-unit" t-att-href="website.social_googleplus" title=""><i class="fa fa-google-plus-square"></i></a>
 
                     </div>
+
+                    <div class="copyright">Conception et fabrication de mobilier à Lyon</div>
+
                     <!--Copyright-->
                     <div class="copyright">Copyright ByWatos</div>
+
                     <!--End copyright-->
                 </div>
                 <!--END sidebar-bottom-wrap-->

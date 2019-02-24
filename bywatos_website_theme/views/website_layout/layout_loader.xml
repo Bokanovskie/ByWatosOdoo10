@@ -13,6 +13,9 @@
                 <img src="/bywatos_website_theme/static/src/img/svg/logo-bw.svg"
                      alt="Logo By Watos"
                      class="page-loading-transform-logo"/>
+                <div class="page-loading-transform-text">
+                    Design in Lyon
+                </div>
             </div>
         </div>
     </template>
