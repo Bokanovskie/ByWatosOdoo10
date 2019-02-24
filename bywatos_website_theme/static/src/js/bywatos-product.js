@@ -60,10 +60,12 @@ odoo.define('bywatos_website_theme.main', function (require) {
 
         }
 
-        positionModal(modalElement);
+        if(modalElement){
+            positionModal(modalElement);
 
-        modalElement.classList.remove('show');
-        modalElement.classList.add('hidden');
+            modalElement.classList.remove('show');
+            modalElement.classList.add('hidden');
+        }
 
         window.onresize = resize;
 
