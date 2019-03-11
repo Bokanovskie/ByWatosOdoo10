@@ -14,13 +14,141 @@ src: url('../police/megrim.ttf');
 .page-loading-transform-text {
     font-family: megrim;
 	position: absolute; top: 65%; left: 46%;
-  width: 220px; line-height: 36px; text-align: center; margin-left: -60px;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  color: black;
-  font-size: 25px;
+    width: 270px;
+    line-height: 36px;
+    text-align: center;
+    margin-left: -60px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #666666;
+    font-size: 35px;
 
+}
+
+
+// max width high resolution phone landscape
+@media (max-device-width: 896px) and (max-device-height: 414px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    .page-loading-transform {
+        top: 20% !important;
+    }
+
+    .page-loading-transform-logo {
+        left: 52% !important;
+        top: 50% !important;
+    }
+
+    .page-loading-transform-text {
+        left: 45% !important;
+        top: 80% !important;
+    }
+}
+
+
+// max width high resolution phone landscape
+@media (max-device-width: 896px) and (max-device-height: 414px) and (-webkit-min-device-pixel-ratio: 3) {
+
+    .page-loading-transform {
+        top: 20% !important;
+    }
+
+    .page-loading-transform-logo {
+        left: 52% !important;
+        top: 50% !important;
+    }
+
+    .page-loading-transform-text {
+        left: 43% !important;
+        top: 80% !important;
+    }
+}
+
+// max width high resolution phone landscape
+@media (max-device-width: 896px) and (max-device-height: 360px) and (-webkit-min-device-pixel-ratio: 3) {
+    .page-loading-transform-logo {
+        top: 30% !important;
+    }
+}
+
+// max width high resolution phone landscape
+@media (max-device-width: 736px) and (max-device-height: 414px) and (-webkit-min-device-pixel-ratio: 3) {
+
+    .page-loading-transform-logo {
+        top: 30% !important;
+    }
+}
+
+// max width high resolution phone landscape
+@media (max-device-width: 736px) and (max-device-height: 414px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    .page-loading-transform-logo {
+        top: 30% !important;
+    }
+}
+
+
+// max width high resolution phone portrait 414 * 896 * 2
+@media (max-device-width: 414px) and (max-device-height: 896px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    .page-loading-transform-logo {
+        left: 52% !important;
+        top: 40% !important;
+    }
+
+    .page-loading-transform-text {
+        left: 35% !important;
+    }
+}
+
+// max width high resolution phone portrait 414 * 896 * 3
+@media (max-device-width: 414px) and (max-device-height: 896px) and (-webkit-min-device-pixel-ratio: 3) {
+
+    .page-loading-transform-logo {
+        left: 52% !important;
+        top: 40% !important;
+    }
+
+    .page-loading-transform-text {
+        left: 35% !important;
+    }
+}
+
+// max width high resolution tablet
+@media (min-device-width: 768px) and (min-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    .page-loading-transform {
+        top: 35% !important;
+    }
+
+    .page-loading-transform-logo {
+        left: 52% !important;
+        top: 50% !important;
+    }
+
+    .page-loading-transform-text {
+        left: 45% !important;
+        top: 65% !important;
+    }
+}
+
+@media (max-device-width: 414px) and (max-device-height: 896px) {
+    .page-loading-transform-logo {
+        left: 52% !important;
+        top: 40% !important;
+    }
+
+    .page-loading-transform-text {
+        left: 35% !important;
+        //margin-top: 35px;
+    }
+}
+
+@media (max-device-width: 375px) and (max-device-height: 667px) {
+
+    .page-loading-transform-text {
+        margin-top: 35px;
+    }
 }
