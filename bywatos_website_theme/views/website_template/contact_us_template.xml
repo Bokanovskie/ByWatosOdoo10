@@ -11,10 +11,17 @@
     <template id="contact_us_template" name="ByWatos Contact-us Template">
         <t t-call="website.layout">
             <div id="contact-us">
-                <div id="wrap" class="cd-fixed-bg--contact-us ">
 
-                    <!-- Header template -->
-                    <t t-call="bywatos_website_theme.layout_aside_bar_homepage"/>
+                
+                <div id="wrap" class="responsive-ux cd-fixed-bg--contact-us">
+
+                    <!-- Header mobile template -->
+                    <t t-call="bywatos_website_theme.layout_header_mobile" />
+
+                    <!-- Aside bar template -->
+                    <t t-call="bywatos_website_theme.layout_aside_bar"/>
+
+
                     <!--#main-wrap-->
                     <div id="main-wrap">
                         <div id="main">
