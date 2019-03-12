@@ -32,7 +32,7 @@
                             <li id="menu-item-homepage" class="menu-item menu-item-type-post_type menu-item-object-page">
                                 <a href="/">Home</a>
                             </li>
-                            <li id="menu-item-portfolio" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item">
+                            <li id="menu-item-portfolio" class="menu-item menu-item-type-custom menu-item-object-custom">
                                 <a href="/portfolio">Portfolio</a>
                             </li>
                             <li id="menu-item-workshop" class="menu-item menu-item-type-post_type menu-item-object-page">
