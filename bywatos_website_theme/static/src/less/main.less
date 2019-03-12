@@ -145,14 +145,64 @@ src: url('../police/megrim.ttf');
     }
 }
 
-@media (max-device-width: 375px) and (max-device-height: 667px) {
+@media (max-device-width: 375px) and (max-device-height: 667px) and (-webkit-min-device-pixel-ratio: 3) {
+
+    .page-loading-transform {
+        top: 20% !important;
+    }
+
+    .page-loading-transform-logo {
+        top: 30% !important;
+        width: 90px !important;
+        left: 53% !important;
+    }
 
     .page-loading-transform-text {
-        margin-top: 35px;
+        top: 60% !important;
+        left: 32% !important;
+        font-size: 30px !important;
     }
 }
 
-@media (max-device-width: 667px) and (max-device-height: 375px) and (-webkit-min-device-pixel-ratio: 3),  {
+@media (max-device-width: 375px) and (max-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    .page-loading-transform {
+        top: 20% !important;
+    }
+
+    .page-loading-transform-logo {
+        top: 30% !important;
+        width: 90px !important;
+        left: 53% !important;
+    }
+
+    .page-loading-transform-text {
+        top: 60% !important;
+        left: 32% !important;
+        font-size: 30px !important;
+    }
+}
+
+@media (max-device-width: 375px) and (max-device-height: 667px)  {
+
+    .page-loading-transform {
+        top: 20% !important;
+    }
+
+    .page-loading-transform-logo {
+        top: 30% !important;
+        width: 90px !important;
+        left: 53% !important;
+    }
+
+    .page-loading-transform-text {
+        top: 60% !important;
+        left: 32% !important;
+        font-size: 30px !important;
+    }
+}
+
+@media (max-device-width: 667px) and (max-device-height: 375px) and (-webkit-min-device-pixel-ratio: 3)  {
 
     .page-loading-transform {
         top: 20% !important;
