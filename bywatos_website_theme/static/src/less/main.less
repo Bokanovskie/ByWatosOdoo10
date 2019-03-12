@@ -152,23 +152,7 @@ src: url('../police/megrim.ttf');
     }
 }
 
-@media (max-device-width: 667px) and (max-device-height: 375px) {
-
-    .page-loading-transform {
-        top: 20% !important;
-    }
-
-    .page-loading-transform-logo {
-        top: 30% !important;
-    }
-
-    .page-loading-transform-text {
-        top: 80%;
-        left: 40%;
-    }
-}
-
-@media (max-device-width: 667px) and (max-device-height: 325px) {
+@media (max-device-width: 667px) and (max-device-height: 375px) and (-webkit-min-device-pixel-ratio: 3),  {
 
     .page-loading-transform {
         top: 20% !important;
@@ -184,6 +168,62 @@ src: url('../police/megrim.ttf');
         top: 80% !important;
         left: 40% !important;
         font-size: 30px !important;
+    }
+}
+
+@media (max-device-width: 667px) and (max-device-height: 325px) and (-webkit-min-device-pixel-ratio: 3) {
+
+    .page-loading-transform {
+        top: 20% !important;
+    }
+
+    .page-loading-transform-logo {
+        top: 25% !important;
+        width: 65px !important;
+        left: 57% !important;
+    }
+
+    .page-loading-transform-text {
+        top: 75% !important;
+        left: 35% !important;
+        font-size: 25px !important;
+    }
+}
+@media (max-device-width: 667px) and (max-device-height: 375px) and (-webkit-min-device-pixel-ratio: 2)  {
+
+    .page-loading-transform {
+        top: 20% !important;
+    }
+
+    .page-loading-transform-logo {
+        top: 30% !important;
+        width: 90px !important;
+        left: 53% !important;
+    }
+
+    .page-loading-transform-text {
+        top: 80% !important;
+        left: 40% !important;
+        font-size: 30px !important;
+    }
+}
+
+@media (max-device-width: 667px) and (max-device-height: 325px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    .page-loading-transform {
+        top: 20% !important;
+    }
+
+    .page-loading-transform-logo {
+        top: 25% !important;
+        width: 65px !important;
+        left: 57% !important;
+    }
+
+    .page-loading-transform-text {
+        top: 75% !important;
+        left: 35% !important;
+        font-size: 25px !important;
     }
 }
 
@@ -282,7 +322,9 @@ src: url('../police/megrim.ttf');
     }
 }
 
-@media (max-device-width: 240px) and (max-device-height: 426px) {
+@media (max-device-width: 240px) and (max-device-height: 426px)
+
+{
 
     .page-loading-transform {
         top: 20% !important;
