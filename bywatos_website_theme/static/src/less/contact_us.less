@@ -15,21 +15,29 @@
            url("/bywatos_website_theme/static/src/img/background/World-background.jpg");
         }
 
-        .container{
+        .container {
             padding-top: 5%;
             opacity: 0.9;
 
-            .row-white{
+            .row-white {
                 background-color: white;
+                border-radius: 1%;
+                padding: 0.5em;
 
-                #header-logo {
+                .border-grey {
+
+                    border: #9d9fa0;
+                    border-style: solid;
+                    border-width: 0.1em;
+
+                    #header-logo {
                     text-align: center;
                     padding-top: 5%;
 
                     .header-logo-img{
                         height: 20em;
+                        }
                     }
-                }
 
                 .form-group {
 
@@ -45,16 +53,23 @@
                         box-shadow:none !important;
                         width: 100%;
                         border: none !important;
-                        border-bottom: 1px solid black !important;
+                        border-bottom: 0.1em solid #9d9fa0 !important;
 
-                        input:focus {
-                            border-color: #9d9fa0;
-                        }
+                    }
+
+                    input:focus {
+                        color: #e10d35 !important;
+                        border-color: #3f558f !important;
+                    }
+
+                    textarea:focus {
+                        color: #e10d35 !important;
+                        border-color: #3f558f !important;
                     }
 
                     .input-item {
 
-                        padding-top: 35px;
+                        padding: 2.2em 0;
 
                         input {
                             width: 120px;
@@ -64,10 +79,12 @@
                             transition-duration: 1s;
                             font-size: 1.4em;
                             color: white;
+                            float: right;
                         }
 
                         input:hover {
                             background-color: #343638;
+                        }
                         }
                     }
                 }
