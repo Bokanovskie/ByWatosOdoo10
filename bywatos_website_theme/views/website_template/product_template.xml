@@ -42,13 +42,13 @@
                                                 <t t-esc="product.name"/>
                                             </h4>
 
-                                            <div id="close-button-modal" class="modal-close menu-icon">
-                                                <img src="/bywatos_website_theme/static/src/img/svg/cross_1.svg" class="burger-img" />
-                                            </div>
+                                            <a id="close-button-modal" class="" href="#">
+                                                <img src="/bywatos_website_theme/static/src/img/svg/cross_1.svg" class="" />
+                                            </a>
                                         </div>
                                         <div class="body-modal">
                                             <p>
-                                                <div t-field="product.website_description"/>
+                                                <div t-field="product.website_description" />
                                             </p>
                                         </div>
 

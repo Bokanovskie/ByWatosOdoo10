@@ -8,109 +8,34 @@
     margin: 15px;
     padding: 15px;
 
+    display: flex;
+    flex-direction: column;
+    
     .header-modal {
-        position: relative;
-        float: left;
+        display: flex;
 
         .modal-title {
             width: 80%;
-            position: relative;
-            float: left;
-        }
-
-        .modal-close {
-            width: 20%;
-            position: relative;
-            float: left;
-        }
-
-        .menu-icon {
-            line-height: 0;
-
-            .burger-img {
-                width: 100%;
-            }
+            text-align: center;
+            font-size: 1.5em;
             
+            @media (orientation: landscape) {
+                font-size: 2rem;
+            }
+        }
+
+        #close-button-modal {
+            width: 20%;
+            float: right;
         }
     }
 
     .body-modal {
-        position: relative;
-        float: left;
         margin-top: 25px;
+        padding: 0 15px;
 
         p {
-            font-size: 14px;
-            line-height: 16px;
+            font-size: 1rem;
         }
-    }
-
-}
-
-@media (max-width: 325px) {
-
-    .modal-product {
-
-        .header-modal {
-
-            .modal-title {
-
-            }
-
-            .modal-close {
-
-            }
-
-            .menu-icon {
-
-                .burger-img {
-                }
-
-            }
-        }
-
-        .body-modal {
-
-
-            p {
-                font-size: 12px;
-                line-height: 14px;
-            }
-        }
-
-    }
-}
-
-@media (max-width: 325px) {
-
-    .modal-product {
-
-        .header-modal {
-
-            .modal-title {
-
-            }
-
-            .modal-close {
-
-            }
-
-            .menu-icon {
-
-                .burger-img {
-                }
-
-            }
-        }
-
-        .body-modal {
-
-
-            p {
-                font-size: 12px;
-                line-height: 14px;
-            }
-        }
-
     }
 }
