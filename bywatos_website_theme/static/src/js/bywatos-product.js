@@ -22,6 +22,8 @@ odoo.define('bywatos_website_theme.main', function (require) {
                 
                 positionModal(modalElement);
 
+                document.getElementById('main-wrap').classList.add('modalBlur');
+
             });
 
             // Add event click listener on continuous button to close modal
@@ -30,6 +32,7 @@ odoo.define('bywatos_website_theme.main', function (require) {
                 modalElement.classList.remove('show');
                 modalElement.classList.add('hidden');
 
+                document.getElementById('main-wrap').classList.remove('modalBlur');
             });
         }
 

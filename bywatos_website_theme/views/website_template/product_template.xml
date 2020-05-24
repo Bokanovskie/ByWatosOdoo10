@@ -32,27 +32,6 @@
                             <div id="post-671" class="post-671 post type-post status-publish format-gallery has-post-thumbnail hentry category-architecture category-blog category-portfolio tag-architecture-2 tag-photography">
                                 <div id="content_wrap">
 
-                                    <!-- Modal -->
-                                    <div id="description-product-modal" class="modal-product show">
-                                        <!-- Modal content-->
-
-                                        <div class="header-modal">
-                                            <!-- Title modal -->
-                                            <h4 class="modal-title">
-                                                <t t-esc="product.name"/>
-                                            </h4>
-
-                                            <a id="close-button-modal" class="" href="#">
-                                                <img src="/bywatos_website_theme/static/src/img/svg/cross_1.svg" class="" />
-                                            </a>
-                                        </div>
-                                        <div class="body-modal">
-                                            <p>
-                                                <div t-field="product.website_description" />
-                                            </p>
-                                        </div>
-
-                                    </div>
                                 </div>
                                 <div class="row-fluid gallery-wrap gallery-wrap-sidebar " style="position: relative;">
                                     <div class="gallery-info-wrap container span4" style="position: fixed;">
@@ -108,7 +87,28 @@
                         </div>
                         <!--end content_wrap-->
                     </div>
-                    <!--end post-->
+
+                    <!-- Modal -->
+                    <div id="description-product-modal" class="modal-product show">
+                        <!-- Modal content-->
+
+                        <div class="header-modal">
+                            <!-- Title modal -->
+                            <h4 class="modal-title">
+                                <t t-esc="product.name"/>
+                            </h4>
+
+                            <a id="close-button-modal" class="" href="#">
+                                <img src="/bywatos_website_theme/static/src/img/svg/cross_1.svg" class="" />
+                            </a>
+                        </div>
+                        <div class="body-modal">
+                            <p>
+                                <div t-field="product.website_description" />
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End modal -->
                 </div>
                 <!--end content-->
 
