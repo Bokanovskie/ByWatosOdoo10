@@ -101,7 +101,8 @@
                                                                                                             </div>
                                                                                                             <div class="brick-content">
                                                                                                                 <img t-attf-src="/web/content/#{product.get_portefolio_img('width_and_long')}"
-                                                                                                                     class="attachment-imagebox-thumb wp-post-image" t-att-alt="product.name"/>
+                                                                                                                     class="attachment-imagebox-thumb wp-post-image" t-att-alt="product.name"
+                                                                                                                     loading="lazy" />
                                                                                                             </div>
                                                                                                         </a>
                                                                                                     </div>
@@ -118,7 +119,8 @@
                                                                                                             </div>
                                                                                                             <div class="brick-content">
                                                                                                                 <img t-attf-src="/web/content/#{product.get_portefolio_img('width_and_height')}"
-                                                                                                                     class="attachment-imagebox-thumb wp-post-image" t-att-alt="product.name"/>
+                                                                                                                     class="attachment-imagebox-thumb wp-post-image" t-att-alt="product.name"
+                                                                                                                     loading="lazy" />
                                                                                                             </div>
                                                                                                         </a>
                                                                                                     </div>
@@ -138,7 +140,8 @@
                                                                                                                 </div>
                                                                                                                 <div class="brick-content">
                                                                                                                     <img t-attf-src="/web/content/#{product.get_portefolio_img('width_and_small')}"
-                                                                                                                         class="attachment-imagebox-thumb wp-post-image" t-att-alt="product.name"/>
+                                                                                                                         class="attachment-imagebox-thumb wp-post-image" t-att-alt="product.name"
+                                                                                                                         loading="lazy" />
                                                                                                                 </div>
                                                                                                             </a>
                                                                                                         </div>
@@ -163,7 +166,8 @@
                                                                                                             </div>
                                                                                                             <div class="brick-content">
                                                                                                                 <img t-attf-src="/web/content/#{product.get_portefolio_img('width_and_long')}"
-                                                                                                                     class="attachment-imagebox-thumb wp-post-image" t-att-alt="product.name"/>
+                                                                                                                     class="attachment-imagebox-thumb wp-post-image" t-att-alt="product.name"
+                                                                                                                     loading="lazy" />
                                                                                                             </div>
                                                                                                         </a>
                                                                                                     </div>
@@ -182,7 +186,8 @@
                                                                                                             </div>
                                                                                                             <div class="brick-content">
                                                                                                                 <img t-attf-src="/web/content/#{product.get_portefolio_img('width_and_height')}"
-                                                                                                                     class="attachment-imagebox-thumb wp-post-image" t-att-alt="product.name"/>
+                                                                                                                     class="attachment-imagebox-thumb wp-post-image" t-att-alt="product.name"
+                                                                                                                     loading="lazy" />
                                                                                                             </div>
                                                                                                         </a>
                                                                                                     </div>
@@ -202,7 +207,8 @@
                                                                                                                 </div>
                                                                                                                 <div class="brick-content">
                                                                                                                     <img t-attf-src="/web/content/#{product.get_portefolio_img('width_and_small')}"
-                                                                                                                         class="attachment-imagebox-thumb wp-post-image" t-att-alt="product.name"/>
+                                                                                                                         class="attachment-imagebox-thumb wp-post-image" t-att-alt="product.name"
+                                                                                                                         loading="lazy" />
                                                                                                                 </div>
                                                                                                             </a>
                                                                                                         </div>

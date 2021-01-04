@@ -34,7 +34,8 @@
                             <div class="col-sm-12 col-md-6">
                                 <img src="/bywatos_website_theme/static/src/img/background/Horloge.jpg"
                                      alt="Horloge By Watos"
-                                     class="img-text" />
+                                     class="img-text"
+                                     loading="lazy" />
                             </div>
 
                             <div class="col-sm-12 col-md-6 bywatos-text">
@@ -66,7 +67,8 @@
                             <div class="col-md-6 col-sm-12 col-xs-12">
                                 <img src="/bywatos_website_theme/static/src/img/logo/logo_by_watos_noir.png"
                                      alt="Logo By Watos noir"
-                                     class="header-logo-img"/>
+                                     class="header-logo-img"
+                                     loading="lazy" />
                             </div>
 
                             <div id="youtube-iframe" class="col-md-6 col-sm-12 col-xs-12">

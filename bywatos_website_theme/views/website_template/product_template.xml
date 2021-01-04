@@ -71,7 +71,11 @@
                                                     <t t-set="images_product" t-value="product.get_images_product()"/>
 
                                                     <t t-foreach="images_product" t-as="image">
-                                                        <img t-attf-src="/web/content/#{image.id}" t-att-alt="product.name" />
+                                                        <img
+                                                                t-attf-src="/web/content/#{image.id}"
+                                                                t-att-alt="product.name"
+                                                                loading="lazy"
+                                                        />
                                                     </t>
                                                 </div>
                                             </div>

@@ -569,15 +569,10 @@ jQuery(document).ready(function() {
 		jQuery("html, body").css({height:_win_height});
 		
 		jQuery('#wrap').imagesLoaded(function(){
-			
-			//_page_loading.fadeOut(1300, function(){
-				_page_loading.removeClass('visible');
-			//});
-				
+            _page_loading.removeClass('visible');
+
 			jQuery("html, body").css({height: "auto"});
-			
+
 		});
-		
-		
 	}
 });
