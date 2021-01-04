@@ -50,7 +50,16 @@ function ThemeIsotope(){
 			_isotope.each(function(index, element) {
 				var _this = jQuery(this),
 					image_size = jQuery(this).data('size');
-				
+
+				    _this.find('.attachment-imagebox-thumb').each(function(index, element) {
+                        jQuery(element).removeAttr('style');
+                        jQuery(element).css("height", "100%");
+				    });
+
+				    _this.find('.brick-content').each(function(index, element) {
+                        jQuery(element).css("height", "100%");
+				    });
+
 				ux_ts.setWidths(image_size, _this);
 				_this.isotope({
 					masonry: {
