@@ -10,6 +10,8 @@
                 <field name="website_portfolio_image"/>
                 <field name="website_product_details"/>
                 <field name="image_size"/>
+                <field name="compress_image_file"/>
+                <field name="compress_rate"/>
             </field>
         </field>
     </record>

@@ -16,7 +16,6 @@ class ContactUs(http.Controller):
     @http.route('/send-contact', type='http', auth='public', website=True)
     def send_contact(self, **post):
 
-        print(request.params)
         mail_obj = request.env['mail.mail']
 
         subject_str = "Prise de contact par {0} {1}".format(request.params['civility'], request.params['name'])
