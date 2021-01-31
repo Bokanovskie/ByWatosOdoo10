@@ -39,7 +39,7 @@ class IrAttachment(models.Model):
         self.browse().check('write', values=values)
 
         if values.get('compress_image_file'):
-            values = self.handle_image(values)
+            values = self.handle_image(values, values.get('compress_rate'), values.get('compress_image_file'))
 
         return super(IrAttachment, self).create(values)
 
