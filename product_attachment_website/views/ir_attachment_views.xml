@@ -15,4 +15,16 @@
             </field>
         </field>
     </record>
+
+    <!-- Tree view -->
+    <record id="ir_attachment_tree_view" model="ir.ui.view">
+        <field name="name">ir.attachment.tree.view</field>
+        <field name="model">ir.attachment</field>
+        <field name="arch" type="xml">
+            <tree string="Images">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
 </odoo>

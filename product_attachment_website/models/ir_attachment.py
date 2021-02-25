@@ -15,6 +15,9 @@ _logger = logging.getLogger(__name__)
 class IrAttachment(models.Model):
 
     _inherit = 'ir.attachment'
+    _order = 'sequence, id'
+
+    sequence = fields.Integer('Sequence', default=1)
 
     website_image = fields.Boolean(string="Image pour SiteWeb", default=False)
     website_portfolio_image = fields.Boolean(string="Image pour portefolio", default=False)
