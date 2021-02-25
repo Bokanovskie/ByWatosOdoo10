@@ -49,6 +49,9 @@
                                 <li><a t-att-href="website.social_googleplus"
                                        t-if="website.social_googleplus" rel="publisher"><i class="fa fa-google-plus-square"/></a>
                                 </li>
+                                <li><a t-att-href="website.social_instagram"
+                                       t-if="website.social_instagram" rel="publisher"><i class="fa fa-instagram"/></a>
+                                </li>
                             </ul>
                         </div>
 

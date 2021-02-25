@@ -55,7 +55,7 @@
                         <a class="icons-sidebar-unit" t-att-href="website.social_linkedin" title=""><i class="fa fa-linkedin-square"></i></a>
                         <a class="icons-sidebar-unit" t-att-href="website.social_youtube" title=""><i class="fa fa-youtube-square"></i></a>
                         <a class="icons-sidebar-unit" t-att-href="website.social_googleplus" title=""><i class="fa fa-google-plus-square"></i></a>
-
+                        <a class="icons-sidebar-unit" t-att-href="website.social_instagram" title=""><i class="fa fa-instagram"></i></a>
                     </div>
 
                     <div class="copyright">Conception et fabrication de mobilier à Lyon</div>

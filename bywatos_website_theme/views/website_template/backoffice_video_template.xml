@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-
     <record id="bywatos_website_config_settings_form_inherit" model="ir.ui.view">
         <field name="name">bywatos.website.config.settings.form.inherit</field>
         <field name="model">website.config.settings</field>
         <field name="inherit_id" ref="website.view_website_config_settings"/>
         <field eval="18" name="priority"/>
         <field name="arch" type="xml">
-            <xpath expr="//group[@name='optimization']" position="after">
+            <xpath expr="//div[@name='social_googleplus']" position="after">
+                <label for="social_instagram"/>
+                <div name="social_instagram">
+                    <div class="oe_inline">
+                        <field name="social_instagram" placeholder="https://www.instagram.com/"/>
+                    </div>
+                </div>
+            </xpath>
 
+            <xpath expr="//group[@name='optimization']" position="after">
                 <group name="video_config" string="Vidéo">
                     <field name="url_video_configuration" />
                 </group>
-
             </xpath>
         </field>
     </record>
