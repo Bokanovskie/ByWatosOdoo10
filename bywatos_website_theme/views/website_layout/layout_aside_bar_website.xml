@@ -13,7 +13,7 @@
             <!--End sidebar-trigger-->
             <div class="sidebar-main">
 
-                <div id="hot-close-sidebar" class="menu-icon" style="display: none; color: red;">
+                <div id="hot-close-sidebar" class="menu-icon" style="navi_wrapdisplay: none; color: red;">
                     <img src="/bywatos_website_theme/static/src/img/svg/cross_1.svg" class="burger-img" />
                 </div>
 
@@ -45,21 +45,38 @@
                     </div>
                     <!--End #navi_wrap-->
                 </nav>
-                <!-- End Menu -->
+
+                <!--<div class="sidebar-wrap">-->
+
+                <!--</div>-->
+                <img src="/bywatos_website_theme/static/src/img/svg/logo-artisanat.svg" class="logo-artisanat" alt="Logo artisanat"/>
+
                 <!-- End Menu -->
                 <div class="sidebar-bottom-wrap">
                     <!--Social icons-->
                     <div class="social-icons-sidebar">
-                        <a class="icons-sidebar-unit" t-att-href="website.social_facebook" title="Suivez-nous"><i class="fa fa-facebook-square"></i></a>
-                        <a class="icons-sidebar-unit" t-att-href="website.social_twitter" title="Suivez-nous"><i class="fa fa-twitter-square"></i></a>
-                        <a class="icons-sidebar-unit" t-att-href="website.social_linkedin" title=""><i class="fa fa-linkedin-square"></i></a>
-                        <a class="icons-sidebar-unit" t-att-href="website.social_youtube" title=""><i class="fa fa-youtube-square"></i></a>
-                        <a class="icons-sidebar-unit" t-att-href="website.social_googleplus" title=""><i class="fa fa-google-plus-square"></i></a>
-                        <a class="icons-sidebar-unit" t-att-href="website.social_instagram" title=""><i class="fa fa-instagram"></i></a>
+                        <a class="icons-sidebar-unit" t-if="website.social_facebook" t-att-href="website.social_facebook">
+                            <i class="fa fa-facebook-square"/>
+                        </a>
+                        <a class="icons-sidebar-unit" t-if="website.social_twitter" t-att-href="website.social_twitter">
+                            <i class="fa fa-twitter-square"/>
+                        </a>
+                        <a class="icons-sidebar-unit" t-if="website.social_linkedin" t-att-href="website.social_linkedin">
+                            <i class="fa fa-linkedin-square"/>
+                        </a>
+                        <a class="icons-sidebar-unit" t-if="website.social_youtube" t-att-href="website.social_youtube">
+                            <i class="fa fa-youtube-square"/>
+                        </a>
+                        <a class="icons-sidebar-unit" t-if="website.social_googleplus" t-att-href="website.social_googleplus">
+                            <i class="fa fa-google-plus-square"/>
+                        </a>
+                        <a class="icons-sidebar-unit" t-if="website.social_instagram" t-att-href="website.social_instagram">
+                            <i class="fa fa-instagram"/>
+                        </a>
                     </div>
 
                     <div class="copyright">Conception et fabrication de mobilier à Lyon</div>
-                    
+
                     <!--Copyright-->
                     <div class="copyright">Copyright ByWatos</div>
 

@@ -7,12 +7,41 @@
                 <div class="float-bar-inn">
                     <!--Social network share icon-->
                     <div class="float-bar-social-share">
-                        <button class="social-share-facebook" onclick="javascript:window.open('http://www.facebook.com/share.php?u=http://ximudesign.com/aside/','', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fa fa-facebook"></i></button>
-                        <button class="social-share-twitter" onclick="javascript:window.open('https://twitter.com/share?url=http://ximudesign.com/aside/','', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fa fa-twitter"></i></button>
-                        <button class="social-share-linkedin" onclick="javascript:window.open('http://www.linkedin.com/shareArticle?mini=true&amp;url=http://ximudesign.com/aside/','', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fa fa-linkedin"></i></button>
-                        <button class="social-share-youtube" onclick="javascript:window.open('http://www.youtube.com','', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fa fa-youtube-square"></i></button>
-                        <button class="social-share-google-plus" onclick="javascript:window.open('https://plus.google.com/share?url=http://ximudesign.com/aside/','', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fa fa-google-plus"></i></button>
+                        <a t-if="website.social_facebook" t-att-href="website.social_facebook" target="_blank">
+                            <button class="social-share-facebook">
+                                <i class="fa fa-facebook"></i>
+                            </button>
+                        </a>
 
+                        <a t-if="website.social_twitter" t-att-href="website.social_twitter" target="_blank">
+                            <button class="social-share-twitter">
+                                <i class="fa fa-twitter"></i>
+                            </button>
+                        </a>
+
+                        <a  t-if="website.social_linkedin" t-att-href="website.social_linkedin" target="_blank">
+                            <button class="social-share-linkedin">
+                                <i class="fa fa-linkedin"></i>
+                            </button>
+                        </a>
+
+                        <a  t-if="website.social_youtube"  t-att-href="website.social_youtube" target="_blank">
+                            <button class="social-share-youtube">
+                                <i class="fa fa-youtube-square"></i>
+                            </button>
+                        </a>
+
+                        <a  t-if="website.social_googleplus"  t-att-href="website.social_googleplus" target="_blank">
+                            <button class="social-share-google-plus">
+                                <i class="fa fa-google-plus"></i>
+                            </button>
+                        </a>
+
+                        <a  t-if="website.social_instagram"  t-att-href="website.social_instagram" target="_blank">
+                            <button class="social-share-google-plus">
+                                <i class="fa fa-instagram"></i>
+                            </button>
+                        </a>
                     </div>
                 </div>
                 <!--End float inn wrap-->

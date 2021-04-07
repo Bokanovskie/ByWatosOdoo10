@@ -66,9 +66,7 @@
                         <div class="row video-container">
                             <div class="col-md-6 col-sm-12 col-xs-12">
                                 <img src="/bywatos_website_theme/static/src/img/logo/logo_by_watos_noir.png"
-                                     alt="Logo By Watos noir"
-                                     class="header-logo-img"
-                                     loading="lazy" />
+                                     alt="Logo By Watos noir" />
                             </div>
 
                             <div id="youtube-iframe" class="col-md-6 col-sm-12 col-xs-12">

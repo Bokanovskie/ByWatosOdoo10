@@ -75,19 +75,41 @@
 
                     <div id="social-network-bottom" class="col-xs-6 col-md-6 offset-md-3 col-lg-3 offset-lg-3">
                         <ul>
-                            <li><a t-att-href="website.social_facebook"
-                                   t-if="website.social_facebook"><i class="fa fa-facebook-square"/></a></li>
-                            <li><a t-att-href="website.social_twitter"
-                                   t-if="website.social_twitter"><i class="fa fa-twitter"/></a></li>
-                            <li><a t-att-href="website.social_linkedin"
-                                   t-if="website.social_linkedin"><i class="fa fa-linkedin"/></a></li>
-                            <li><a t-att-href="website.social_youtube"
-                                   t-if="website.social_youtube"><i class="fa fa-youtube-play"/></a></li>
-                            <li><a t-att-href="website.social_googleplus"
-                                   t-if="website.social_googleplus" rel="publisher"><i class="fa fa-google-plus-square"/></a>
+                            <li>
+                                <a t-att-href="website.social_facebook"
+                                   t-if="website.social_facebook">
+                                    <i class="fa fa-facebook-square"/>
+                                </a>
                             </li>
-                            <li><a t-att-href="website.social_instagram"
-                                   t-if="website.social_instagram" rel="publisher"><i class="fa fa-instagram"/></a>
+                            <li>
+                                <a t-att-href="website.social_twitter"
+                                   t-if="website.social_twitter">
+                                    <i class="fa fa-twitter"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a t-att-href="website.social_linkedin"
+                                   t-if="website.social_linkedin">
+                                    <i class="fa fa-linkedin"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a t-att-href="website.social_youtube"
+                                   t-if="website.social_youtube">
+                                    <i class="fa fa-youtube-play"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a t-att-href="website.social_googleplus"
+                                   t-if="website.social_googleplus" rel="publisher">
+                                    <i class="fa fa-google-plus-square"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a t-att-href="website.social_instagram"
+                                   t-if="website.social_instagram" rel="publisher">
+                                    <i class="fa fa-instagram"/>
+                                </a>
                             </li>
                         </ul>
                     </div>
