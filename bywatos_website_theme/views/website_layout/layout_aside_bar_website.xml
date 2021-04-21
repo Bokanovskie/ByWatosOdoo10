@@ -13,7 +13,7 @@
             <!--End sidebar-trigger-->
             <div class="sidebar-main">
 
-                <div id="hot-close-sidebar" class="menu-icon" style="navi_wrapdisplay: none; color: red;">
+                <div id="hot-close-sidebar" class="menu-icon" style="display: none; color: red;">
                     <img src="/bywatos_website_theme/static/src/img/svg/cross_1.svg" class="burger-img" />
                 </div>
 

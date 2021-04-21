@@ -65,7 +65,8 @@
                     <div class="cd-scrolling-bg cd-scrolling-bg--color-1">
                         <div class="row video-container">
                             <div class="col-md-6 col-sm-12 col-xs-12">
-                                <img src="/bywatos_website_theme/static/src/img/logo/logo_by_watos_noir.png"
+                                <img src="/bywatos_website_theme/static/src/img/svg/logo-bw.svg"
+                                     class="homepage-logo"
                                      alt="Logo By Watos noir" />
                             </div>
 
